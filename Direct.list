@@ -310,16 +310,16 @@ DOMAIN-SUFFIX,cibcfcib.com
 DOMAIN-SUFFIX,simplii.com
 
 # Mainland China / Hong Kong / Macau / Taiwan banks
-# DOMAIN-SUFFIX,bankofchina.com.cn # 中国银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
-# DOMAIN-SUFFIX,bocmacau.com.mo # 中国银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
-# DOMAIN-SUFFIX,bocgi.com # 中国银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
-# DOMAIN-SUFFIX,bocionline.com # 中国银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,bankofchina.com.cn # 中国银行系相关但未在确认清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,bocmacau.com.mo # 中国银行系相关但未在确认清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,bocgi.com # 中国银行系相关但未在确认清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,bocionline.com # 中国银行系相关但未在确认清单内，按确认范围注释停用。
 DOMAIN-SUFFIX,abchina.com
 DOMAIN-SUFFIX,abchina.com.cn
 DOMAIN-SUFFIX,95599.cn
-# DOMAIN-SUFFIX,bankcomm.cn # 交通银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
-# DOMAIN-SUFFIX,bankcomm.com.hk # 交通银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
-# DOMAIN-SUFFIX,bocomgroup.com # 交通银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,bankcomm.cn # 交通银行系相关但未在确认清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,bankcomm.com.hk # 交通银行系相关但未在确认清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,bocomgroup.com # 交通银行系相关但未在确认清单内，按确认范围注释停用。
 DOMAIN-SUFFIX,psbc.com
 DOMAIN-SUFFIX,psbc.com.cn
 DOMAIN-SUFFIX,95580.com
@@ -412,7 +412,7 @@ DOMAIN-SUFFIX,pay.weixin.qq.com
 DOMAIN-SUFFIX,mch.weixin.qq.com
 DOMAIN-SUFFIX,api.mch.weixin.qq.com
 DOMAIN-SUFFIX,wx.tenpay.com
-# DOMAIN-SUFFIX,cloudquickpass.com # 银联云闪付相关但未在本轮用户给定清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,cloudquickpass.com # 银联云闪付相关但未在确认清单内，按确认范围注释停用。
 DOMAIN-SUFFIX,octopus.com.hk
 DOMAIN-SUFFIX,octopus.com
 DOMAIN-SUFFIX,octopuscards.com
@@ -457,7 +457,7 @@ DOMAIN-SUFFIX,glbank.com
 
 # Malaysia digital banks
 DOMAIN-SUFFIX,gxbank.my
-# DOMAIN-SUFFIX,gxbank.org  # 旧入口或并行旧站，不建议作为主域名
+# DOMAIN-SUFFIX,gxbank.org  # 非主入口或并行入口，不建议作为主域名
 DOMAIN-SUFFIX,aeonbank.com.my
 # DOMAIN-SUFFIX,myboostbank.co  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
 # DOMAIN-SUFFIX,kafdigitalbank.com.my  # 暂停：纯新兴市场本土金融域名，减少直连规则数量

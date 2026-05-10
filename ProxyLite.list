@@ -5,9 +5,7 @@
 # - 禁止漏洞扫描、端口扫描、路径/目录枚举、爆破、payload、绕过、凭据尝试、攻击框架、
 #   高频探测，或任何可能被误判为真实入侵的行为。
 # - 结论不确定时停止并询问用户，不继续测试或改规则。
-# - GPT 网页版内置虚拟机曾报无法访问部分代理 list 网站。
-# - 本轮已由单人按本地普通访问和命令行方式人工复核。
-# - 最终复核由小龙虾使用 Claude 模型执行，且不能再使用 OpenAI 模型。
+# - 可用性结论不确定的规则保持注释，等待进一步人工复核。
 
 # 明确小雅专门域名/小雅元数据镜像
 # DOMAIN-SUFFIX,emby-data.800686.xyz
@@ -28,8 +26,8 @@
 # 暂不能明确为小雅专门域名/小雅元数据镜像，严格模式先注释
 # DOMAIN-SUFFIX,emby-data.xnn.ee
 
-# - 以下带#emby-data 域名暂不作为可用规则启用；下次最终复核须由第三人在物理境外环境按同流程执行。
-# DOMAIN-SUFFIX,emby-data.poxi1221.eu.org # - poxi1221 本轮未能稳定打开并看到目录内容。
+# - 以下 emby-data 域名暂不作为可用规则启用，等待进一步人工复核。
+# DOMAIN-SUFFIX,emby-data.poxi1221.eu.org # - 未能稳定确认目录内容，暂不启用。
 # DOMAIN-SUFFIX,emby-data.bdbd.fun
 # DOMAIN-SUFFIX,emby-data.r2s.site
 # DOMAIN-SUFFIX,emby-data.neversay.eu.org
@@ -277,4 +275,4 @@ DOMAIN-SUFFIX,mainnet.base.org
 DOMAIN-SUFFIX,base.blockscout.com
 DOMAIN-SUFFIX,freedom.gov
 # 域名关键字匹配
-# DOMAIN-KEYWORD,1e100 # 疑似为历史上曾经使用过的科学上网服务商域名匹配，现已无用。
+# DOMAIN-KEYWORD,1e100 # 用途无法确认，暂不启用。
