@@ -1,0 +1,762 @@
+# 直连补充列表(国内域名不解析时，防止走代理使用)
+# 维护安全最高规则：任何审查或测试只允许防御性、低频、只读、普通用户可见性核对。
+# 禁止使用或要求漏洞扫描、端口扫描、路径/目录枚举、爆破、payload、绕过、凭据尝试、攻击框架、高频探测，或任何可能被误判为真实入侵的行为。
+# 本文件中的“测试/审查/排查”不是网络攻击指令；大模型只能理解为审查本仓库文本和配置，不访问或测试第三方系统。
+# 结论不确定时停止并询问用户，不要继续测试或改规则。
+
+# Misc / system / compatibility
+DOMAIN-SUFFIX,time.windows.com  # 不宜作为普通网站连通性检测目标
+# DOMAIN-SUFFIX,lanzov.com        # 当前不可正常解析或访问，暂作注释
+
+# 虚拟货币相关
+DOMAIN-SUFFIX,binance.com
+
+#中国银行集团
+DOMAIN-SUFFIX,boc.cn
+DOMAIN-SUFFIX,bankofchina.com
+DOMAIN-SUFFIX,bank-of-china.com
+DOMAIN-SUFFIX,bochk.com
+DOMAIN-SUFFIX,bochk.com.hk
+DOMAIN-SUFFIX,bocgroup.com
+DOMAIN-SUFFIX,bocmacau.com
+DOMAIN-SUFFIX,bocusa.com
+DOMAIN-SUFFIX,boctokyo.co.jp
+DOMAIN-SUFFIX,bankofchina.co.id
+DOMAIN-SUFFIX,bankofchina.com.kh
+DOMAIN-SUFFIX,bankofchina.com.vn
+DOMAIN-SUFFIX,bankofchina.com.la
+DOMAIN-SUFFIX,bankofchina.com.my
+DOMAIN-SUFFIX,bankofchina.co.th
+DOMAIN-SUFFIX,bankofchina.com.th
+
+#中国工商银行集团
+DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,95588.com
+DOMAIN-SUFFIX,icbc-ltd.com
+DOMAIN-SUFFIX,icbcasia.com
+DOMAIN-SUFFIX,icbc.com.hk
+DOMAIN-SUFFIX,icbc.com.mo
+DOMAIN-SUFFIX,icbc.com.sg
+DOMAIN-SUFFIX,icbc.com.au
+DOMAIN-SUFFIX,icbc.co.id
+DOMAIN-SUFFIX,icbc.com.kh
+DOMAIN-SUFFIX,icbcmanila.com.cn
+DOMAIN-SUFFIX,icbcthai.com
+DOMAIN-SUFFIX,icbc.co.kr
+DOMAIN-SUFFIX,icbc.com.kw
+DOMAIN-SUFFIX,icbc.com.mm
+DOMAIN-SUFFIX,icbc.de
+DOMAIN-SUFFIX,icbc-at.com
+DOMAIN-SUFFIX,icbclondon.com
+DOMAIN-SUFFIX,icbc-uk.com
+DOMAIN-SUFFIX,icbc.com.tr
+DOMAIN-SUFFIX,icbc-cz.com
+DOMAIN-SUFFIX,icbcswiss.com
+DOMAIN-SUFFIX,icbc.com.mx
+DOMAIN-SUFFIX,icbc-us.com
+DOMAIN-SUFFIX,icbkus.com
+DOMAIN-SUFFIX,icbc.com.ar
+DOMAIN-SUFFIX,icbc.com.pe
+
+#交通银行集团
+DOMAIN-SUFFIX,bankcomm.com
+DOMAIN-SUFFIX,95559.com.cn
+
+#银联与中国银联商务相关域名DOMAIN-SUFFIX,unionpay.com
+DOMAIN-SUFFIX,chinaunionpay.com
+DOMAIN-SUFFIX,unionpayintl.com
+DOMAIN-SUFFIX,unionpaysecure.com
+DOMAIN-SUFFIX,95516.com
+DOMAIN-SUFFIX,chinaums.com
+DOMAIN-SUFFIX,chinaumswh.com
+DOMAIN-SUFFIX,umspay.cn
+DOMAIN-SUFFIX,mpos.quanminfu.com
+DOMAIN-SUFFIX,m.95534.biz
+
+# HSBC / Hang Seng
+DOMAIN-SUFFIX,hsbc.com
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,hsbc.com.cn
+DOMAIN-SUFFIX,hsbc.com.sg
+DOMAIN-SUFFIX,hsbc.co.uk
+DOMAIN-SUFFIX,hsbc.ca
+DOMAIN-SUFFIX,hsbc.com.au
+DOMAIN-SUFFIX,hsbc.fr
+DOMAIN-SUFFIX,hsbc.ae
+DOMAIN-SUFFIX,hsbc.com.my
+DOMAIN-SUFFIX,hsbcnet.com
+DOMAIN-SUFFIX,hsbcprivatebank.com
+DOMAIN-SUFFIX,payme.hsbc
+DOMAIN-SUFFIX,hangseng.com
+DOMAIN-SUFFIX,hangseng.com.hk
+DOMAIN-SUFFIX,hangseng.com.cn
+DOMAIN-SUFFIX,hangsengbank.com
+DOMAIN-SUFFIX,hangsengbank.com.cn
+DOMAIN-SUFFIX,hase.hk
+# DOMAIN-SUFFIX,hsbc.edgekey.net             # 当前不可正常解析或访问，暂作注释
+# DOMAIN-SUFFIX,hsbc.com.hk.edgekey.net      # 当前不可正常解析或访问，暂作注释
+# DOMAIN-SUFFIX,hangseng.edgekey.net         # 当前不可正常解析或访问，暂作注释
+
+# Standard Chartered
+DOMAIN-SUFFIX,sc.com
+DOMAIN-SUFFIX,standardchartered.com
+DOMAIN-SUFFIX,standardchartered.com.hk
+DOMAIN-SUFFIX,standardchartered.com.sg
+DOMAIN-SUFFIX,standardchartered.com.cn
+DOMAIN-SUFFIX,standardchartered.co.uk
+DOMAIN-SUFFIX,standardchartered.co.in
+DOMAIN-SUFFIX,standardchartered.com.my
+DOMAIN-SUFFIX,standardchartered.com.tw
+DOMAIN-SUFFIX,standardcharteredprivatebank.com
+
+# Citi / Citibank
+DOMAIN-SUFFIX,citi.com
+DOMAIN-SUFFIX,citi.com.cn
+DOMAIN-SUFFIX,citi.co.uk
+DOMAIN-SUFFIX,citigroup.com
+DOMAIN-SUFFIX,citibank.com
+DOMAIN-SUFFIX,citibank.com.hk
+DOMAIN-SUFFIX,citibank.com.sg
+DOMAIN-SUFFIX,citibank.com.cn
+DOMAIN-SUFFIX,citibank.co.uk
+DOMAIN-SUFFIX,citibank.com.tw
+DOMAIN-SUFFIX,citibank.com.au
+DOMAIN-SUFFIX,citibank.co.in
+DOMAIN-SUFFIX,citibank.com.my
+DOMAIN-SUFFIX,citibankonline.com
+DOMAIN-SUFFIX,citicards.com
+
+# JPMorgan Chase
+DOMAIN-SUFFIX,chase.com
+DOMAIN-SUFFIX,chasecdn.com
+DOMAIN-SUFFIX,chasepaymentech.com
+DOMAIN-SUFFIX,jpmorgan.com
+DOMAIN-SUFFIX,jpmorganchase.com
+DOMAIN-SUFFIX,jpmorganonline.com
+DOMAIN-SUFFIX,jpmorganwealthmanagement.com
+
+# Bank of America / Merrill
+DOMAIN-SUFFIX,bankofamerica.com
+DOMAIN-SUFFIX,bankofamerica.com.cn
+DOMAIN-SUFFIX,bofa.com
+DOMAIN-SUFFIX,merrill.com
+DOMAIN-SUFFIX,merrilledge.com
+DOMAIN-SUFFIX,ml.com
+DOMAIN-SUFFIX,bankofamerica.com.edgekey.net
+
+# Wells Fargo
+DOMAIN-SUFFIX,wellsfargo.com
+DOMAIN-SUFFIX,wf.com
+DOMAIN-SUFFIX,wellsfargoadvisors.com
+DOMAIN-SUFFIX,wellsfargomedia.com
+DOMAIN-SUFFIX,wellsfargo.com.edgekey.net
+
+# UBS
+DOMAIN-SUFFIX,ubs.com
+DOMAIN-SUFFIX,ubs.ch
+DOMAIN-SUFFIX,ubs.com.cn
+DOMAIN-SUFFIX,ubs.com.hk
+DOMAIN-SUFFIX,ubs.com.sg
+DOMAIN-SUFFIX,ubs.com.tw
+DOMAIN-SUFFIX,ubs.com.au
+DOMAIN-SUFFIX,ubsbankusa.com
+
+# Barclays
+DOMAIN-SUFFIX,barclays.co.uk
+DOMAIN-SUFFIX,barclays.com
+DOMAIN-SUFFIX,barclaysus.com
+DOMAIN-SUFFIX,barclaycard.co.uk
+DOMAIN-SUFFIX,barclaycardus.com
+DOMAIN-SUFFIX,barclayswealth.com
+
+# Lloyds Bank
+DOMAIN-SUFFIX,lloydsbank.com
+DOMAIN-SUFFIX,lloydsbank.co.uk
+DOMAIN-SUFFIX,lloydsbankcommercial.com
+DOMAIN-SUFFIX,lloydsbankcardnet.com
+
+# NatWest / RBS / Ulster Bank
+DOMAIN-SUFFIX,natwest.com
+DOMAIN-SUFFIX,natwestinternational.com
+DOMAIN-SUFFIX,rbs.co.uk
+DOMAIN-SUFFIX,royalbankofscotland.com
+DOMAIN-SUFFIX,ulsterbank.co.uk
+
+# Deutsche Bank
+DOMAIN-SUFFIX,db.com
+DOMAIN-SUFFIX,deutsche-bank.com
+DOMAIN-SUFFIX,deutsche-bank.de
+DOMAIN-SUFFIX,deutschebank.be
+DOMAIN-SUFFIX,deutschewealth.com
+
+# BNP Paribas
+DOMAIN-SUFFIX,bnpparibas.com
+DOMAIN-SUFFIX,bnpparibas.net
+DOMAIN-SUFFIX,mabanque.bnpparibas
+DOMAIN-SUFFIX,hellobank.fr
+DOMAIN-SUFFIX,hellobank.be
+DOMAIN-SUFFIX,bnpparibasfortis.be
+DOMAIN-SUFFIX,bgl.lu
+
+# Societe Generale
+DOMAIN-SUFFIX,societegenerale.com
+DOMAIN-SUFFIX,societegenerale.fr
+DOMAIN-SUFFIX,sg.fr
+DOMAIN-SUFFIX,boursobank.com
+DOMAIN-SUFFIX,boursorama.com
+
+# Credit Agricole / LCL
+DOMAIN-SUFFIX,credit-agricole.com
+DOMAIN-SUFFIX,credit-agricole.fr
+DOMAIN-SUFFIX,creditagricole.info
+DOMAIN-SUFFIX,lcl.fr
+
+# ING
+DOMAIN-SUFFIX,ing.com
+DOMAIN-SUFFIX,ing.nl
+DOMAIN-SUFFIX,ing.be
+DOMAIN-SUFFIX,ing.de
+DOMAIN-SUFFIX,ingdirect.es
+DOMAIN-SUFFIX,ing.com.au
+DOMAIN-SUFFIX,ing.lu
+DOMAIN-SUFFIX,ing.pl
+DOMAIN-SUFFIX,ing.it
+
+# Santander / Openbank
+DOMAIN-SUFFIX,santander.com
+DOMAIN-SUFFIX,santander.co.uk
+DOMAIN-SUFFIX,santanderbank.com
+DOMAIN-SUFFIX,santander.com.br
+DOMAIN-SUFFIX,santander.com.mx
+DOMAIN-SUFFIX,bancosantander.es
+DOMAIN-SUFFIX,santanderconsumerusa.com
+DOMAIN-SUFFIX,openbank.es
+DOMAIN-SUFFIX,openbank.com
+
+# Japan major banks
+DOMAIN-SUFFIX,mufg.jp
+DOMAIN-SUFFIX,mufg.co.jp
+DOMAIN-SUFFIX,mufgbank.com
+DOMAIN-SUFFIX,mufgamericas.com
+DOMAIN-SUFFIX,mufgunionbank.com
+DOMAIN-SUFFIX,smbc.co.jp
+DOMAIN-SUFFIX,smbctb.co.jp
+DOMAIN-SUFFIX,smbc-card.com
+DOMAIN-SUFFIX,smbcnikko.co.jp
+DOMAIN-SUFFIX,smbcgroup.com
+DOMAIN-SUFFIX,mizuho-fg.co.jp
+DOMAIN-SUFFIX,mizuhobank.co.jp
+DOMAIN-SUFFIX,mizuho-sc.com
+
+# Singapore banks
+DOMAIN-SUFFIX,dbs.com
+DOMAIN-SUFFIX,dbs.com.sg
+DOMAIN-SUFFIX,dbs.com.hk
+DOMAIN-SUFFIX,posb.com.sg
+DOMAIN-SUFFIX,digibank.com
+DOMAIN-SUFFIX,ocbc.com
+DOMAIN-SUFFIX,ocbc.com.sg
+DOMAIN-SUFFIX,ocbc.com.hk
+DOMAIN-SUFFIX,ocbc.com.cn
+DOMAIN-SUFFIX,bankofsingapore.com
+DOMAIN-SUFFIX,uobgroup.com
+DOMAIN-SUFFIX,uob.com.sg
+DOMAIN-SUFFIX,uob.com.my
+DOMAIN-SUFFIX,uob.co.th
+DOMAIN-SUFFIX,uob.com.hk
+DOMAIN-SUFFIX,uobchina.com.cn
+
+# Australia / New Zealand banks
+DOMAIN-SUFFIX,anz.com
+DOMAIN-SUFFIX,anz.com.au
+DOMAIN-SUFFIX,anz.co.nz
+DOMAIN-SUFFIX,anz.com.sg
+DOMAIN-SUFFIX,anz.com.cn
+DOMAIN-SUFFIX,anz.com.hk
+DOMAIN-SUFFIX,commbank.com.au
+DOMAIN-SUFFIX,commbank.com
+DOMAIN-SUFFIX,commonwealthbank.com.au
+DOMAIN-SUFFIX,netbank.com.au
+DOMAIN-SUFFIX,commsec.com.au
+DOMAIN-SUFFIX,westpac.com.au
+DOMAIN-SUFFIX,westpac.co.nz
+DOMAIN-SUFFIX,stgeorge.com.au
+DOMAIN-SUFFIX,banksa.com.au
+DOMAIN-SUFFIX,bankofmelbourne.com.au
+DOMAIN-SUFFIX,nab.com.au
+DOMAIN-SUFFIX,nabtrade.com.au
+DOMAIN-SUFFIX,ubank.com.au
+
+# Canada banks
+DOMAIN-SUFFIX,rbc.com
+DOMAIN-SUFFIX,rbcroyalbank.com
+DOMAIN-SUFFIX,rbcbank.com
+DOMAIN-SUFFIX,rbcwealthmanagement.com
+DOMAIN-SUFFIX,rbcdirectinvesting.com
+DOMAIN-SUFFIX,td.com
+DOMAIN-SUFFIX,tdbank.com
+DOMAIN-SUFFIX,tdcanadatrust.com
+DOMAIN-SUFFIX,tdwaterhouse.ca
+DOMAIN-SUFFIX,scotiabank.com
+DOMAIN-SUFFIX,scotiabank.ca
+DOMAIN-SUFFIX,scotiaitrade.com
+DOMAIN-SUFFIX,bmo.com
+DOMAIN-SUFFIX,bmo.ca
+DOMAIN-SUFFIX,bmoharris.com
+DOMAIN-SUFFIX,bmoinvestorline.com
+DOMAIN-SUFFIX,cibc.com
+DOMAIN-SUFFIX,cibc.ca
+DOMAIN-SUFFIX,cibcfcib.com
+DOMAIN-SUFFIX,simplii.com
+
+# Mainland China / Hong Kong / Macau / Taiwan banks
+# DOMAIN-SUFFIX,bankofchina.com.cn # 中国银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,bocmacau.com.mo # 中国银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,bocgi.com # 中国银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,bocionline.com # 中国银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
+DOMAIN-SUFFIX,abchina.com
+DOMAIN-SUFFIX,abchina.com.cn
+DOMAIN-SUFFIX,95599.cn
+# DOMAIN-SUFFIX,bankcomm.cn # 交通银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,bankcomm.com.hk # 交通银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
+# DOMAIN-SUFFIX,bocomgroup.com # 交通银行系相关但未在本轮用户给定清单内，按确认范围注释停用。
+DOMAIN-SUFFIX,psbc.com
+DOMAIN-SUFFIX,psbc.com.cn
+DOMAIN-SUFFIX,95580.com
+DOMAIN-SUFFIX,cmbchina.com
+DOMAIN-SUFFIX,cmbchina.com.cn
+DOMAIN-SUFFIX,cmbchina.com.hk
+DOMAIN-SUFFIX,cmblife.com
+DOMAIN-SUFFIX,cmbwinglungbank.com
+DOMAIN-SUFFIX,cmbwinglungbank.com.hk
+DOMAIN-SUFFIX,winglungbank.com
+DOMAIN-SUFFIX,wlb.com.hk
+DOMAIN-SUFFIX,cmbi.com.hk
+DOMAIN-SUFFIX,hkbea.com
+DOMAIN-SUFFIX,hkbea.com.cn
+DOMAIN-SUFFIX,bankofeastasia.com
+DOMAIN-SUFFIX,bea.com
+DOMAIN-SUFFIX,cib.com.cn
+DOMAIN-SUFFIX,cmbc.com.cn
+DOMAIN-SUFFIX,cmbc.com.hk
+DOMAIN-SUFFIX,citicbank.com
+DOMAIN-SUFFIX,citicbank.com.cn
+DOMAIN-SUFFIX,cncb.com.hk
+DOMAIN-SUFFIX,ecitic.com
+DOMAIN-SUFFIX,cebbank.com
+DOMAIN-SUFFIX,cebbank.com.cn
+DOMAIN-SUFFIX,cebbank.com.hk
+DOMAIN-SUFFIX,hxb.com.cn
+DOMAIN-SUFFIX,hxb.com
+DOMAIN-SUFFIX,cgbchina.com.cn
+DOMAIN-SUFFIX,cgbchina.com
+DOMAIN-SUFFIX,gdb.com.cn
+DOMAIN-SUFFIX,pingan.com
+DOMAIN-SUFFIX,pingan.com.cn
+DOMAIN-SUFFIX,pab.com.cn
+DOMAIN-SUFFIX,pinganbank.com
+DOMAIN-SUFFIX,pinganbank.com.cn
+DOMAIN-SUFFIX,czbank.com
+DOMAIN-SUFFIX,czbank.com.cn
+DOMAIN-SUFFIX,cbhb.com.cn
+DOMAIN-SUFFIX,bankofbeijing.com.cn
+DOMAIN-SUFFIX,bankofbeijing.com
+DOMAIN-SUFFIX,bosc.cn
+DOMAIN-SUFFIX,bosc.com.cn
+DOMAIN-SUFFIX,jsbchina.cn
+DOMAIN-SUFFIX,jsbchina.com
+DOMAIN-SUFFIX,jsbchina.com.cn
+DOMAIN-SUFFIX,nbcb.com.cn
+DOMAIN-SUFFIX,nbcb.cn
+DOMAIN-SUFFIX,njcb.com.cn
+DOMAIN-SUFFIX,njcb.com
+DOMAIN-SUFFIX,njcb.cn
+DOMAIN-SUFFIX,bnu.com.mo
+DOMAIN-SUFFIX,taifungbank.com
+DOMAIN-SUFFIX,luso.com.mo
+DOMAIN-SUFFIX,bot.com.tw
+DOMAIN-SUFFIX,landbank.com.tw
+DOMAIN-SUFFIX,tcb-bank.com.tw
+DOMAIN-SUFFIX,firstbank.com.tw
+DOMAIN-SUFFIX,hncb.com.tw
+DOMAIN-SUFFIX,esunbank.com
+DOMAIN-SUFFIX,esunbank.com.tw
+DOMAIN-SUFFIX,cathaybk.com.tw
+DOMAIN-SUFFIX,fubon.com
+DOMAIN-SUFFIX,taipeifubon.com.tw
+DOMAIN-SUFFIX,sinopac.com
+DOMAIN-SUFFIX,sinopac.com.tw
+DOMAIN-SUFFIX,ctbcbank.com
+DOMAIN-SUFFIX,ctbcbank.com.tw
+DOMAIN-SUFFIX,megabank.com.tw
+DOMAIN-SUFFIX,taishinbank.com.tw
+DOMAIN-SUFFIX,yuantabank.com.tw
+DOMAIN-SUFFIX,scsb.com.tw
+DOMAIN-SUFFIX,kgibank.com.tw
+DOMAIN-SUFFIX,ubot.com.tw
+DOMAIN-SUFFIX,linebank.com.tw
+
+# China / Hong Kong / Macau / Taiwan payment tools
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipay.com.cn
+DOMAIN-SUFFIX,alipay.hk
+DOMAIN-SUFFIX,alipayplus.com
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN-SUFFIX,alipayusercontent.com
+DOMAIN-SUFFIX,antfin.com
+DOMAIN-SUFFIX,antgroup.com
+DOMAIN-SUFFIX,mybank.cn
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,wechatpay.com
+DOMAIN-SUFFIX,pay.weixin.qq.com
+DOMAIN-SUFFIX,mch.weixin.qq.com
+DOMAIN-SUFFIX,api.mch.weixin.qq.com
+DOMAIN-SUFFIX,wx.tenpay.com
+# DOMAIN-SUFFIX,cloudquickpass.com # 银联云闪付相关但未在本轮用户给定清单内，按确认范围注释停用。
+DOMAIN-SUFFIX,octopus.com.hk
+DOMAIN-SUFFIX,octopus.com
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,octopuswallet.com.hk
+DOMAIN-SUFFIX,macaupass.com
+DOMAIN-SUFFIX,mpay.mo
+DOMAIN-SUFFIX,jkopay.com
+DOMAIN-SUFFIX,linepay.com.tw
+DOMAIN-SUFFIX,piapp.com.tw
+DOMAIN-SUFFIX,ecpay.com.tw
+DOMAIN-SUFFIX,allpay.com.tw
+
+# Hong Kong virtual banks / digital banks
+DOMAIN-SUFFIX,za.group
+DOMAIN-SUFFIX,bank.za.group
+# DOMAIN-SUFFIX,www.bank.za.group  # 非官方主入口，不宜作为有效检测目标
+DOMAIN-SUFFIX,airstarbank.com
+DOMAIN-SUFFIX,elebank.com
+DOMAIN-SUFFIX,welab.bank
+DOMAIN-SUFFIX,welab.co
+DOMAIN-SUFFIX,livibank.com
+DOMAIN-SUFFIX,mox.com
+DOMAIN-SUFFIX,paob.com.hk
+DOMAIN-SUFFIX,fusionbank.com
+DOMAIN-SUFFIX,antbank.hk
+DOMAIN-SUFFIX,xapobank.com
+DOMAIN-SUFFIX,xapo.com
+
+# Mainland China internet banks
+DOMAIN-SUFFIX,webank.com
+DOMAIN-SUFFIX,aibank.com
+DOMAIN-SUFFIX,xwbank.com
+DOMAIN-SUFFIX,suningbank.com
+DOMAIN-SUFFIX,z-bank.com
+
+# Singapore digital banks
+DOMAIN-SUFFIX,gxs.com.sg
+DOMAIN-SUFFIX,trustbank.sg
+DOMAIN-SUFFIX,maribank.sg
+DOMAIN-SUFFIX,anext.com.sg
+DOMAIN-SUFFIX,glbank.com
+
+# Malaysia digital banks
+DOMAIN-SUFFIX,gxbank.my
+# DOMAIN-SUFFIX,gxbank.org  # 旧入口或并行旧站，不建议作为主域名
+DOMAIN-SUFFIX,aeonbank.com.my
+# DOMAIN-SUFFIX,myboostbank.co  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+# DOMAIN-SUFFIX,kafdigitalbank.com.my  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+DOMAIN-SUFFIX,rytbank.my
+
+# Philippines digital banks
+# DOMAIN-SUFFIX,maya.ph  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+# DOMAIN-SUFFIX,mayabank.ph  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+# DOMAIN-SUFFIX,gotyme.com.ph  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+DOMAIN-SUFFIX,tonikbank.com
+DOMAIN-SUFFIX,uno.bank
+DOMAIN-SUFFIX,seabank.ph
+
+# Indonesia digital banks
+DOMAIN-SUFFIX,jenius.com
+# DOMAIN-SUFFIX,jago.com  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+DOMAIN-SUFFIX,seabank.co.id
+# DOMAIN-SUFFIX,blubybcadigital.id  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+
+# South Korea digital banks
+DOMAIN-SUFFIX,kakaobank.com
+DOMAIN-SUFFIX,kbanknow.com
+DOMAIN-SUFFIX,tossbank.com
+
+# Taiwan digital banks
+DOMAIN-SUFFIX,rakuten-bank.com.tw
+DOMAIN-SUFFIX,nextbank.com.tw
+
+# Japan online banks
+DOMAIN-SUFFIX,rakuten-bank.co.jp
+DOMAIN-SUFFIX,netbk.co.jp
+DOMAIN-SUFFIX,sonybank.net
+DOMAIN-SUFFIX,moneykit.net
+DOMAIN-SUFFIX,sonybank.jp
+# DOMAIN-SUFFIX,www.sonybank.net  # 非当前推荐入口，官方服务入口优先 sonybank.net / moneykit.net / sonybank.jp
+DOMAIN-SUFFIX,paypay-bank.co.jp
+DOMAIN-SUFFIX,jibunbank.co.jp
+DOMAIN-SUFFIX,sevenbank.co.jp
+
+# Global neobanks / digital financial services
+DOMAIN-SUFFIX,n26.com
+DOMAIN-SUFFIX,monzo.com
+DOMAIN-SUFFIX,starlingbank.com
+DOMAIN-SUFFIX,chime.com
+DOMAIN-SUFFIX,current.com
+DOMAIN-SUFFIX,dave.com
+DOMAIN-SUFFIX,moneylion.com
+DOMAIN-SUFFIX,varomoney.com
+DOMAIN-SUFFIX,sofi.com
+DOMAIN-SUFFIX,ally.com
+DOMAIN-SUFFIX,go2bank.com
+DOMAIN-SUFFIX,greendot.com
+DOMAIN-SUFFIX,axosbank.com
+DOMAIN-SUFFIX,lendingclub.com
+DOMAIN-SUFFIX,synchronybank.com
+DOMAIN-SUFFIX,jeniusbank.com
+DOMAIN-SUFFIX,one.app
+DOMAIN-SUFFIX,upgrade.com
+DOMAIN-SUFFIX,wealthfront.com
+DOMAIN-SUFFIX,betterment.com
+DOMAIN-SUFFIX,mercury.com
+DOMAIN-SUFFIX,quontic.com
+DOMAIN-SUFFIX,cit.com
+DOMAIN-SUFFIX,citbank.com
+DOMAIN-SUFFIX,openbank.us
+DOMAIN-SUFFIX,marcus.com
+DOMAIN-SUFFIX,novo.co
+DOMAIN-SUFFIX,bluevine.com
+DOMAIN-SUFFIX,brex.com
+DOMAIN-SUFFIX,relayfi.com
+DOMAIN-SUFFIX,northone.com
+DOMAIN-SUFFIX,found.com
+DOMAIN-SUFFIX,lili.co
+DOMAIN-SUFFIX,grasshopper.bank
+DOMAIN-SUFFIX,everbank.com
+DOMAIN-SUFFIX,baskbank.com
+DOMAIN-SUFFIX,ufbdirect.com
+DOMAIN-SUFFIX,laurelroad.com
+
+# UK neobanks / fintech banks
+DOMAIN-SUFFIX,chase.co.uk
+DOMAIN-SUFFIX,bunq.com
+DOMAIN-SUFFIX,atombank.co.uk
+DOMAIN-SUFFIX,tandem.co.uk
+DOMAIN-SUFFIX,zopa.com
+DOMAIN-SUFFIX,kroo.com
+DOMAIN-SUFFIX,cashplus.com
+DOMAIN-SUFFIX,cashplusbank.com
+DOMAIN-SUFFIX,monese.com
+DOMAIN-SUFFIX,mettle.co.uk
+DOMAIN-SUFFIX,allica.bank
+DOMAIN-SUFFIX,clear.bank
+DOMAIN-SUFFIX,clearbank.co.uk
+DOMAIN-SUFFIX,monument.co
+DOMAIN-SUFFIX,oaknorth.co.uk
+DOMAIN-SUFFIX,oaknorth.com
+DOMAIN-SUFFIX,firstdirect.com
+DOMAIN-SUFFIX,tide.co
+DOMAIN-SUFFIX,anna.money
+DOMAIN-SUFFIX,countingup.com
+DOMAIN-SUFFIX,getchip.uk
+DOMAIN-SUFFIX,paragonbank.co.uk
+DOMAIN-SUFFIX,aldermore.co.uk
+DOMAIN-SUFFIX,shawbrook.co.uk
+DOMAIN-SUFFIX,chartersavingsbank.co.uk
+DOMAIN-SUFFIX,lunar.app
+
+# Canada neobanks
+DOMAIN-SUFFIX,eqbank.ca
+DOMAIN-SUFFIX,tangerine.ca
+
+# Latin America neobanks
+# DOMAIN-SUFFIX,nubank.com.br  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+# DOMAIN-SUFFIX,nu.com.mx  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+# DOMAIN-SUFFIX,nu.com.co  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+# DOMAIN-SUFFIX,inter.co  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+# DOMAIN-SUFFIX,bancointer.com.br  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+DOMAIN-SUFFIX,c6bank.com.br
+DOMAIN-SUFFIX,neon.com.br
+DOMAIN-SUFFIX,uala.com.ar
+
+# Middle East / Africa neobanks
+DOMAIN-SUFFIX,wio.io
+DOMAIN-SUFFIX,liv.me
+# DOMAIN-SUFFIX,tymebank.co.za  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+# DOMAIN-SUFFIX,gotyme.co.za  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
+DOMAIN-SUFFIX,kuda.com
+
+# Major US banks and card issuers
+DOMAIN-SUFFIX,capitalone.com
+DOMAIN-SUFFIX,capitalonebank.com
+DOMAIN-SUFFIX,usbank.com
+DOMAIN-SUFFIX,pnc.com
+DOMAIN-SUFFIX,pncbank.com
+DOMAIN-SUFFIX,pncwealthmanagement.com
+DOMAIN-SUFFIX,truist.com
+DOMAIN-SUFFIX,truistbank.com
+DOMAIN-SUFFIX,bbt.com
+DOMAIN-SUFFIX,suntrust.com
+DOMAIN-SUFFIX,americanexpress.com
+DOMAIN-SUFFIX,americanexpress.com.ar
+DOMAIN-SUFFIX,americanexpress.com.au
+DOMAIN-SUFFIX,americanexpress.at
+DOMAIN-SUFFIX,americanexpress.com.br
+DOMAIN-SUFFIX,americanexpress.ca
+DOMAIN-SUFFIX,americanexpress.com.cn
+DOMAIN-SUFFIX,americanexpress.fi
+DOMAIN-SUFFIX,americanexpress.fr
+DOMAIN-SUFFIX,americanexpress.de
+DOMAIN-SUFFIX,americanexpress.com.hk
+DOMAIN-SUFFIX,americanexpress.co.in
+DOMAIN-SUFFIX,americanexpress.it
+DOMAIN-SUFFIX,americanexpress.jp
+DOMAIN-SUFFIX,americanexpress.com.mx
+DOMAIN-SUFFIX,americanexpress.nl
+DOMAIN-SUFFIX,americanexpress.co.nz
+DOMAIN-SUFFIX,americanexpress.com.pr
+DOMAIN-SUFFIX,americanexpress.com.sg
+DOMAIN-SUFFIX,americanexpress.es
+DOMAIN-SUFFIX,americanexpress.se
+DOMAIN-SUFFIX,americanexpress.com.tw
+DOMAIN-SUFFIX,americanexpress.co.th
+DOMAIN-SUFFIX,americanexpress.co.uk
+DOMAIN-SUFFIX,americanexpress.ae
+DOMAIN-SUFFIX,americanexpress.com.bh
+DOMAIN-SUFFIX,americanexpress.com.eg
+DOMAIN-SUFFIX,americanexpress.com.jo
+DOMAIN-SUFFIX,americanexpress.com.kw
+DOMAIN-SUFFIX,americanexpress.com.lb
+DOMAIN-SUFFIX,americanexpress.com.om
+DOMAIN-SUFFIX,americanexpress.com.qa
+DOMAIN-SUFFIX,aexp.com
+DOMAIN-SUFFIX,aexp-static.com
+DOMAIN-SUFFIX,amex.com
+DOMAIN-SUFFIX,amexgiftcard.com
+DOMAIN-SUFFIX,amextravel.com
+DOMAIN-SUFFIX,membershiprewards.com
+DOMAIN-SUFFIX,discover.com
+DOMAIN-SUFFIX,discovercard.com
+DOMAIN-SUFFIX,discoverbank.com
+
+# Payment networks and processors
+DOMAIN-SUFFIX,visa.com
+DOMAIN-SUFFIX,visa.com.cn
+DOMAIN-SUFFIX,visa.com.hk
+DOMAIN-SUFFIX,visaeurope.com
+DOMAIN-SUFFIX,visaonline.com
+DOMAIN-SUFFIX,visaacceptance.com
+DOMAIN-SUFFIX,cybersource.com
+DOMAIN-SUFFIX,authorizenet.com
+DOMAIN-SUFFIX,mastercard.com
+DOMAIN-SUFFIX,mastercard.com.cn
+DOMAIN-SUFFIX,mastercard.com.hk
+DOMAIN-SUFFIX,mastercardservices.com
+DOMAIN-SUFFIX,mastercardconnect.com
+DOMAIN-SUFFIX,mastercard.us
+DOMAIN-SUFFIX,discovernetwork.com
+# Card authentication / 3DS / payment risk dependencies
+DOMAIN-SUFFIX,visasecureservices.com
+DOMAIN-SUFFIX,cardinalcommerce.com
+DOMAIN-SUFFIX,emvco.com
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,braintreegateway.com
+DOMAIN-SUFFIX,braintree-api.com
+DOMAIN-SUFFIX,forter.com
+DOMAIN-SUFFIX,checkouttools.com
+DOMAIN-SUFFIX,riskified.com
+DOMAIN-SUFFIX,signifyd.com
+# 按新增 AGENTS.md 注释保留规则恢复此组；仅保留原规则文本，不启用。确需删除时须对同一删除动作完成 3 次人工确认。
+# DOMAIN-SUFFIX,fingerprint.com
+# DOMAIN-SUFFIX,fpjs.pro
+# DOMAIN-SUFFIX,maxmind.com
+# DOMAIN-SUFFIX,kount.com
+# DOMAIN-SUFFIX,kount.net
+# DOMAIN-SUFFIX,kaptcha.com
+# DOMAIN-SUFFIX,kaxsdc.com
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripe.network
+DOMAIN-SUFFIX,stripe.global
+DOMAIN-SUFFIX,link.com
+DOMAIN-SUFFIX,adyen.com
+DOMAIN-SUFFIX,adyenpayments.com
+DOMAIN-SUFFIX,adyen.com.cn
+DOMAIN-SUFFIX,checkout.com
+DOMAIN-SUFFIX,checkoutcdn.com
+DOMAIN-SUFFIX,cko-payments.com
+DOMAIN-SUFFIX,worldpay.com
+DOMAIN-SUFFIX,worldpayglobal.com
+DOMAIN-SUFFIX,worldpay.us
+DOMAIN-SUFFIX,squareup.com
+DOMAIN-SUFFIX,square.com
+DOMAIN-SUFFIX,squarecdn.com
+DOMAIN-SUFFIX,block.xyz
+DOMAIN-SUFFIX,cash.app
+DOMAIN-SUFFIX,klarna.com
+DOMAIN-SUFFIX,klarna.net
+DOMAIN-SUFFIX,afterpay.com
+DOMAIN-SUFFIX,afterpay.com.au
+DOMAIN-SUFFIX,afterpaycdn.com
+DOMAIN-SUFFIX,affirm.com
+DOMAIN-SUFFIX,affirmcdn.com
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,wiseassets.com
+DOMAIN-SUFFIX,revolut.com
+DOMAIN-SUFFIX,rev.money
+DOMAIN-SUFFIX,payoneer.com
+DOMAIN-SUFFIX,payoneer.com.cn
+
+# Mainstream brokerage and securities trading account services
+DOMAIN-SUFFIX,interactivebrokers.com
+DOMAIN-SUFFIX,interactivebrokers.co.uk
+DOMAIN-SUFFIX,interactivebrokers.com.hk
+DOMAIN-SUFFIX,interactivebrokers.com.sg
+DOMAIN-SUFFIX,ibkr.com
+DOMAIN-SUFFIX,ibkr.info
+DOMAIN-SUFFIX,ibkrguides.com
+DOMAIN-SUFFIX,ibkr.com.cn
+DOMAIN-SUFFIX,schwab.com
+DOMAIN-SUFFIX,schwabcdn.com
+DOMAIN-SUFFIX,schwaballiance.com
+DOMAIN-SUFFIX,schwabplan.com
+DOMAIN-SUFFIX,thinkorswim.com
+DOMAIN-SUFFIX,tdameritrade.com
+DOMAIN-SUFFIX,ameritrade.com
+DOMAIN-SUFFIX,fidelity.com
+DOMAIN-SUFFIX,fidelityinstitutional.com
+DOMAIN-SUFFIX,fidelityinternational.com
+DOMAIN-SUFFIX,fidelity.com.hk
+DOMAIN-SUFFIX,fidelity.ca
+DOMAIN-SUFFIX,fidelity.co.uk
+DOMAIN-SUFFIX,netbenefits.com
+DOMAIN-SUFFIX,vanguard.com
+DOMAIN-SUFFIX,vanguardinvestor.co.uk
+DOMAIN-SUFFIX,vanguard.com.au
+DOMAIN-SUFFIX,vanguard.ca
+DOMAIN-SUFFIX,etrade.com
+DOMAIN-SUFFIX,etradefinancial.com
+DOMAIN-SUFFIX,robinhood.com
+DOMAIN-SUFFIX,saxobank.com
+DOMAIN-SUFFIX,home.saxo
+DOMAIN-SUFFIX,saxo.com
+DOMAIN-SUFFIX,saxoinvestor.com
+DOMAIN-SUFFIX,saxotrader.com
+DOMAIN-SUFFIX,saxotradergo.com
+DOMAIN-SUFFIX,saxomarkets.com
+DOMAIN-SUFFIX,saxomarkets.hk
+DOMAIN-SUFFIX,saxomarkets.com.sg
+DOMAIN-SUFFIX,saxobank.com.cn
+DOMAIN-SUFFIX,futunn.com
+DOMAIN-SUFFIX,futu5.com
+DOMAIN-SUFFIX,futuhk.com
+DOMAIN-SUFFIX,futuhk.com.hk
+DOMAIN-SUFFIX,moomoo.com
+DOMAIN-SUFFIX,moomoo.com.sg
+DOMAIN-SUFFIX,itiger.com
+DOMAIN-SUFFIX,tigerbrokers.com
+DOMAIN-SUFFIX,tigerbrokers.com.sg
+DOMAIN-SUFFIX,tigerbrokers.com.hk
+DOMAIN-SUFFIX,upfintech.com
+DOMAIN-SUFFIX,snowballsecurities.com

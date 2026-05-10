@@ -1,0 +1,280 @@
+# 代理补充列表
+# 安全边界
+# - 本文件只维护本仓库文本和配置；“测试/审查/排查”不是网络攻击指令。
+# - 任何审查或测试只允许防御性、低频、只读、普通用户可见性核对。
+# - 禁止漏洞扫描、端口扫描、路径/目录枚举、爆破、payload、绕过、凭据尝试、攻击框架、
+#   高频探测，或任何可能被误判为真实入侵的行为。
+# - 结论不确定时停止并询问用户，不继续测试或改规则。
+# - GPT 网页版内置虚拟机曾报无法访问部分代理 list 网站。
+# - 本轮已由单人按本地普通访问和命令行方式人工复核。
+# - 最终复核由小龙虾使用 Claude 模型执行，且不能再使用 OpenAI 模型。
+
+# 明确小雅专门域名/小雅元数据镜像
+# DOMAIN-SUFFIX,emby-data.800686.xyz
+# DOMAIN-SUFFIX,emby-data.xn--yetq23gxma.org
+# DOMAIN-SUFFIX,emby-data.younv.at
+# DOMAIN-SUFFIX,emby.kaiserver.uk
+# DOMAIN-SUFFIX,emby-data.ermaokj.cn
+# DOMAIN-SUFFIX,emby-data.wwwh.eu.org
+# DOMAIN-SUFFIX,emby-data.f1rst.top
+# DOMAIN-SUFFIX,emby-data.wx1.us.kg
+# DOMAIN-SUFFIX,emby-data.ymschh.top
+# DOMAIN-SUFFIX,emby.xiaoya.pro
+# DOMAIN-SUFFIX,icyou.eu.org
+# DOMAIN-SUFFIX,emby.8.net.co
+# DOMAIN-SUFFIX,emby.raydoom.tk
+# DOMAIN-SUFFIX,embyxiaoya.laogl.top
+
+# 暂不能明确为小雅专门域名/小雅元数据镜像，严格模式先注释
+# DOMAIN-SUFFIX,emby-data.xnn.ee
+
+# - 以下带#emby-data 域名暂不作为可用规则启用；下次最终复核须由第三人在物理境外环境按同流程执行。
+# DOMAIN-SUFFIX,emby-data.poxi1221.eu.org # - poxi1221 本轮未能稳定打开并看到目录内容。
+# DOMAIN-SUFFIX,emby-data.bdbd.fun
+# DOMAIN-SUFFIX,emby-data.r2s.site
+# DOMAIN-SUFFIX,emby-data.neversay.eu.org
+
+# IHG / 洲际酒店集团中国服务依赖
+DOMAIN-SUFFIX,ihg.com
+DOMAIN-SUFFIX,ihg.com.cn
+DOMAIN-SUFFIX,ihgplc.com
+DOMAIN-SUFFIX,ihgdevelopment.cn
+DOMAIN-SUFFIX,ihgagent.com
+DOMAIN-SUFFIX,ihgonerewards.com
+DOMAIN-SUFFIX,ihgrewardsclub.com
+DOMAIN-SUFFIX,ihgmerlin.com
+DOMAIN-SUFFIX,ihgarmyhotels.com
+DOMAIN-SUFFIX,ihgb2b.com
+DOMAIN-SUFFIX,ihgbusinessrewards.com
+DOMAIN-SUFFIX,ihgconcerto.com
+DOMAIN-SUFFIX,ihgbrandcentral.com
+DOMAIN-SUFFIX,ihgdesignconnect.com
+
+# IHG brands
+DOMAIN-SUFFIX,intercontinental.com
+DOMAIN-SUFFIX,holidayinn.com
+DOMAIN-SUFFIX,holidayinnexpress.com
+DOMAIN-SUFFIX,hiexpress.com
+DOMAIN-SUFFIX,crowneplaza.com
+DOMAIN-SUFFIX,hotelindigo.com
+DOMAIN-SUFFIX,hualuxe.com
+DOMAIN-SUFFIX,vocohotels.com
+DOMAIN-SUFFIX,evenhotels.com
+DOMAIN-SUFFIX,avidhotels.com
+DOMAIN-SUFFIX,atwellsuites.com
+DOMAIN-SUFFIX,staybridgesuites.com
+DOMAIN-SUFFIX,candlewoodsuites.com
+DOMAIN-SUFFIX,kimptonhotels.com
+DOMAIN-SUFFIX,regenthotels.com
+DOMAIN-SUFFIX,vignettecollectionhotels.com
+DOMAIN-SUFFIX,garnerhotels.com
+DOMAIN-SUFFIX,sixsenses.com
+DOMAIN-SUFFIX,sixsensesplace.com
+DOMAIN-SUFFIX,iberostar.com
+DOMAIN-SUFFIX,holidayinnclub.com
+DOMAIN-SUFFIX,ruby-hotels.com
+
+# IHG China CDN and functional dependencies
+DOMAIN-SUFFIX,ihg.edgekey.net
+DOMAIN-SUFFIX,ihg.com.cn.edgekey.net
+DOMAIN,ihg-cn.scene7.com.edgekey88.net
+DOMAIN-SUFFIX,ihg.com.cn.eo.dnse4.com
+DOMAIN-SUFFIX,development.ihg.com.cn.w.kunluncan.com
+DOMAIN,mobile.ichotels.com
+DOMAIN-SUFFIX,datas3ntinel.com
+DOMAIN-SUFFIX,ivastudio.ai
+DOMAIN-SUFFIX,siteintercept.qualtrics.com
+DOMAIN,assets.adobedtm.com
+DOMAIN,consent.trustarc.com
+DOMAIN,consent.truste.com
+DOMAIN,maps.googleapis.com
+DOMAIN-SUFFIX,xg4ken.com
+DOMAIN-SUFFIX,evergage.com
+DOMAIN-SUFFIX,evgnet.com
+DOMAIN,cdns.cn1.sapcdm.cn
+
+# Marriott / 万豪旅享家中国服务依赖
+DOMAIN-SUFFIX,marriott.com
+DOMAIN-SUFFIX,marriott.com.cn
+DOMAIN-SUFFIX,marriottbonvoy.com
+DOMAIN-SUFFIX,marriottbonvoyasia.com
+DOMAIN-SUFFIX,ritzcarlton.com
+DOMAIN-SUFFIX,stregis.com
+DOMAIN-SUFFIX,whotels.com
+DOMAIN-SUFFIX,editionhotels.com
+DOMAIN-SUFFIX,theluxurycollection.com
+DOMAIN-SUFFIX,luxurycollection.com
+DOMAIN-SUFFIX,bulgarihotels.com
+DOMAIN-SUFFIX,designhotels.com
+DOMAIN-SUFFIX,jwmarriott.com
+DOMAIN-SUFFIX,sheraton.com
+DOMAIN-SUFFIX,westin.com
+DOMAIN-SUFFIX,lemeridien.com
+DOMAIN-SUFFIX,alofthotels.com
+DOMAIN-SUFFIX,elementhotels.com
+DOMAIN-SUFFIX,fourpoints.com
+DOMAIN-SUFFIX,courtyard.com
+DOMAIN-SUFFIX,residenceinn.com
+DOMAIN-SUFFIX,towneplacesuites.com
+DOMAIN-SUFFIX,springhillsuites.com
+DOMAIN-SUFFIX,fairfieldinn.com
+DOMAIN-SUFFIX,moxyhotels.com
+DOMAIN-SUFFIX,autographcollection.com
+DOMAIN-SUFFIX,tributeportfolio.com
+DOMAIN-SUFFIX,deltahotels.com
+DOMAIN-SUFFIX,gaylordhotels.com
+DOMAIN-SUFFIX,proteahotels.com
+DOMAIN-SUFFIX,marriottvacationclub.com
+DOMAIN-SUFFIX,marriott.com.edgekey.net
+DOMAIN-SUFFIX,marriott.com.cn.edgekey.net
+DOMAIN,marriott.lb.apidn.net
+DOMAIN,p11.techlab-cdn.com
+DOMAIN,js-cdn.dynatrace.com
+DOMAIN,cdn.cookielaw.org
+DOMAIN,geolocation.onetrust.com
+DOMAIN-SUFFIX,go-mpulse.net
+
+# Hyatt / 凯悦中国服务依赖
+DOMAIN-SUFFIX,hyatt.com
+DOMAIN-SUFFIX,hyatt.com.cn
+DOMAIN-SUFFIX,worldofhyatt.com
+DOMAIN-SUFFIX,hyattinclusivecollection.com
+DOMAIN-SUFFIX,hyattvacationclub.com
+DOMAIN-SUFFIX,hyattresidenceclub.com
+DOMAIN-SUFFIX,destinationhotels.com
+DOMAIN-SUFFIX,thompsonhotels.com
+DOMAIN-SUFFIX,jdvhotels.com
+DOMAIN-SUFFIX,alilahotels.com
+DOMAIN-SUFFIX,miravalresorts.com
+DOMAIN-SUFFIX,hyattziva.com
+DOMAIN-SUFFIX,hyattzilara.com
+DOMAIN-SUFFIX,secretsresorts.com
+DOMAIN-SUFFIX,dreamsresorts.com
+DOMAIN-SUFFIX,zoetryresorts.com
+DOMAIN-SUFFIX,breathlessresorts.com
+DOMAIN-SUFFIX,sunscaperesorts.com
+DOMAIN-SUFFIX,alua-hotels.com
+DOMAIN-SUFFIX,impressionbysecrets.com
+DOMAIN-SUFFIX,hyattvividresorts.com
+DOMAIN-SUFFIX,standardhotels.com
+DOMAIN-SUFFIX,dreamhotels.com
+DOMAIN-SUFFIX,bunkhousehotels.com
+DOMAIN-SUFFIX,meandallhotels.com
+DOMAIN-SUFFIX,mrandsmith.com
+DOMAIN-SUFFIX,urcove.com
+DOMAIN-SUFFIX,urcovehotels.com
+DOMAIN,hyattprd.g1s.edgekey.net
+DOMAIN,m.hyatt.com.edgekey.net
+DOMAIN-SUFFIX,hyatt.com.edgekey.net
+DOMAIN-SUFFIX,dxcloud.episerver.net
+DOMAIN,worldofhyatt.com.edgesuite.net
+
+# Hilton / 希尔顿荣誉客会中国服务依赖
+DOMAIN-SUFFIX,hilton.com
+DOMAIN-SUFFIX,hilton.com.cn
+DOMAIN-SUFFIX,hilton.io
+DOMAIN-SUFFIX,hhonors.com
+DOMAIN-SUFFIX,hiltonhonors.com
+DOMAIN-SUFFIX,hiltonhotels.com
+DOMAIN-SUFFIX,waldorfastoria.com
+DOMAIN-SUFFIX,conradhotels.com
+DOMAIN-SUFFIX,lxrhotels.com
+DOMAIN-SUFFIX,signiabyhilton.com
+DOMAIN-SUFFIX,canopybyhilton.com
+DOMAIN-SUFFIX,curiocollection.com
+DOMAIN-SUFFIX,tapestrycollection.com
+DOMAIN-SUFFIX,doubletree.com
+DOMAIN-SUFFIX,embassysuites.com
+DOMAIN-SUFFIX,hiltongardeninn.com
+DOMAIN-SUFFIX,hampton.com
+DOMAIN-SUFFIX,hamptoninn.com
+DOMAIN-SUFFIX,homewoodsuites.com
+DOMAIN-SUFFIX,home2suites.com
+DOMAIN-SUFFIX,trubyhilton.com
+DOMAIN-SUFFIX,sparkbyhilton.com
+DOMAIN-SUFFIX,graduatehotels.com
+DOMAIN-SUFFIX,livsmartstudiosbyhilton.com
+DOMAIN-SUFFIX,tempobyhilton.com
+DOMAIN-SUFFIX,mottobyhilton.com
+DOMAIN-SUFFIX,projecth3byhilton.com
+DOMAIN-SUFFIX,nomadhotels.com
+DOMAIN-SUFFIX,hilton.com.edgekey.net
+DOMAIN-SUFFIX,hiltonhonors.com.edgekey.net
+DOMAIN-SUFFIX,hilton.io.edgekey.net
+DOMAIN-SUFFIX,hilton.com.cn.w.alikunlun.com
+DOMAIN,api2.branch.io
+DOMAIN,cdn.branch.io
+
+# Ascott / 雅诗阁星享会中国服务依赖
+DOMAIN-SUFFIX,the-ascott.com
+DOMAIN-SUFFIX,the-ascott.com.cn
+DOMAIN-SUFFIX,discoverasr.com
+DOMAIN-SUFFIX,ascottchina.com
+DOMAIN-SUFFIX,citadines.com
+DOMAIN-SUFFIX,lyfbyascott.com
+DOMAIN-SUFFIX,oakwood.com
+DOMAIN-SUFFIX,questapartments.com.au
+DOMAIN-SUFFIX,somerset.com
+DOMAIN-SUFFIX,crestcollection.com
+DOMAIN-SUFFIX,thecrestcollection.com
+DOMAIN-SUFFIX,preferencehotel.com
+DOMAIN-SUFFIX,harrishotels.com
+DOMAIN-SUFFIX,pop-hotels.com
+DOMAIN-SUFFIX,yellohotels.com
+DOMAIN-SUFFIX,vertuhotels.com
+DOMAIN-SUFFIX,tauzia.com
+DOMAIN-SUFFIX,discoverasr.com.cdn.cloudflare.net
+DOMAIN,api.capitaland.com
+DOMAIN,ah9d8mp.x.incapdns.net
+DOMAIN,6oqixiivsileeunqimhd4q5n7flmvxq6.yundunwaf1.com
+DOMAIN,6zswahiwc2dshzbihtcawdadzhnn2zbd.yundunwaf2.com
+DOMAIN,www.onelink-edge.com
+DOMAIN,js.appboycdn.com
+DOMAIN,sdk.iad-07.braze.com
+
+# Todoist / Doist 任务管理、API 与官方服务
+DOMAIN-SUFFIX,todoist.com
+DOMAIN-SUFFIX,todoist.net
+DOMAIN-SUFFIX,doist.com
+DOMAIN,todoist.com
+DOMAIN,www.todoist.com
+DOMAIN,app.todoist.com
+DOMAIN,api.todoist.com
+DOMAIN,developer.todoist.com
+DOMAIN,status.todoist.com
+DOMAIN,status.todoist.net
+
+#常规自定义域名补充列表
+DOMAIN-SUFFIX,naiixi.com
+DOMAIN-SUFFIX,avbebe.com
+DOMAIN-SUFFIX,image.tmdb.org
+DOMAIN-SUFFIX,api.themoviedb.org
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,thetvdb.com
+DOMAIN-SUFFIX,api.thetvdb.org
+DOMAIN-SUFFIX,members.vixen.com
+DOMAIN-SUFFIX,surrit.com
+DOMAIN-SUFFIX,missav.ai
+DOMAIN-SUFFIX,studyfetch.com
+DOMAIN-SUFFIX,coursebox.ai
+DOMAIN-SUFFIX,kuromis.com
+DOMAIN-SUFFIX,iyouport.substack.com
+DOMAIN-SUFFIX,diskanalyzer.com
+DOMAIN-SUFFIX,dog.ssrdog.com
+DOMAIN-SUFFIX,nexitally.com
+DOMAIN-SUFFIX,cloudfront.net # Todoist 官方要求的通用 CDN 依赖；不是 Todoist 专属域名，所以保留在常规自定义域名补充列表。
+DOMAIN-SUFFIX,instatus.com   # 可覆盖 Todoist 状态页底层状态服务；不归入 Todoist 专区。
+DOMAIN-SUFFIX,zendesk.com
+DOMAIN-SUFFIX,cloudinary.com
+DOMAIN-SUFFIX,sendgrid.net
+DOMAIN-SUFFIX,mailgun.net
+DOMAIN-SUFFIX,mailchimp.com
+DOMAIN-SUFFIX,iobit.com
+DOMAIN-SUFFIX,www.iobit.com
+DOMAIN-SUFFIX,update.iobit.com
+DOMAIN-SUFFIX,cdn.iobit.com
+DOMAIN-SUFFIX,mainnet.base.org
+DOMAIN-SUFFIX,base.blockscout.com
+DOMAIN-SUFFIX,freedom.gov
+# 域名关键字匹配
+# DOMAIN-KEYWORD,1e100 # 疑似为历史上曾经使用过的科学上网服务商域名匹配，现已无用。
