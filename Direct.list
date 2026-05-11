@@ -115,10 +115,10 @@ DOMAIN-SUFFIX,hangseng.com
 DOMAIN-SUFFIX,hangseng.com.hk
 DOMAIN-SUFFIX,hangseng.com.cn
 DOMAIN-SUFFIX,hangsengbank.com
-# DOMAIN-SUFFIX,hsbc.ca # 不在本次可正常访问口径中，按用户口径注释保留原文。
-# DOMAIN-SUFFIX,payme.hsbc # 不在本次可正常访问口径中，按用户口径注释保留原文。
-# DOMAIN-SUFFIX,hangsengbank.com.cn # 不在本次可正常访问口径中，按用户口径注释保留原文。
-# DOMAIN-SUFFIX,hase.hk # 不在本次可正常访问口径中，按用户口径注释保留原文。
+# DOMAIN-SUFFIX,hsbc.ca # 按 KISS 原则做有充分理由支持的尝试性精简。
+# DOMAIN-SUFFIX,payme.hsbc # 按 KISS 原则做有充分理由支持的尝试性精简。
+# DOMAIN-SUFFIX,hangsengbank.com.cn # 按 KISS 原则做有充分理由支持的尝试性精简。
+# DOMAIN-SUFFIX,hase.hk # 按 KISS 原则做有充分理由支持的尝试性精简。
 # DOMAIN-SUFFIX,hsbc.edgekey.net             # 当前不可正常解析或访问，暂作注释
 # DOMAIN-SUFFIX,hsbc.com.hk.edgekey.net      # 当前不可正常解析或访问，暂作注释
 # DOMAIN-SUFFIX,hangseng.edgekey.net         # 当前不可正常解析或访问，暂作注释
