@@ -4,6 +4,14 @@
 
 ## 2026-05-11
 
+### OpenAI/GPT AI routing refinement
+
+- 在 `AI.list` 顶部新增 OpenAI / ChatGPT / GPT 专项规则块，集中维护 OpenAI 核心入口、静态资源、用户内容、挑战验证、功能开关、iOS 完整性、企业 SSO、客服邮件订阅和遥测相关规则。
+- 将过宽或本轮不纳入高置信口径的 OpenAI / Sora 相关旧规则改为注释保留，并统一写明这是基于 KISS 原则的尝试性精简。
+- `js.stripe.com` 因支付直连和 OpenAI 订阅场景存在交叉，按用户两次确认仅保留为注释候选，不启用。
+- 本次不触碰 Claude / Anthropic 明名规则，也不触碰 Sift、Arkose 和通用 Sentry / DataDog / Auth0 / Cloudflare 等可能服务 Claude 的共享基础设施规则。
+- 校验结果：`git diff --check` 通过；规则语法检查 0 错误；OpenAI 置顶块精确匹配；`DOMAIN-KEYWORD,openai`、`DOMAIN-KEYWORD,chatgpt`、`DOMAIN-KEYWORD,sora`、`sora.com` 和 `js.stripe.com` 均非启用规则；四个列表没有新增完全重复启用规则。
+
 ### HSBC / Hang Seng domain review status
 
 - 香港时间 2026 年 5 月 11 日 13:15，完成有充分理由支持的汇丰 / 恒生体系域名调整。
