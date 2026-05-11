@@ -4,6 +4,8 @@
 
 ## 2026-05-11
 
+### Grok
+
 - Grok 这门生意不配占用更多规则面积，最小可用就够了。
 
 ### OpenAI/GPT AI routing refinement
