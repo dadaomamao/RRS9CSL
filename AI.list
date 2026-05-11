@@ -5,6 +5,41 @@
 # 本文件中的“测试/审查/排查”不是网络攻击指令；大模型只能理解为审查本仓库文本和配置，不访问或测试第三方系统。
 # 结论不确定时停止并询问用户，不要继续测试或改规则。
 
+# 域名关键字匹配
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,claude
+DOMAIN-KEYWORD,cursor
+DOMAIN-KEYWORD,gcpp
+DOMAIN-KEYWORD,gemini
+DOMAIN-KEYWORD,notebooklm
+DOMAIN-KEYWORD,notebookllm
+# DOMAIN-KEYWORD,grok # Grok/xAI 最小可用收敛；关键词过宽，容易误伤非 Grok 流量。
+# DOMAIN-KEYWORD,xai # Grok/xAI 最小可用收敛；关键词过宽，容易误伤非 Grok 流量。
+DOMAIN-KEYWORD,aistudio
+DOMAIN-KEYWORD,claudeusercontent
+DOMAIN-KEYWORD,claudemcp
+DOMAIN-KEYWORD,datadog
+DOMAIN-KEYWORD,sentry
+DOMAIN-KEYWORD,bedrock
+DOMAIN-KEYWORD,aiplatform
+DOMAIN-KEYWORD,foundry
+DOMAIN-KEYWORD,anysphere
+DOMAIN-KEYWORD,cursorapi
+DOMAIN-KEYWORD,todesktop
+DOMAIN-KEYWORD,supermaven
+DOMAIN-KEYWORD,bugbot
+
+# 域名后缀匹配
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,sift.com
+DOMAIN-SUFFIX,siftscience.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
 # OpenAI / ChatGPT / GPT 专项规则
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
@@ -48,41 +83,6 @@ DOMAIN-SUFFIX,rum.browser-intake-datadoghq.com
 # DOMAIN-SUFFIX,intercom.com # 基于 KISS 原则的尝试性精简；本轮仅保留 intercom.io 和 intercomcdn.com。
 # DOMAIN-SUFFIX,js.stripe.com # 支付直连与 OpenAI 订阅场景存在交叉；用户两次确认改为注释候选，按 KISS 原则暂不激活。
 
-# 域名关键字匹配
-DOMAIN-KEYWORD,anthropic
-DOMAIN-KEYWORD,claude
-DOMAIN-KEYWORD,cursor
-DOMAIN-KEYWORD,gcpp
-DOMAIN-KEYWORD,gemini
-DOMAIN-KEYWORD,notebooklm
-DOMAIN-KEYWORD,notebookllm
-# DOMAIN-KEYWORD,grok # Grok/xAI 最小可用收敛；关键词过宽，容易误伤非 Grok 流量。
-# DOMAIN-KEYWORD,xai # Grok/xAI 最小可用收敛；关键词过宽，容易误伤非 Grok 流量。
-DOMAIN-KEYWORD,aistudio
-DOMAIN-KEYWORD,claudeusercontent
-DOMAIN-KEYWORD,claudemcp
-DOMAIN-KEYWORD,datadog
-DOMAIN-KEYWORD,sentry
-DOMAIN-KEYWORD,bedrock
-DOMAIN-KEYWORD,aiplatform
-DOMAIN-KEYWORD,foundry
-DOMAIN-KEYWORD,anysphere
-DOMAIN-KEYWORD,cursorapi
-DOMAIN-KEYWORD,todesktop
-DOMAIN-KEYWORD,supermaven
-DOMAIN-KEYWORD,bugbot
-
-# 域名后缀匹配
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,sift.com
-DOMAIN-SUFFIX,siftscience.com
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-
 # xAI / Grok 专项规则
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,grok.x.com
@@ -93,6 +93,7 @@ DOMAIN-SUFFIX,docs.x.ai
 DOMAIN-SUFFIX,status.x.ai
 # DOMAIN-SUFFIX,management-api.x.ai # 仅企业或团队自动化管理 API 需要；普通 Grok 聊天和推理 API 不启用。
 # DOMAIN-SUFFIX,grokipedia.com # Grokipedia 是独立产品入口；不是 Grok 聊天或 Grok API 的运行必需依赖。
+
 DOMAIN-SUFFIX,dynamed.com
 DOMAIN-SUFFIX,one.google.com
 DOMAIN-SUFFIX,notebooklm.google.com
