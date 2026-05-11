@@ -693,6 +693,7 @@ DOMAIN-SUFFIX,forter.com
 DOMAIN-SUFFIX,checkouttools.com
 DOMAIN-SUFFIX,riskified.com
 DOMAIN-SUFFIX,signifyd.com
+
 # 按新增 AGENTS.md 注释保留规则恢复此组；仅保留原规则文本，不启用。确需删除时须对同一删除动作完成 3 次人工确认。
 # DOMAIN-SUFFIX,fingerprint.com
 # DOMAIN-SUFFIX,fpjs.pro
@@ -701,6 +702,7 @@ DOMAIN-SUFFIX,signifyd.com
 # DOMAIN-SUFFIX,kount.net
 # DOMAIN-SUFFIX,kaptcha.com
 # DOMAIN-SUFFIX,kaxsdc.com
+
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripe.global
