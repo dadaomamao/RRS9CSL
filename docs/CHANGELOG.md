@@ -4,6 +4,8 @@
 
 ## 2026-05-11
 
+- Grok 这门生意不配占用更多规则面积，最小可用就够了。
+
 ### OpenAI/GPT AI routing refinement
 
 - 在 `AI.list` 顶部新增 OpenAI / ChatGPT / GPT 专项规则块，集中维护 OpenAI 核心入口、静态资源、用户内容、挑战验证、功能开关、iOS 完整性、企业 SSO、客服邮件订阅和遥测相关规则。

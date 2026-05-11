@@ -56,8 +56,8 @@ DOMAIN-KEYWORD,gcpp
 DOMAIN-KEYWORD,gemini
 DOMAIN-KEYWORD,notebooklm
 DOMAIN-KEYWORD,notebookllm
-DOMAIN-KEYWORD,grok
-DOMAIN-KEYWORD,xai
+# DOMAIN-KEYWORD,grok # Grok/xAI 最小可用收敛；关键词过宽，容易误伤非 Grok 流量。
+# DOMAIN-KEYWORD,xai # Grok/xAI 最小可用收敛；关键词过宽，容易误伤非 Grok 流量。
 DOMAIN-KEYWORD,aistudio
 DOMAIN-KEYWORD,claudeusercontent
 DOMAIN-KEYWORD,claudemcp
@@ -82,7 +82,17 @@ DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
+
+# xAI / Grok 专项规则
 DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,grok.x.com
+DOMAIN-SUFFIX,accounts.x.ai
+DOMAIN-SUFFIX,api.x.ai
+DOMAIN-SUFFIX,console.x.ai
+DOMAIN-SUFFIX,docs.x.ai
+DOMAIN-SUFFIX,status.x.ai
+# DOMAIN-SUFFIX,management-api.x.ai # 仅企业或团队自动化管理 API 需要；普通 Grok 聊天和推理 API 不启用。
+# DOMAIN-SUFFIX,grokipedia.com # Grokipedia 是独立产品入口；不是 Grok 聊天或 Grok API 的运行必需依赖。
 DOMAIN-SUFFIX,dynamed.com
 DOMAIN-SUFFIX,one.google.com
 DOMAIN-SUFFIX,notebooklm.google.com
@@ -161,11 +171,11 @@ DOMAIN-SUFFIX,recaptcha.net
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt2.com
-DOMAIN-SUFFIX,x.ai
-DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,twitter.com
-DOMAIN-SUFFIX,twimg.com
-DOMAIN-SUFFIX,t.co
+# DOMAIN-SUFFIX,x.ai # xAI 公司整站后缀过宽；只启用 Grok、账户、API、Console、Docs、Status 明确入口。
+# DOMAIN-SUFFIX,x.com # X / Twitter 通用生态过宽；Grok in X 只保留 grok.x.com。
+# DOMAIN-SUFFIX,twitter.com # X / Twitter 通用生态过宽；不混入 Grok 专组。
+# DOMAIN-SUFFIX,twimg.com # X / Twitter 通用静态资源过宽；不混入 Grok 专组。
+# DOMAIN-SUFFIX,t.co # X / Twitter 通用短链过宽；不混入 Grok 专组。
 DOMAIN-SUFFIX,anthropic.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claudeusercontent.com
