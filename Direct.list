@@ -681,6 +681,7 @@ DOMAIN-SUFFIX,mastercardservices.com
 DOMAIN-SUFFIX,mastercardconnect.com
 DOMAIN-SUFFIX,mastercard.us
 DOMAIN-SUFFIX,discovernetwork.com
+
 # Card authentication / 3DS / payment risk dependencies
 DOMAIN-SUFFIX,visasecureservices.com
 DOMAIN-SUFFIX,cardinalcommerce.com
