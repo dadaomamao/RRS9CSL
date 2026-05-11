@@ -94,7 +94,9 @@ DOMAIN-SUFFIX,status.x.ai
 # DOMAIN-SUFFIX,management-api.x.ai # 仅企业或团队自动化管理 API 需要；普通 Grok 聊天和推理 API 不启用。
 # DOMAIN-SUFFIX,grokipedia.com # Grokipedia 是独立产品入口；不是 Grok 聊天或 Grok API 的运行必需依赖。
 
-DOMAIN-SUFFIX,dynamed.com
+#循证医学数据库，因常用且涉及医学专业AI，放在此处。
+DOMAIN-SUFFIX,dynamed.com 
+
 DOMAIN-SUFFIX,one.google.com
 DOMAIN-SUFFIX,notebooklm.google.com
 DOMAIN-SUFFIX,manus.im
