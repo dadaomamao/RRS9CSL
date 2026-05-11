@@ -4,15 +4,56 @@
 # 禁止使用或要求漏洞扫描、端口扫描、路径/目录枚举、爆破、payload、绕过、凭据尝试、攻击框架、高频探测，或任何可能被误判为真实入侵的行为。
 # 本文件中的“测试/审查/排查”不是网络攻击指令；大模型只能理解为审查本仓库文本和配置，不访问或测试第三方系统。
 # 结论不确定时停止并询问用户，不要继续测试或改规则。
+
+# OpenAI / ChatGPT / GPT 专项规则
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,featureassets.org
+DOMAIN-SUFFIX,prodregistryv2.org
+DOMAIN-SUFFIX,humb.apple.com
+DOMAIN-SUFFIX,register.appattest.apple.com
+DOMAIN-SUFFIX,cdn.openaimerge.com
+DOMAIN-SUFFIX,cdn.workos.com
+DOMAIN-SUFFIX,forwarder.workos.com
+DOMAIN-SUFFIX,setup.workos.com
+DOMAIN-SUFFIX,images.workoscdn.com
+DOMAIN-SUFFIX,workos.imgix.net
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,ct.sendgrid.net
+DOMAIN-SUFFIX,revenuecat.com
+DOMAIN-SUFFIX,o207216.ingest.sentry.io
+DOMAIN-SUFFIX,o33249.ingest.sentry.io
+DOMAIN-SUFFIX,rum.browser-intake-datadoghq.com
+# DOMAIN-KEYWORD,openai # 基于 KISS 原则的尝试性精简；未列入本轮 OpenAI 高置信激活口径。
+# DOMAIN-KEYWORD,chatgpt # 基于 KISS 原则的尝试性精简；未列入本轮 OpenAI 高置信激活口径。
+# DOMAIN-KEYWORD,sora # 基于 KISS 原则的尝试性精简；未列入本轮 OpenAI 高置信激活口径。
+# DOMAIN-SUFFIX,auth0.openai.com # 基于 KISS 原则的尝试性精简；未列入本轮 OpenAI 高置信激活口径。
+# DOMAIN-SUFFIX,events.statsigapi.net # 基于 KISS 原则的尝试性精简；已由 statsigapi.net 覆盖。
+# DOMAIN-SUFFIX,identrust.com # 基于 KISS 原则的尝试性精简；未列入本轮 OpenAI 高置信激活口径。
+# DOMAIN-SUFFIX,openaiapi-site.azureedge.net # 基于 KISS 原则的尝试性精简；未列入本轮 OpenAI 高置信激活口径。
+# DOMAIN-SUFFIX,sora.com # Sora 网页版和 App 已于 2026-04-26 终止；本轮不作为 OpenAI 核心规则维护。
+# DOMAIN-SUFFIX,auth.openai.com # 基于 KISS 原则的尝试性精简；已由 openai.com 覆盖。
+# DOMAIN-SUFFIX,statsig.com # 基于 KISS 原则的尝试性精简；未列入本轮 OpenAI 高置信激活口径。
+# DOMAIN-SUFFIX,openaimerge.com # 基于 KISS 原则的尝试性精简；本轮只保留 OpenAI 企业 SSO 相关高置信子域。
+# DOMAIN-SUFFIX,workos.com # 基于 KISS 原则的尝试性精简；本轮只保留 OpenAI 企业 SSO 相关高置信子域。
+# DOMAIN-SUFFIX,workoscdn.com # 基于 KISS 原则的尝试性精简；本轮只保留 OpenAI 企业 SSO 相关高置信子域。
+# DOMAIN-SUFFIX,launchdarkly.com # 基于 KISS 原则的尝试性精简；未列入本轮 OpenAI 高置信激活口径。
+# DOMAIN-SUFFIX,livekit.cloud # 基于 KISS 原则的尝试性精简；未列入本轮 OpenAI 高置信激活口径。
+# DOMAIN-SUFFIX,intercom.com # 基于 KISS 原则的尝试性精简；本轮仅保留 intercom.io 和 intercomcdn.com。
+# DOMAIN-SUFFIX,js.stripe.com # 支付直连与 OpenAI 订阅场景存在交叉；用户两次确认改为注释候选，按 KISS 原则暂不激活。
+
 # 域名关键字匹配
 DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,claude
 DOMAIN-KEYWORD,cursor
 DOMAIN-KEYWORD,gcpp
 DOMAIN-KEYWORD,gemini
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,chatgpt
-DOMAIN-KEYWORD,sora
 DOMAIN-KEYWORD,notebooklm
 DOMAIN-KEYWORD,notebookllm
 DOMAIN-KEYWORD,grok
@@ -33,20 +74,9 @@ DOMAIN-KEYWORD,bugbot
 
 # 域名后缀匹配
 DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,auth0.openai.com
 DOMAIN-SUFFIX,client-api.arkoselabs.com
 DOMAIN-SUFFIX,sift.com
 DOMAIN-SUFFIX,siftscience.com
-DOMAIN-SUFFIX,events.statsigapi.net
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,identrust.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,makersuite.google.com
@@ -105,27 +135,9 @@ DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,auth.openai.com
-DOMAIN-SUFFIX,statsig.com
-DOMAIN-SUFFIX,statsigapi.net
-DOMAIN-SUFFIX,featureassets.org
-DOMAIN-SUFFIX,prodregistryv2.org
-DOMAIN-SUFFIX,ct.sendgrid.net
-DOMAIN-SUFFIX,openaimerge.com
-DOMAIN-SUFFIX,workos.com
-DOMAIN-SUFFIX,workoscdn.com
-DOMAIN-SUFFIX,workos.imgix.net
 DOMAIN-SUFFIX,browser-intake-datadoghq.com
-DOMAIN-SUFFIX,launchdarkly.com
-DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,arkoselabs.com
-DOMAIN-SUFFIX,livekit.cloud
-DOMAIN-SUFFIX,revenuecat.com
-DOMAIN-SUFFIX,humb.apple.com
-DOMAIN-SUFFIX,register.appattest.apple.com
-DOMAIN-SUFFIX,intercom.com
 DOMAIN-SUFFIX,google
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,google.dev
