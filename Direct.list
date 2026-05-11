@@ -734,55 +734,55 @@ DOMAIN-SUFFIX,rev.money
 DOMAIN-SUFFIX,payoneer.com
 DOMAIN-SUFFIX,payoneer.com.cn
 
-# Mainstream brokerage and securities trading account services
-DOMAIN-SUFFIX,interactivebrokers.com
-DOMAIN-SUFFIX,interactivebrokers.co.uk
-DOMAIN-SUFFIX,interactivebrokers.com.hk
-DOMAIN-SUFFIX,interactivebrokers.com.sg
-DOMAIN-SUFFIX,ibkr.com
-DOMAIN-SUFFIX,ibkr.info
-DOMAIN-SUFFIX,ibkrguides.com
-DOMAIN-SUFFIX,ibkr.com.cn
-DOMAIN-SUFFIX,schwab.com
-DOMAIN-SUFFIX,schwabcdn.com
-DOMAIN-SUFFIX,schwaballiance.com
-DOMAIN-SUFFIX,schwabplan.com
-DOMAIN-SUFFIX,thinkorswim.com
-DOMAIN-SUFFIX,tdameritrade.com
-DOMAIN-SUFFIX,ameritrade.com
-DOMAIN-SUFFIX,fidelity.com
-DOMAIN-SUFFIX,fidelityinstitutional.com
-DOMAIN-SUFFIX,fidelityinternational.com
-DOMAIN-SUFFIX,fidelity.com.hk
-DOMAIN-SUFFIX,fidelity.ca
-DOMAIN-SUFFIX,fidelity.co.uk
-DOMAIN-SUFFIX,netbenefits.com
-DOMAIN-SUFFIX,vanguard.com
-DOMAIN-SUFFIX,vanguardinvestor.co.uk
-DOMAIN-SUFFIX,vanguard.com.au
-DOMAIN-SUFFIX,vanguard.ca
-DOMAIN-SUFFIX,etrade.com
-DOMAIN-SUFFIX,etradefinancial.com
-DOMAIN-SUFFIX,robinhood.com
-DOMAIN-SUFFIX,saxobank.com
-DOMAIN-SUFFIX,home.saxo
-DOMAIN-SUFFIX,saxo.com
-DOMAIN-SUFFIX,saxoinvestor.com
-DOMAIN-SUFFIX,saxotrader.com
-DOMAIN-SUFFIX,saxotradergo.com
-DOMAIN-SUFFIX,saxomarkets.com
-DOMAIN-SUFFIX,saxomarkets.hk
-DOMAIN-SUFFIX,saxomarkets.com.sg
-DOMAIN-SUFFIX,saxobank.com.cn
-DOMAIN-SUFFIX,futunn.com
-DOMAIN-SUFFIX,futu5.com
-DOMAIN-SUFFIX,futuhk.com
-DOMAIN-SUFFIX,futuhk.com.hk
-DOMAIN-SUFFIX,moomoo.com
-DOMAIN-SUFFIX,moomoo.com.sg
-DOMAIN-SUFFIX,itiger.com
-DOMAIN-SUFFIX,tigerbrokers.com
-DOMAIN-SUFFIX,tigerbrokers.com.sg
-DOMAIN-SUFFIX,tigerbrokers.com.hk
-DOMAIN-SUFFIX,upfintech.com
-DOMAIN-SUFFIX,snowballsecurities.com
+# 非银行券商和证券交易账户服务 # 死亡提醒我们：在投资和规则维护里，少动有时比频繁调整更接近长期收益纪律。
+# DOMAIN-SUFFIX,interactivebrokers.com
+# DOMAIN-SUFFIX,interactivebrokers.co.uk
+# DOMAIN-SUFFIX,interactivebrokers.com.hk
+# DOMAIN-SUFFIX,interactivebrokers.com.sg
+# DOMAIN-SUFFIX,ibkr.com
+# DOMAIN-SUFFIX,ibkr.info
+# DOMAIN-SUFFIX,ibkrguides.com
+# DOMAIN-SUFFIX,ibkr.com.cn
+# DOMAIN-SUFFIX,schwab.com
+# DOMAIN-SUFFIX,schwabcdn.com
+# DOMAIN-SUFFIX,schwaballiance.com
+# DOMAIN-SUFFIX,schwabplan.com
+# DOMAIN-SUFFIX,thinkorswim.com
+# DOMAIN-SUFFIX,tdameritrade.com
+# DOMAIN-SUFFIX,ameritrade.com
+# DOMAIN-SUFFIX,fidelity.com
+# DOMAIN-SUFFIX,fidelityinstitutional.com
+# DOMAIN-SUFFIX,fidelityinternational.com
+# DOMAIN-SUFFIX,fidelity.com.hk
+# DOMAIN-SUFFIX,fidelity.ca
+# DOMAIN-SUFFIX,fidelity.co.uk
+# DOMAIN-SUFFIX,netbenefits.com
+# DOMAIN-SUFFIX,vanguard.com
+# DOMAIN-SUFFIX,vanguardinvestor.co.uk
+# DOMAIN-SUFFIX,vanguard.com.au
+# DOMAIN-SUFFIX,vanguard.ca
+# DOMAIN-SUFFIX,etrade.com
+# DOMAIN-SUFFIX,etradefinancial.com
+# DOMAIN-SUFFIX,robinhood.com
+# DOMAIN-SUFFIX,saxobank.com
+# DOMAIN-SUFFIX,home.saxo
+# DOMAIN-SUFFIX,saxo.com
+# DOMAIN-SUFFIX,saxoinvestor.com
+# DOMAIN-SUFFIX,saxotrader.com
+# DOMAIN-SUFFIX,saxotradergo.com
+# DOMAIN-SUFFIX,saxomarkets.com
+# DOMAIN-SUFFIX,saxomarkets.hk
+# DOMAIN-SUFFIX,saxomarkets.com.sg
+# DOMAIN-SUFFIX,saxobank.com.cn
+# DOMAIN-SUFFIX,futunn.com
+# DOMAIN-SUFFIX,futu5.com
+# DOMAIN-SUFFIX,futuhk.com
+# DOMAIN-SUFFIX,futuhk.com.hk
+# DOMAIN-SUFFIX,moomoo.com
+# DOMAIN-SUFFIX,moomoo.com.sg
+# DOMAIN-SUFFIX,itiger.com
+# DOMAIN-SUFFIX,tigerbrokers.com
+# DOMAIN-SUFFIX,tigerbrokers.com.sg
+# DOMAIN-SUFFIX,tigerbrokers.com.hk
+# DOMAIN-SUFFIX,upfintech.com
+# DOMAIN-SUFFIX,snowballsecurities.com
