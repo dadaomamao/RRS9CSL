@@ -11,6 +11,28 @@ DOMAIN-SUFFIX,time.windows.com  # 不宜作为普通网站连通性检测目标
 # 虚拟货币相关
 DOMAIN-SUFFIX,binance.com
 
+# 支付宝 / 蚂蚁集团 / 网商银行
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipay.com.cn
+DOMAIN-SUFFIX,alipay.hk
+DOMAIN-SUFFIX,alipayhk.com
+DOMAIN-SUFFIX,alipayplus.com
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN-SUFFIX,alipayusercontent.com
+DOMAIN-SUFFIX,antfin.com
+DOMAIN-SUFFIX,antgroup.com
+DOMAIN-SUFFIX,mybank.cn
+
+# 微信支付 / 财付通
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,wechatpay.cn
+DOMAIN-SUFFIX,wechatpay.com
+DOMAIN-SUFFIX,pay.weixin.qq.com
+DOMAIN-SUFFIX,mch.weixin.qq.com
+DOMAIN-SUFFIX,api.mch.weixin.qq.com
+DOMAIN-SUFFIX,api2.mch.weixin.qq.com
+DOMAIN-SUFFIX,wx.tenpay.com
+
 #中国银行集团
 DOMAIN-SUFFIX,boc.cn
 DOMAIN-SUFFIX,bankofchina.com
@@ -421,28 +443,6 @@ DOMAIN-SUFFIX,scsb.com.tw
 DOMAIN-SUFFIX,kgibank.com.tw
 DOMAIN-SUFFIX,ubot.com.tw
 DOMAIN-SUFFIX,linebank.com.tw
-
-# 支付宝 / 蚂蚁集团 / 网商银行
-DOMAIN-SUFFIX,alipay.com
-DOMAIN-SUFFIX,alipay.com.cn
-DOMAIN-SUFFIX,alipay.hk
-DOMAIN-SUFFIX,alipayhk.com
-DOMAIN-SUFFIX,alipayplus.com
-DOMAIN-SUFFIX,alipayobjects.com
-DOMAIN-SUFFIX,alipayusercontent.com
-DOMAIN-SUFFIX,antfin.com
-DOMAIN-SUFFIX,antgroup.com
-DOMAIN-SUFFIX,mybank.cn
-
-# 微信支付 / 财付通
-DOMAIN-SUFFIX,tenpay.com
-DOMAIN-SUFFIX,wechatpay.cn
-DOMAIN-SUFFIX,wechatpay.com
-DOMAIN-SUFFIX,pay.weixin.qq.com
-DOMAIN-SUFFIX,mch.weixin.qq.com
-DOMAIN-SUFFIX,api.mch.weixin.qq.com
-DOMAIN-SUFFIX,api2.mch.weixin.qq.com
-DOMAIN-SUFFIX,wx.tenpay.com
 
 # China / Hong Kong / Macau / Taiwan payment tools
 # DOMAIN-SUFFIX,cloudquickpass.com # 银联云闪付相关但未在确认清单内，按确认范围注释停用。
