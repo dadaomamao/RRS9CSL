@@ -75,24 +75,50 @@ DOMAIN-SUFFIX,m.95534.biz
 
 # HSBC / Hang Seng
 DOMAIN-SUFFIX,hsbc.com
-DOMAIN-SUFFIX,hsbc.com.hk
-DOMAIN-SUFFIX,hsbc.com.cn
-DOMAIN-SUFFIX,hsbc.com.sg
-DOMAIN-SUFFIX,hsbc.co.uk
-DOMAIN-SUFFIX,hsbc.ca
-DOMAIN-SUFFIX,hsbc.com.au
-DOMAIN-SUFFIX,hsbc.fr
-DOMAIN-SUFFIX,hsbc.ae
-DOMAIN-SUFFIX,hsbc.com.my
 DOMAIN-SUFFIX,hsbcnet.com
 DOMAIN-SUFFIX,hsbcprivatebank.com
-DOMAIN-SUFFIX,payme.hsbc
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,hsbc.com.cn
+DOMAIN-SUFFIX,hsbc.com.mo
+DOMAIN-SUFFIX,hsbc.com.sg
+DOMAIN-SUFFIX,hsbc.com.my
+DOMAIN-SUFFIX,hsbcamanah.com.my
+DOMAIN-SUFFIX,hsbc.co.in
+DOMAIN-SUFFIX,hsbc.co.jp
+DOMAIN-SUFFIX,hsbc.co.kr
+DOMAIN-SUFFIX,hsbc.com.ph
+DOMAIN-SUFFIX,hsbc.com.tw
+DOMAIN-SUFFIX,hsbc.co.th
+DOMAIN-SUFFIX,hsbc.lk
+DOMAIN-SUFFIX,hsbc.com.vn
+DOMAIN-SUFFIX,hsbc.co.nz
+DOMAIN-SUFFIX,hsbc.com.au
+DOMAIN-SUFFIX,hsbc.co.uk
+DOMAIN-SUFFIX,hsbc.uk
+DOMAIN-SUFFIX,hsbc.ch
+DOMAIN-SUFFIX,hsbc.fr
+DOMAIN-SUFFIX,hsbc.de
+DOMAIN-SUFFIX,hsbc.be
+DOMAIN-SUFFIX,hsbc.nl
+DOMAIN-SUFFIX,hsbc.lu
+DOMAIN-SUFFIX,hsbc.es
+DOMAIN-SUFFIX,hsbc.it
+DOMAIN-SUFFIX,hsbc.co.il
+DOMAIN-SUFFIX,hsbc.com.tr
+DOMAIN-SUFFIX,hsbc.ae
+DOMAIN-SUFFIX,hsbc.com.bh
+DOMAIN-SUFFIX,hsbc.com.eg
+DOMAIN-SUFFIX,hsbc.co.mu
+DOMAIN-SUFFIX,hsbc.com.mx
+DOMAIN-SUFFIX,hsbc.com.uy
 DOMAIN-SUFFIX,hangseng.com
 DOMAIN-SUFFIX,hangseng.com.hk
 DOMAIN-SUFFIX,hangseng.com.cn
 DOMAIN-SUFFIX,hangsengbank.com
-DOMAIN-SUFFIX,hangsengbank.com.cn
-DOMAIN-SUFFIX,hase.hk
+# DOMAIN-SUFFIX,hsbc.ca # 不在本次可正常访问口径中，按用户口径注释保留原文。
+# DOMAIN-SUFFIX,payme.hsbc # 不在本次可正常访问口径中，按用户口径注释保留原文。
+# DOMAIN-SUFFIX,hangsengbank.com.cn # 不在本次可正常访问口径中，按用户口径注释保留原文。
+# DOMAIN-SUFFIX,hase.hk # 不在本次可正常访问口径中，按用户口径注释保留原文。
 # DOMAIN-SUFFIX,hsbc.edgekey.net             # 当前不可正常解析或访问，暂作注释
 # DOMAIN-SUFFIX,hsbc.com.hk.edgekey.net      # 当前不可正常解析或访问，暂作注释
 # DOMAIN-SUFFIX,hangseng.edgekey.net         # 当前不可正常解析或访问，暂作注释
