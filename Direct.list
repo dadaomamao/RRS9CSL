@@ -422,22 +422,29 @@ DOMAIN-SUFFIX,kgibank.com.tw
 DOMAIN-SUFFIX,ubot.com.tw
 DOMAIN-SUFFIX,linebank.com.tw
 
-# China / Hong Kong / Macau / Taiwan payment tools
+# 支付宝 / 蚂蚁集团 / 网商银行
 DOMAIN-SUFFIX,alipay.com
 DOMAIN-SUFFIX,alipay.com.cn
 DOMAIN-SUFFIX,alipay.hk
+DOMAIN-SUFFIX,alipayhk.com
 DOMAIN-SUFFIX,alipayplus.com
 DOMAIN-SUFFIX,alipayobjects.com
 DOMAIN-SUFFIX,alipayusercontent.com
 DOMAIN-SUFFIX,antfin.com
 DOMAIN-SUFFIX,antgroup.com
 DOMAIN-SUFFIX,mybank.cn
+
+# 微信支付 / 财付通
 DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,wechatpay.cn
 DOMAIN-SUFFIX,wechatpay.com
 DOMAIN-SUFFIX,pay.weixin.qq.com
 DOMAIN-SUFFIX,mch.weixin.qq.com
 DOMAIN-SUFFIX,api.mch.weixin.qq.com
+DOMAIN-SUFFIX,api2.mch.weixin.qq.com
 DOMAIN-SUFFIX,wx.tenpay.com
+
+# China / Hong Kong / Macau / Taiwan payment tools
 # DOMAIN-SUFFIX,cloudquickpass.com # 银联云闪付相关但未在确认清单内，按确认范围注释停用。
 DOMAIN-SUFFIX,octopus.com.hk
 DOMAIN-SUFFIX,octopus.com
