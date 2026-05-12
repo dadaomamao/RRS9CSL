@@ -7,7 +7,7 @@
 ### Repository red-blue review and rights documentation alignment
 
 - 全仓库防御性红蓝审核通过。
-- 重构了权利文档，并据此修正了 README 文档的对应部分。
+- 重构了 `NOTICE.md`，并据此修正了 README 文档的对应部分。
 
 ### Maintenance stop rule for unexplained rules
 
