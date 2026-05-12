@@ -4,6 +4,10 @@
 
 ## 2026-05-11
 
+### Maintenance stop rule for unexplained rules
+
+- 按三次明确确认，`AGENTS.md` 最高原则新增 stop rule：不知道一条规则为什么存在或为什么不存在时，必须停止并询问用户，不得为补全、精简、归类、清理、去重或让规则看起来更合理而自作主张改变规则。
+
 ### AI list split for full and eSIM use
 
 - 将 `AI.list` 恢复为本地可见版本中 active 规则最多的宽口径完整版本，用作默认 AI 规则入口。
