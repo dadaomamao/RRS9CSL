@@ -4,6 +4,12 @@
 
 ## 2026-05-12
 
+### eSIM AI maintenance boundary
+
+- 将 `eSIM-AI.list` 补入 `AGENTS.md` 全仓库维护入口，并新增手机 / eSIM 场景的 AI 精修规则维护边界。
+- 明确 `eSIM-AI.list` 不是 `AI.list` 的自动同步版、压缩版或替代版；其与 `AI.list` 的必要重叠属于场景化入口设计，不按普通跨列表重复自动清理。
+- 本次只更新全局维护文档和维护记录，不修改任何 `.list` 规则行或实际分流行为。
+
 ### Repository red-blue review and rights documentation alignment
 
 - 全仓库防御性红蓝审核通过。
