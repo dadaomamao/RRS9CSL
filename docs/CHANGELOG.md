@@ -4,15 +4,6 @@
 
 ## 2026-05-12
 
-### American Express / Amex domain review status
-
-- 香港时间 2026 年 5 月 12 日 18:01，完成有充分理由支持的运通 / American Express / Amex 体系域名调整。
-- 该调整等待第二人和第三人按相同流程再审。
-- 在三审定谳前，如无充分理由支持，不要再对此域名块做大规模改动。
-- 本条只记录维护状态，不修改 `.list` 或任何实际分流行为。
-
-## 2026-05-11
-
 ### Maintenance stop rule for unexplained rules
 
 - 按三次明确确认，`AGENTS.md` 最高原则新增 stop rule：不知道一条规则为什么存在或为什么不存在时，必须停止并询问用户，不得为补全、精简、归类、清理、去重或让规则看起来更合理而自作主张改变规则。
@@ -24,6 +15,15 @@
 - `eSIM-AI.list` 将所有被注释停用的规则集中到文件顶部，以“为手机使用之故被精简”大组包裹，并按服务商分类保留原始注释规则；生效区保留 OpenAI / ChatGPT 核心链路及依赖，并重新启用 xAI / Grok 分组，上一轮恢复的 17 条 OpenAI / 依赖候选规则重新移回注释精简区。
 - `eSIM-AI.list` 顶部新增醒目注释警示：本列表不得用于任何可能涉及 Claude / Anthropic 的分流场景。
 - 本次不改变 `Direct.list`、`ProxyLite.list` 或 `crypto.list`。
+
+### American Express / Amex domain review status
+
+- 香港时间 2026 年 5 月 12 日 18:01，完成有充分理由支持的运通 / American Express / Amex 体系域名调整。
+- 该调整等待第二人和第三人按相同流程再审。
+- 在三审定谳前，如无充分理由支持，不要再对此域名块做大规模改动。
+- 本条只记录维护状态，不修改 `.list` 或任何实际分流行为。
+
+## 2026-05-11
 
 ### Alipay and WeChat Pay direct rule trial refinement
 
