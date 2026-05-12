@@ -16,6 +16,7 @@
 
 ```text
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/AI.list
+https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/eSIM-AI.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/ProxyLite.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Direct.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/crypto.list
@@ -24,6 +25,7 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/crypto.list
 使用时按下面的默认判断：
 
 - `AI.list`：AI 服务相关规则。
+- `eSIM-AI.list`：手机 / eSIM 场景使用的 AI 精修规则。
 - `ProxyLite.list`：个人代理补充规则。
 - `Direct.list`：直连补充规则。
 - `crypto.list`：虚拟货币相关观察规则。

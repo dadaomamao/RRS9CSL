@@ -22,6 +22,7 @@
 根目录只保留使用流程或维护流程真正需要直接读取的入口：
 
 - `AI.list`
+- `eSIM-AI.list`
 - `ProxyLite.list`
 - `Direct.list`
 - `crypto.list`

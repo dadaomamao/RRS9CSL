@@ -4,6 +4,14 @@
 
 ## 2026-05-11
 
+### AI list split for full and eSIM use
+
+- 将 `AI.list` 恢复为本地可见版本中 active 规则最多的宽口径完整版本，用作默认 AI 规则入口。
+- 新增 `eSIM-AI.list`，保留此前按手机 / eSIM 场景精修过的 AI 规则。
+- `eSIM-AI.list` 将所有被注释停用的规则集中到文件顶部，以“为手机使用之故被精简”大组包裹，并按服务商分类保留原始注释规则；生效区保留 OpenAI / ChatGPT 核心链路及依赖，并重新启用 xAI / Grok 分组，上一轮恢复的 17 条 OpenAI / 依赖候选规则重新移回注释精简区。
+- `eSIM-AI.list` 顶部新增醒目注释警示：本列表不得用于任何可能涉及 Claude / Anthropic 的分流场景。
+- 本次不改变 `Direct.list`、`ProxyLite.list` 或 `crypto.list`。
+
 ### Alipay and WeChat Pay direct rule trial refinement
 
 - 对支付宝 / 蚂蚁集团 / 网商银行，以及微信支付 / 财付通相关直连规则做有充分理由支撑的尝试性优化。
