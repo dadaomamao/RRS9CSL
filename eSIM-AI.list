@@ -407,5 +407,5 @@ DOMAIN-SUFFIX,browser-intake-datadoghq.com
 DOMAIN-SUFFIX,browser-intake-us5-datadoghq.com
 DOMAIN-SUFFIX,rum.browser-intake-datadoghq.com
 
-# DynaMed
+# DynaMed 循证医学数据库，因过于常用且与医学专用大模型强关联，留在此处
 DOMAIN-SUFFIX,dynamed.com
