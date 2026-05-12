@@ -20,6 +20,7 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/eSIM-AI.lis
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/ProxyLite.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Direct.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/crypto.list
+https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Dropbox.list
 ```
 
 使用时按下面的默认判断：
@@ -29,6 +30,7 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/crypto.list
 - `ProxyLite.list`：个人代理补充规则。
 - `Direct.list`：直连补充规则。
 - `crypto.list`：虚拟货币相关观察规则。
+- `Dropbox.list`：Dropbox 桌面同步、网页、API、分享下载和登录依赖规则。
 
 不要把 `docs/*.md` 加入规则入口。Markdown 文件只给人阅读，不能当作规则列表。
 
@@ -43,6 +45,12 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/crypto.list
 - 如果同一条金融规则同时出现在多个列表里，不能按普通重复规则自动删除。先确认它在公开规则中是否已经直连。
 
 不同使用场景的表现可能不同。同一服务在不同地理位置、运营商、DNS 和出口网络下也可能不同。若确实需要代理，优先在该使用场景自己的配置里覆盖，不改变公开默认直连原则。
+
+## Dropbox 专用规则
+
+`Dropbox.list` 是 Dropbox 专用规则入口。若同时使用 `Dropbox.list` 和包含宽泛第三方依赖的 `ProxyLite.list`，应让 Dropbox 专用规则排在宽泛规则之前。
+
+例如 `DOMAIN,dropbox.zendesk.com` 是 Dropbox 官方支持邮件域的精确匹配；它可以和 `ProxyLite.list` 中更宽的 `DOMAIN-SUFFIX,zendesk.com` 同时存在，但具体策略以使用场景里的规则顺序为准。
 
 ## 常见排查
 
@@ -90,7 +98,7 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/crypto.list
 按顺序判断：
 
 1. 先判断它应该走代理、直连，还是单独策略组。
-2. 再检查对应域名是否已经在 `AI.list`、`ProxyLite.list`、`Direct.list` 或 `crypto.list` 中。
+2. 再检查对应域名是否已经在 `AI.list`、`eSIM-AI.list`、`ProxyLite.list`、`Direct.list`、`crypto.list` 或 `Dropbox.list` 中。
 3. 如果要新增规则，优先添加最小域名后缀。
 4. 不要一次加入过宽的关键词。
 5. 如果是金融、银行、支付或虚拟货币域名，先确认公开 `Direct.list`。

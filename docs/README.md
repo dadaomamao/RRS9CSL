@@ -35,6 +35,7 @@
 - `ProxyLite.list`
 - `Direct.list`
 - `crypto.list`
+- `Dropbox.list`
 - `AGENTS.md`
 
 一般说明文档统一放在 `docs/`。这样做是为了减少自动读取流程把说明性 Markdown 当作规则输入的机会。

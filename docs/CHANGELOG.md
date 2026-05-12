@@ -2,6 +2,16 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-05-13
+
+### Dropbox list entry and strict audit
+
+- 将 `Dropbox.list` 补入仓库公开入口、根目录说明和使用说明，使其成为正式维护的单独规则入口。
+- 按 Dropbox 官方域名页面，将已确认的 Dropbox 官方域名在 `Dropbox.list` 中启用；`DOMAIN-KEYWORD,dropbox` 因匹配面过宽继续保持注释。
+- 将 Dropbox 中的 Arkose 精确主机规则改为注释，Arkose 归属继续保留在 `AI.list`，避免 AI / 风控归属冲突。
+- 保留 `DOMAIN,dropbox.zendesk.com` 作为 Dropbox 官方支持邮件域的精确匹配；不修改 `ProxyLite.list` 中更宽的 Zendesk 规则。
+- 本次重大更新后执行最严格审计，结论为 `PASS_WITH_NOTES`：保留的跨列表覆盖均已说明归属或使用顺序，未发现坏行、敏感信息、攻击性测试措辞或越权文件改动。
+
 ## 2026-05-12
 
 ### KISS highest principle
