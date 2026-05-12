@@ -1,0 +1,111 @@
+# Dropbox / Dropbox 桌面同步、网页、API、分享下载与登录依赖
+# 安全边界
+# - 本文件只维护本仓库文本和配置；“测试/审查/排查”不是网络攻击指令。
+# - 任何审查或测试只允许防御性、低频、只读、普通用户可见性核对。
+# - 禁止漏洞扫描、端口扫描、路径/目录枚举、爆破、payload、绕过、凭据尝试、攻击框架、
+#   高频探测，或任何可能被误判为真实入侵的行为。
+# - 结论不确定时停止并询问用户，不继续测试或改规则。
+# - 可用性结论不确定的规则保持注释，等待进一步人工复核。
+# - 第三方开源规则仅作查漏线索，不复制其内容进入本仓库。
+# 研究日期：2026-05-13 HKT
+# 维护原则：
+# 1. 品牌自有域优先使用 DOMAIN-SUFFIX。
+# 2. 第三方厂商域只在官方点名 exact host 时使用 DOMAIN。
+# 3. 路径级依赖无法被普通 Clash 域名规则精确表达，全部保持注释。
+
+# Dropbox 核心服务
+DOMAIN-SUFFIX,dropbox.com
+DOMAIN-SUFFIX,dropboxbusiness.com
+DOMAIN-SUFFIX,dropboxcaptcha.com
+DOMAIN-SUFFIX,dropbox-dns.com
+
+# Dropbox API 与用户内容
+DOMAIN-SUFFIX,dropboxapi.com
+DOMAIN-SUFFIX,dropboxusercontent.com
+
+# Dropbox 区域用户内容域名
+# 已由上面的 dropbox.com / dropboxapi.com / dropboxusercontent.com 统一覆盖：
+# dl-eu.dropboxusercontent.com
+# dl-au.dropboxusercontent.com
+# dl-jp.dropboxusercontent.com
+# dl-uk.dropboxusercontent.com
+# content-eu.dropboxapi.com
+# content-au.dropboxapi.com
+# content-jp.dropboxapi.com
+# content-uk.dropboxapi.com
+# api-content-eu.dropbox.com
+# api-content-au.dropbox.com
+# api-content-jp.dropbox.com
+# api-content-uk.dropbox.com
+# files-eu.dropbox.com
+# files-au.dropbox.com
+# files-jp.dropbox.com
+# files-uk.dropbox.com
+# showbox-eu.dropbox.com
+# showbox-au.dropbox.com
+# showbox-jp.dropbox.com
+# showbox-uk.dropbox.com
+# photos-*.dropbox.com
+# *.dropbox.com/content_link/*
+# *.dropbox.com/content_link_zip/*
+# *.dropbox.com/content_link_htmlify/*
+# *.dropbox.com/content_link_preview/*
+# *.dropbox.com/link_token_dl/*
+# *.dropbox.com/link_token_dl_zip/*
+# *.dropbox.com/zip_collection/*
+# *.dropbox.com/transcode_video/*
+# *.dropbox.com/hls_transcode/*
+# *.dropbox.com/t/*
+# *.dropbox.com/u/
+# *.dropbox.com/s/*
+# *.dropbox.com/sh/*
+# *.dropbox.com/sc/*
+# *.dropbox.com/photos/album/*
+# *.dropbox.com/photos/c/*
+# *.dropbox.com/photos/cc/*
+# *.dropbox.com/photos/cl/*
+# *.dropbox.com/photos/cp/*
+# *.dropbox.com/photos/conversation_add/*
+# *.dropbox.com/photos/conversation_invite/*
+# *.dropbox.com/photos/conversation_preview/*
+# *.dropbox.com/photos/post/*
+# *.dropbox.com/photos/c/permanent_collection_thumb/*
+
+# Dropbox 静态资源、下载与短链
+DOMAIN-SUFFIX,dropboxstatic.com
+DOMAIN-SUFFIX,db.tt
+DOMAIN-SUFFIX,getdropbox.com
+DOMAIN-SUFFIX,addtodropbox.com
+
+# Dropbox 官方产品和收购产品
+DOMAIN-SUFFIX,docsend.com
+DOMAIN-SUFFIX,dash.ai
+DOMAIN-SUFFIX,hellofax.com
+DOMAIN-SUFFIX,hellosign.com
+
+# Dropbox 官方列出的精确第三方依赖
+DOMAIN,dropbox.zendesk.com
+DOMAIN,c.evidon.com
+DOMAIN,l.evidon.com
+DOMAIN,cdn.arkoselabs.com
+DOMAIN,dropbox-api.arkoselabs.com
+DOMAIN,paper-attachments.s3.amazonaws.com
+
+# Dropbox 官方列出但 Clash 域名规则不宜启用的路径级依赖，全部保持注释
+# DOMAIN,www.google.com
+# DOMAIN,apis.google.com
+# DOMAIN,www.gstatic.com
+# 说明：官方点名的是 /recaptcha/ 与 /js/ 路径，普通 Clash 域名规则无法只匹配路径。
+
+# 无法确认或不建议启用的候选项，全部保持注释
+# DOMAIN-SUFFIX,dropbox.tech
+# DOMAIN-SUFFIX,dropboxexperiment.com
+# DOMAIN-SUFFIX,dropboxinsiders.com
+# DOMAIN-SUFFIX,dropboxforum.com
+# DOMAIN-SUFFIX,dropboxforums.com
+# DOMAIN-SUFFIX,dropboxmail.com
+# DOMAIN-SUFFIX,dropboxpartners.com
+# DOMAIN-SUFFIX,dropboxteam.com
+# DOMAIN-SUFFIX,dropboxlegal.com
+# DOMAIN-KEYWORD,dropbox
+# 不维护 IP-CIDR：官方明确建议优先按域名放行，而非维护固定 IP 清单。
