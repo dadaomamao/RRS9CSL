@@ -630,6 +630,7 @@ DOMAIN-SUFFIX,truist.com
 DOMAIN-SUFFIX,truistbank.com
 DOMAIN-SUFFIX,bbt.com
 DOMAIN-SUFFIX,suntrust.com
+
 # American Express / Amex / 美国运通
 # 2026-05-12：按用户给定清单补齐；非一字不差的既有规则保留。
 DOMAIN-SUFFIX,americanexpress.com
