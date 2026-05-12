@@ -4,6 +4,12 @@
 
 ## 2026-05-12
 
+### KISS highest principle
+
+- 按三次明确确认，在 `AGENTS.md` 最高原则中新增“本仓库遵循 KISS 原则”。
+- 保留既有“KISS 必须服从安全”边界，避免把简化理解为削弱安全、确认门槛或规则保留要求。
+- 本次只更新全局维护文档和维护记录，不修改任何 `.list` 规则行或实际分流行为。
+
 ### eSIM AI maintenance boundary
 
 - 将 `eSIM-AI.list` 补入 `AGENTS.md` 全仓库维护入口，并新增手机 / eSIM 场景的 AI 精修规则维护边界。
