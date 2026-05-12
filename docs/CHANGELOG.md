@@ -4,6 +4,11 @@
 
 ## 2026-05-12
 
+### Repository red-blue review and rights documentation alignment
+
+- 全仓库防御性红蓝审核通过。
+- 重构了权利文档，并据此修正了 README 文档的对应部分。
+
 ### Maintenance stop rule for unexplained rules
 
 - 按三次明确确认，`AGENTS.md` 最高原则新增 stop rule：不知道一条规则为什么存在或为什么不存在时，必须停止并询问用户，不得为补全、精简、归类、清理、去重或让规则看起来更合理而自作主张改变规则。
