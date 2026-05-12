@@ -184,9 +184,6 @@
 # Manus
 # DOMAIN-SUFFIX,manus.im
 
-# DynaMed
-# DOMAIN-SUFFIX,dynamed.com
-
 # Microsoft / Azure / Office / Visual Studio / Foundry
 # DOMAIN-KEYWORD,foundry
 # DOMAIN-SUFFIX,appsforoffice.microsoft.com
@@ -409,3 +406,6 @@ DOMAIN-SUFFIX,datadoghq.eu
 DOMAIN-SUFFIX,browser-intake-datadoghq.com
 DOMAIN-SUFFIX,browser-intake-us5-datadoghq.com
 DOMAIN-SUFFIX,rum.browser-intake-datadoghq.com
+
+# DynaMed
+ DOMAIN-SUFFIX,dynamed.com
