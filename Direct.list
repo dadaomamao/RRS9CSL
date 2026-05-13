@@ -698,10 +698,11 @@ DOMAIN-SUFFIX,discovernetwork.com
 DOMAIN-SUFFIX,visasecureservices.com
 DOMAIN-SUFFIX,cardinalcommerce.com
 DOMAIN-SUFFIX,emvco.com
-DOMAIN-SUFFIX,paypal.com
-DOMAIN-SUFFIX,paypalobjects.com
-DOMAIN-SUFFIX,braintreegateway.com
-DOMAIN-SUFFIX,braintree-api.com
+# PayPal / 贝宝 / Braintree 已由本地专用规则覆盖；公开 Direct.list 为 KISS 和性能考虑保留原文但停用。
+# DOMAIN-SUFFIX,paypal.com
+# DOMAIN-SUFFIX,paypalobjects.com
+# DOMAIN-SUFFIX,braintreegateway.com
+# DOMAIN-SUFFIX,braintree-api.com
 DOMAIN-SUFFIX,forter.com
 DOMAIN-SUFFIX,checkouttools.com
 DOMAIN-SUFFIX,riskified.com

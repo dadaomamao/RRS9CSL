@@ -4,6 +4,13 @@
 
 ## 2026-05-13
 
+### PayPal / 贝宝 direct rule local specialization
+
+- 将 `Direct.list` 中与 PayPal / 贝宝 / Braintree 明确、极高置信度单独相关的 `paypal.com`、`paypalobjects.com`、`braintreegateway.com`、`braintree-api.com` 改为注释保留。
+- 本地已有对应 PayPal / 贝宝 / Braintree 专用规则；公开通用 `Direct.list` 因 KISS 和性能考虑不再启用这四条。
+- 其他支付网关、卡组织、3DS、支付风控和反欺诈依赖仍保持原状，不扩大到非 PayPal / Braintree 专属规则。
+- 本次不删除规则原文，不触碰其他支付、风控或 3DS 规则。
+
 ### Dropbox provider text compatibility
 
 - 将 `Dropbox.list` 中仍带行内说明的生效规则改为“整行说明 + 纯规则行”，方便以 `behavior: classical`、`format: text` 的 rule-provider 方式引用。
