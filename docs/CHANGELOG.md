@@ -4,6 +4,12 @@
 
 ## 2026-05-13
 
+### Dropbox provider text compatibility
+
+- 将 `Dropbox.list` 中仍带行内说明的生效规则改为“整行说明 + 纯规则行”，方便以 `behavior: classical`、`format: text` 的 rule-provider 方式引用。
+- 本次只调整注释位置，不改变任何生效规则；`DOMAIN,dropbox.zendesk.com` 和 `DOMAIN,paper-attachments.s3.amazonaws.com` 仍保持启用。
+- 远端 raw 复核显示 `Dropbox.list` 仍为 27 条生效规则、6 条注释规则、0 条坏行、0 条生效规则行内注释。
+
 ### Dropbox list entry and strict audit
 
 - 将 `Dropbox.list` 补入仓库公开入口、根目录说明和使用说明，使其成为正式维护的单独规则入口。
