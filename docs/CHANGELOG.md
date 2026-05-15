@@ -4,12 +4,21 @@
 
 ## 2026-05-15
 
+### Financial direct rule consolidation and red-blue audit
+
+- 将 `Direct.list` 中剩余的正常金融、银行、支付、卡组织、3DS、支付风控和 Binance 核心相关规则宽口径合并入 `FinanceRealDNSDirect.list`。
+- `Direct.list` 不删除原规则；已迁入 `FinanceRealDNSDirect.list` 的规则均改为注释保留，作为历史线索。
+- `cmblife.com` 按用户核查保持注释状态，未加入 `FinanceRealDNSDirect.list` 的生效规则。
+- `cmbchina.com.cn` 和 `cmbchina.com.hk` 保持生效规则，并在规则后记录 `www.cmbchina.com.cn` / `www.cmbchina.com.hk` 多种方法无法正常访问、待进一步核查。
+- `xapobank.com` 和 `xapo.com` 的归属说明改为直布罗陀虚拟币数字银行，不再写作香港数字银行。
+- 重新整理 `FinanceRealDNSDirect.list` 分组，使同一银行或机构的域名尽量归在同一块；本次整理不以删除、去重或改写规则为目标。
+- 发布前后完成防御性红蓝审计和目标审计：`FinanceRealDNSDirect.list` 生效规则 623 条，生效重复 0 条；`Direct.list` 生效规则 1 条，仅保留 `time.windows.com`；两者生效规则重叠 0 条；硬排除对象命中 0 条；GitHub raw 与网页回读均通过。
+
 ### FinanceRealDNSDirect formal entry and Direct duplicate retention
 
 - 将 `FinanceRealDNSDirect.list` 纳入仓库公开入口和使用说明，定位为金融真实 DNS 兼容直连清单，用于 `fake-ip-filter` 与 `RULE-SET,DIRECT`。
 - 修正 `FinanceRealDNSDirect.list` 文件头里的旧名 `RRS9CSL.list` / `rrs9csl`，统一为 `FinanceRealDNSDirect.list` / `finance_realdns_direct`。
 - 将 `Direct.list` 中与 `FinanceRealDNSDirect.list` 规则类型和域名完全一致的 167 条活动规则改为注释保留；不删除原文。
-
 
 ## 2026-05-13
 
