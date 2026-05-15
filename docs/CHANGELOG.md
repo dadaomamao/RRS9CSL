@@ -9,7 +9,7 @@
 - 将 `FinanceRealDNSDirect.list` 纳入仓库公开入口和使用说明，定位为金融真实 DNS 兼容直连清单，用于 `fake-ip-filter` 与 `RULE-SET,DIRECT`。
 - 修正 `FinanceRealDNSDirect.list` 文件头里的旧名 `RRS9CSL.list` / `rrs9csl`，统一为 `FinanceRealDNSDirect.list` / `finance_realdns_direct`。
 - 将 `Direct.list` 中与 `FinanceRealDNSDirect.list` 规则类型和域名完全一致的 167 条活动规则改为注释保留；不删除原文。
-- 本次不修改 `crypto.list`，不修改用户 YAML；YAML 接入仍需在使用配置中单独完成。
+
 
 ## 2026-05-13
 
