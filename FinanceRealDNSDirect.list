@@ -1,0 +1,229 @@
+# RRS9CSL.list
+# 金融真实 DNS 兼容直连清单
+# 用途：
+#  1) fake-ip-filter: - "rule-set:rrs9csl"
+#  2) rules: - RULE-SET,rrs9csl,DIRECT
+# 生成原则：高置信首版；以用户上传 Direct.list / crypto.list 为仓库锚点，结合官方公开资料重建。
+# 硬排除：建设银行系、浦发银行系、Claude/Anthropic 相关、未解决 AI/银行风控交叉、纯独立非银行券商。
+# 说明：部分高风险金融对象按本轮置顶规则先纳入，并标记“需 Codex 后置审查”。
+
+# Binance
+DOMAIN-SUFFIX,binance.com # 币安主域；crypto.list Binance-only 边界；真实 DNS 兼容与 DIRECT。
+
+# 支付宝 / 蚂蚁集团 / 网商银行
+DOMAIN-SUFFIX,alipay.com # 支付宝主域；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,alipay.com.cn # 支付宝中国域；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,alipay.hk # 支付宝香港；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,alipayhk.com # 支付宝香港站点；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,alipayplus.com # Alipay+；跨境支付入口；官方公开资料可见；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,alipayobjects.com # 支付宝服务资源域；支付页兼容；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,alipayusercontent.com # 支付宝用户资源域；支付页兼容；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,antfin.com # 蚂蚁金服历史品牌域；金融集团入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,antgroup.com # 蚂蚁集团主域；金融集团入口；官方公开资料可见；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,mybank.cn # 网商银行；互联网银行入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+
+# 微信支付 / 财付通
+DOMAIN-SUFFIX,tenpay.com # 财付通主域；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,wechatpay.cn # 微信支付中国域；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,wechatpay.com # 微信支付国际域；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+
+# 中国主要银行与银行集团投资入口
+DOMAIN-SUFFIX,bankofchina.com # 中国银行全球主域；银行入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,boc.cn # 中国银行中国域；银行入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,icbc.com.cn # 工商银行主域；银行入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,bankcomm.cn # 交通银行主域；银行入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,bankcomm.com.hk # 交通银行香港；银行入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,bocomgroup.com # 交银国际；银行集团投资/证券平台；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,cmbchina.com # 招商银行主域；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,cmbwinglungbank.com # 招商永隆银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,cmbwinglungbank.com.hk # 招商永隆香港；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,cmbwinglungbank.com.cn # 招商永隆中国；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,cmbc.com.cn # 中国民生银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,cebbank.com # 光大银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,cebbank.com.cn # 光大银行中国域；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,cib.com.cn # 兴业银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,pingan.com # 平安集团；金融集团入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,pinganbank.com # 平安银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,citicbank.com # 中信银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,ecitic.com # 中信集团金融入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,minsheng.com.cn # 民生银行集团域；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,bochk.com # 中银香港；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,hkbea.com # 东亚银行；银行入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,bankofbeijing.com.cn # 北京银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,bobchina.com # 北京银行品牌域；银行入口；Direct.list 锚点；需 Codex 后置审查。
+
+# 香港虚拟银行 / 数字银行
+DOMAIN-SUFFIX,antbank.hk # 蚂蚁银行香港；持牌数字银行；官方公开资料可见。
+DOMAIN-SUFFIX,mox.com # Mox；渣打系数字银行；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,welab.bank # WeLab Bank；持牌数字银行；官方公开资料可见。
+DOMAIN-SUFFIX,za.group # ZA 集团金融入口；官方公开资料可见。
+DOMAIN-SUFFIX,bank.za.group # ZA Bank；持牌数字银行；官方公开资料可见。
+
+# 银联 / 卡组织 / 3DS
+DOMAIN-SUFFIX,unionpay.com # 中国银联主域；卡组织；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,unionpayintl.com # 银联国际；跨境支付与 3DS 相关；官方公开资料可见。
+DOMAIN-SUFFIX,visa.com # Visa 主域；卡组织；支付网络入口；Direct.list 锚点。
+DOMAIN-SUFFIX,visasecureservices.com # Visa Secure 服务域；3DS 认证；官方公开资料可见。
+DOMAIN-SUFFIX,mastercard.com # Mastercard 主域；卡组织；Direct.list 锚点。
+DOMAIN-SUFFIX,cardinalcommerce.com # CardinalCommerce；Visa Protect / 3DS 认证服务；官方公开资料可见。
+DOMAIN-SUFFIX,emvco.com # EMVCo；EMV 3DS 规范与测试；官方公开资料可见。
+DOMAIN-SUFFIX,americanexpress.com # 美国运通主域；卡组织与 SafeKey 相关；需 Codex 后置审查。
+DOMAIN-SUFFIX,americanexpress.com.hk # 美国运通香港；卡组织区域入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,americanexpress.co.jp # 美国运通日本；卡组织区域入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,americanexpress.com.cn # 美国运通中国；卡组织区域入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,americanexpress.com.sg # 美国运通新加坡；卡组织区域入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,americanexpress.com.au # 美国运通澳洲；卡组织区域入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,discover.com # Discover 主域；卡组织；需 Codex 后置审查。
+DOMAIN-SUFFIX,discovernetwork.com # Discover Network；卡组织网络域；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,dinersclub.com # Diners Club；卡品牌；Direct.list 锚点；需 Codex 后置审查。
+
+# 汇丰 / 恒生
+DOMAIN-SUFFIX,hsbc.com # 汇丰集团主域；银行入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,hsbc.co.uk # 汇丰英国；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,hsbc.com.hk # 汇丰香港；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,hsbc.com.sg # 汇丰新加坡；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,hsbc.com.au # 汇丰澳洲；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,hsbc.co.jp # 汇丰日本；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,hsbcnet.com # HSBCnet；企业网银/机构入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,hsbcprivatebank.com # 汇丰私人银行；银行集团投资/财富入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,hangseng.com # 恒生集团主域；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,hangsengbank.com # 恒生银行；银行入口；需 Codex 后置审查。
+
+# 渣打 / 花旗 / 摩根 / 美银 / 富国
+DOMAIN-SUFFIX,standardchartered.com # 渣打集团主域；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,sc.com # 渣打主域；银行入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,sc.com.hk # 渣打香港；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,citi.com # 花旗集团主域；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,citibank.com # 花旗银行主域；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,citibank.com.hk # 花旗香港；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,jpmorgan.com # 摩根大通集团主域；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,chase.com # Chase；零售银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,jpmcb.com # JPMC 企业/机构域；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,jpmorganwealthmanagement.com # 摩根财富管理；银行集团投资入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,bankofamerica.com # 美国银行主域；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,bofa.com # 美国银行短域；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,merrill.com # Merrill；银行集团财富/投行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,merrilledge.com # Merrill Edge；银行集团投资入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,bankofamerica.com.edgekey.net # 美银品牌化 CDN 别名；Direct.list 锚点；真实 DNS 兼容；需 Codex 后置审查。
+DOMAIN-SUFFIX,wellsfargo.com # 富国银行主域；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,wellsfargoadvisors.com # 富国顾问；银行集团投资入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,wellsfargo.com.edgekey.net # 富国品牌化 CDN 别名；Direct.list 锚点；真实 DNS 兼容；需 Codex 后置审查。
+
+# 欧洲主要银行
+DOMAIN-SUFFIX,ubs.com # UBS；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,barclays.com # Barclays；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,barclays.co.uk # Barclays UK；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,barclaycard.co.uk # Barclaycard；银行卡/支付入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,lloydsbank.com # Lloyds Bank；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,lloydsbankinggroup.com # Lloyds Banking Group；集团入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,halifax.co.uk # Halifax；Lloyds 系银行品牌；需 Codex 后置审查。
+DOMAIN-SUFFIX,bankofscotland.co.uk # Bank of Scotland；Lloyds 系银行品牌；需 Codex 后置审查。
+DOMAIN-SUFFIX,natwest.com # NatWest；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,rbs.co.uk # RBS；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,ulsterbank.co.uk # Ulster Bank；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,coutts.com # Coutts；NatWest 系私人银行；需 Codex 后置审查。
+DOMAIN-SUFFIX,db.com # Deutsche Bank；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,bnpparibas.com # BNP Paribas；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,hellobank.com # Hello bank!；BNP 数字银行品牌；需 Codex 后置审查。
+DOMAIN-SUFFIX,societegenerale.com # 法兴；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,credit-agricole.com # 法农；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,lcl.fr # LCL；法农系零售银行；需 Codex 后置审查。
+DOMAIN-SUFFIX,ing.com # ING；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,santander.com # Santander；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,santander.co.uk # Santander UK；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,openbank.com # Openbank；Santander 系数字银行；需 Codex 后置审查。
+
+# 日本主要银行
+DOMAIN-SUFFIX,mufg.jp # MUFG；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,bk.mufg.jp # 三菱 UFJ 银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,smbc.co.jp # 三井住友银行；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,prestia.co.jp # SMBC Prestia；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,mizuhobank.co.jp # 瑞穗银行；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,mizuhogroup.com # 瑞穗集团；银行集团入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,resonabank.co.jp # Resona Bank；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,resona-gr.co.jp # Resona Group；银行集团入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,sbishinseibank.co.jp # SBI 新生银行；银行入口；需 Codex 后置审查。
+
+# 新加坡 / 亚太银行与银行集团投资入口
+DOMAIN-SUFFIX,dbs.com # DBS；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,posb.com.sg # POSB；DBS 系零售银行；需 Codex 后置审查。
+DOMAIN-SUFFIX,ocbc.com # OCBC；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,uob.com.sg # UOB；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,trustbank.sg # Trust Bank；数字银行；Direct.list 锚点。
+DOMAIN-SUFFIX,mariabank.sg # MariBank；数字银行；Direct.list 锚点。
+DOMAIN-SUFFIX,gxs.com.sg # GXS Bank；数字银行；Direct.list 锚点。
+DOMAIN-SUFFIX,commbank.com.au # Commonwealth Bank；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,commsec.com.au # CommSec；银行集团投资入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,nab.com.au # NAB；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,nabtrade.com.au # nabtrade；银行集团投资入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,westpac.com.au # Westpac；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,westpac.co.nz # Westpac NZ；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,anz.com # ANZ；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,anz.co.nz # ANZ NZ；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,bnz.co.nz # BNZ；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,asb.co.nz # ASB；银行入口；需 Codex 后置审查。
+
+# 加拿大银行与银行集团投资入口
+DOMAIN-SUFFIX,rbc.com # RBC；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,rbcdirectinvesting.com # RBC Direct Investing；银行集团投资入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,bmo.com # BMO；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,bmoinvestorline.com # BMO InvestorLine；银行集团投资入口；官方公开资料可见；需 Codex 后置审查。
+DOMAIN-SUFFIX,td.com # TD；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,tdcanadatrust.com # TD Canada Trust；银行入口；需 Codex 后置审查。
+DOMAIN-SUFFIX,scotiabank.com # Scotiabank；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,cibc.com # CIBC；银行集团主域；需 Codex 后置审查。
+DOMAIN-SUFFIX,simplii.com # Simplii；CIBC 系数字银行；需 Codex 后置审查。
+DOMAIN-SUFFIX,tangerine.ca # Tangerine；数字银行；Direct.list 锚点。
+DOMAIN-SUFFIX,eqbank.ca # EQ Bank；数字银行；Direct.list 锚点。
+
+# 全球数字银行 / 数字金融服务
+DOMAIN-SUFFIX,n26.com # N26；数字银行；Direct.list 锚点。
+DOMAIN-SUFFIX,monzo.com # Monzo；数字银行；Direct.list 锚点。
+DOMAIN-SUFFIX,starlingbank.com # Starling Bank；数字银行；Direct.list 锚点。
+DOMAIN-SUFFIX,ally.com # Ally；数字银行/银行入口；Direct.list 锚点。
+DOMAIN-SUFFIX,sofi.com # SoFi；数字金融服务；Direct.list 锚点。
+DOMAIN-SUFFIX,chime.com # Chime；数字金融服务；Direct.list 锚点。
+DOMAIN-SUFFIX,current.com # Current；数字金融服务；Direct.list 锚点。
+DOMAIN-SUFFIX,moneylion.com # MoneyLion；数字金融服务；Direct.list 锚点。
+DOMAIN-SUFFIX,varomoney.com # Varo；数字银行；Direct.list 锚点。
+DOMAIN-SUFFIX,axosbank.com # Axos Bank；数字银行；Direct.list 锚点。
+DOMAIN-SUFFIX,synchronybank.com # Synchrony Bank；数字银行/信用金融；Direct.list 锚点。
+DOMAIN-SUFFIX,wio.io # Wio Bank；数字银行；Direct.list 锚点。
+DOMAIN-SUFFIX,liv.me # Liv.；数字银行品牌；Direct.list 锚点。
+DOMAIN-SUFFIX,kuda.com # Kuda；数字银行；Direct.list 锚点。
+DOMAIN-SUFFIX,wise.com # Wise；跨境金融账户；官方公开资料可见。
+DOMAIN-SUFFIX,transferwise.com # Wise 旧品牌域；迁移兼容；Direct.list 锚点。
+DOMAIN-SUFFIX,wiseassets.com # Wise Assets；投资/收益产品实体；官方公开资料可见。
+DOMAIN-SUFFIX,revolut.com # Revolut；数字银行/金融服务；Direct.list 锚点。
+DOMAIN-SUFFIX,rev.money # Revolut 相关域；Direct.list 锚点。
+DOMAIN-SUFFIX,payoneer.com # Payoneer；跨境收款/金融服务；Direct.list 锚点。
+DOMAIN-SUFFIX,payoneer.com.cn # Payoneer 中国域；跨境金融服务；Direct.list 锚点。
+
+# 支付处理商 / 支付基础设施 / 钱包
+DOMAIN-SUFFIX,stripe.com # Stripe 主域；支付基础设施；官方公开资料可见；需 Codex 后置复核。
+DOMAIN-SUFFIX,stripe.global # Stripe 官方域；官方帮助中心列名；需 Codex 后置复核。
+DOMAIN-SUFFIX,link.com # Stripe Link 钱包；官方公开资料可见；AI 交叉已审查；需 Codex 后置复核。
+DOMAIN-SUFFIX,adyen.com # Adyen 主域；支付基础设施；官方公开资料可见；需 Codex 后置复核。
+DOMAIN-SUFFIX,adyenpayments.com # Adyen live API 域；官方文档明确；需 Codex 后置复核。
+DOMAIN-SUFFIX,adyen.com.cn # Adyen 中国域；Direct.list 锚点；需 Codex 后置复核。
+DOMAIN-SUFFIX,checkout.com # Checkout.com 主域；支付基础设施；官方公开资料可见；需 Codex 后置复核。
+DOMAIN-SUFFIX,checkoutcdn.com # Checkout.com 前端资源域；官方可见 demo；需 Codex 后置复核。
+DOMAIN-SUFFIX,worldpay.com # Worldpay 主域；全球支付处理；官方公开资料可见；需 Codex 后置复核。
+DOMAIN-SUFFIX,worldpay.us # Worldpay US；支付页/美国支付基础设施；需 Codex 后置复核。
+DOMAIN-SUFFIX,squareup.com # Square 商户支付；Direct.list 锚点；需 Codex 后置复核。
+DOMAIN-SUFFIX,square.com # Square 主域；支付生态入口；需 Codex 后置复核。
+DOMAIN-SUFFIX,squarecdn.com # Square 服务资源域；支付页兼容；Direct.list 锚点；需 Codex 后置复核。
+DOMAIN-SUFFIX,block.xyz # Block 集团；支付金融集团入口；需 Codex 后置复核。
+DOMAIN-SUFFIX,cash.app # Cash App；数字金融/支付；Direct.list 锚点；需 Codex 后置复核。
+DOMAIN-SUFFIX,klarna.com # Klarna；支付/分期金融服务；Direct.list 锚点；需 Codex 后置复核。
+DOMAIN-SUFFIX,klarna.net # Klarna 服务域；Direct.list 锚点；需 Codex 后置复核。
+DOMAIN-SUFFIX,afterpay.com # Afterpay；支付/分期金融服务；Direct.list 锚点；需 Codex 后置复核。
+DOMAIN-SUFFIX,afterpay.com.au # Afterpay 澳洲；支付/分期金融服务；Direct.list 锚点；需 Codex 后置复核。
+DOMAIN-SUFFIX,afterpaycdn.com # Afterpay 服务资源域；支付页兼容；Direct.list 锚点；需 Codex 后置复核。
+DOMAIN-SUFFIX,affirm.com # Affirm；分期金融服务；Direct.list 锚点；需 Codex 后置复核。
+DOMAIN-SUFFIX,affirmcdn.com # Affirm 服务资源域；支付页兼容；Direct.list 锚点；需 Codex 后置复核。
+
+# 支付风控与认证侧已审查对象
+DOMAIN-SUFFIX,forter.com # Forter；支付风控；AI/银行交叉已审查；纳入并需 Codex 后置复核。
+DOMAIN-SUFFIX,riskified.com # Riskified；支付风控；AI/银行交叉已审查；纳入并需 Codex 后置复核。
+DOMAIN-SUFFIX,signifyd.com # Signifyd；支付风控；AI/银行交叉已审查；纳入并需 Codex 后置复核。
