@@ -1,8 +1,8 @@
-# RRS9CSL.list
+# FinanceRealDNSDirect.list
 # 金融真实 DNS 兼容直连清单
 # 用途：
-#  1) fake-ip-filter: - "rule-set:rrs9csl"
-#  2) rules: - RULE-SET,rrs9csl,DIRECT
+#  1) fake-ip-filter: - "rule-set:finance_realdns_direct"
+#  2) rules: - RULE-SET,finance_realdns_direct,DIRECT
 # 生成原则：高置信首版；以用户上传 Direct.list / crypto.list 为仓库锚点，结合官方公开资料重建。
 # 硬排除：建设银行系、浦发银行系、Claude/Anthropic 相关、未解决 AI/银行风控交叉、纯独立非银行券商。
 # 说明：部分高风险金融对象按本轮置顶规则先纳入，并标记“需 Codex 后置审查”。

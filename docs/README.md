@@ -34,6 +34,7 @@
 - `eSIM-AI.list`
 - `ProxyLite.list`
 - `Direct.list`
+- `FinanceRealDNSDirect.list`
 - `crypto.list`
 - `Dropbox.list`
 - `AGENTS.md`

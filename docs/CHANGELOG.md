@@ -2,6 +2,15 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-05-15
+
+### FinanceRealDNSDirect formal entry and Direct duplicate retention
+
+- 将 `FinanceRealDNSDirect.list` 纳入仓库公开入口和使用说明，定位为金融真实 DNS 兼容直连清单，用于 `fake-ip-filter` 与 `RULE-SET,DIRECT`。
+- 修正 `FinanceRealDNSDirect.list` 文件头里的旧名 `RRS9CSL.list` / `rrs9csl`，统一为 `FinanceRealDNSDirect.list` / `finance_realdns_direct`。
+- 将 `Direct.list` 中与 `FinanceRealDNSDirect.list` 规则类型和域名完全一致的 167 条活动规则改为注释保留；不删除原文。
+- 本次不修改 `crypto.list`，不修改用户 YAML；YAML 接入仍需在使用配置中单独完成。
+
 ## 2026-05-13
 
 ### PayPal / 贝宝 direct rule local specialization
