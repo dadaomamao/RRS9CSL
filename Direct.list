@@ -27,115 +27,115 @@ DOMAIN-SUFFIX,time.windows.com  # 不宜作为普通网站连通性检测目标
 # DOMAIN-SUFFIX,tenpay.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,wechatpay.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,wechatpay.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,pay.weixin.qq.com
-DOMAIN-SUFFIX,mch.weixin.qq.com
-DOMAIN-SUFFIX,api.mch.weixin.qq.com
-DOMAIN-SUFFIX,api2.mch.weixin.qq.com
-DOMAIN-SUFFIX,wx.tenpay.com
+# DOMAIN-SUFFIX,pay.weixin.qq.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mch.weixin.qq.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,api.mch.weixin.qq.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,api2.mch.weixin.qq.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,wx.tenpay.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 #中国银行集团
 # DOMAIN-SUFFIX,boc.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,bankofchina.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,bank-of-china.com
+# DOMAIN-SUFFIX,bank-of-china.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,bochk.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,bochk.com.hk
-DOMAIN-SUFFIX,bocgroup.com
-DOMAIN-SUFFIX,bocmacau.com
-DOMAIN-SUFFIX,bocusa.com
-DOMAIN-SUFFIX,boctokyo.co.jp
-DOMAIN-SUFFIX,bankofchina.co.id
-DOMAIN-SUFFIX,bankofchina.com.kh
-DOMAIN-SUFFIX,bankofchina.com.vn
-DOMAIN-SUFFIX,bankofchina.com.la
-DOMAIN-SUFFIX,bankofchina.com.my
-DOMAIN-SUFFIX,bankofchina.co.th
-DOMAIN-SUFFIX,bankofchina.com.th
+# DOMAIN-SUFFIX,bochk.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bocgroup.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bocmacau.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bocusa.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,boctokyo.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bankofchina.co.id # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bankofchina.com.kh # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bankofchina.com.vn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bankofchina.com.la # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bankofchina.com.my # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bankofchina.co.th # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bankofchina.com.th # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 #中国工商银行集团
 # DOMAIN-SUFFIX,icbc.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,95588.com
-DOMAIN-SUFFIX,icbc-ltd.com
-DOMAIN-SUFFIX,icbcasia.com
-DOMAIN-SUFFIX,icbc.com.hk
-DOMAIN-SUFFIX,icbc.com.mo
-DOMAIN-SUFFIX,icbc.com.sg
-DOMAIN-SUFFIX,icbc.com.au
-DOMAIN-SUFFIX,icbc.co.id
-DOMAIN-SUFFIX,icbc.com.kh
-DOMAIN-SUFFIX,icbcmanila.com.cn
-DOMAIN-SUFFIX,icbcthai.com
-DOMAIN-SUFFIX,icbc.co.kr
-DOMAIN-SUFFIX,icbc.com.kw
-DOMAIN-SUFFIX,icbc.com.mm
-DOMAIN-SUFFIX,icbc.de
-DOMAIN-SUFFIX,icbc-at.com
-DOMAIN-SUFFIX,icbclondon.com
-DOMAIN-SUFFIX,icbc-uk.com
-DOMAIN-SUFFIX,icbc.com.tr
-DOMAIN-SUFFIX,icbc-cz.com
-DOMAIN-SUFFIX,icbcswiss.com
-DOMAIN-SUFFIX,icbc.com.mx
-DOMAIN-SUFFIX,icbc-us.com
-DOMAIN-SUFFIX,icbkus.com
-DOMAIN-SUFFIX,icbc.com.ar
-DOMAIN-SUFFIX,icbc.com.pe
+# DOMAIN-SUFFIX,95588.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc-ltd.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbcasia.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.com.mo # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.co.id # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.com.kh # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbcmanila.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbcthai.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.co.kr # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.com.kw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.com.mm # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.de # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc-at.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbclondon.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc-uk.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.com.tr # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc-cz.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbcswiss.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.com.mx # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc-us.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbkus.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.com.ar # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,icbc.com.pe # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 #交通银行集团
-DOMAIN-SUFFIX,bankcomm.com
-DOMAIN-SUFFIX,95559.com.cn
+# DOMAIN-SUFFIX,bankcomm.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,95559.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 #银联与中国银联商务相关域名DOMAIN-SUFFIX,unionpay.com
-DOMAIN-SUFFIX,chinaunionpay.com
+# DOMAIN-SUFFIX,chinaunionpay.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,unionpayintl.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,unionpaysecure.com
-DOMAIN-SUFFIX,95516.com
-DOMAIN-SUFFIX,chinaums.com
-DOMAIN-SUFFIX,chinaumswh.com
-DOMAIN-SUFFIX,umspay.cn
-DOMAIN-SUFFIX,mpos.quanminfu.com
-DOMAIN-SUFFIX,m.95534.biz
+# DOMAIN-SUFFIX,unionpaysecure.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,95516.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,chinaums.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,chinaumswh.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,umspay.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mpos.quanminfu.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,m.95534.biz # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # HSBC / Hang Seng
 # DOMAIN-SUFFIX,hsbc.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,hsbcnet.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,hsbcprivatebank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,hsbc.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,hsbc.com.cn
-DOMAIN-SUFFIX,hsbc.com.mo
+# DOMAIN-SUFFIX,hsbc.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.com.mo # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,hsbc.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,hsbc.com.my
-DOMAIN-SUFFIX,hsbcamanah.com.my
-DOMAIN-SUFFIX,hsbc.co.in
+# DOMAIN-SUFFIX,hsbc.com.my # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbcamanah.com.my # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.co.in # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,hsbc.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,hsbc.co.kr
-DOMAIN-SUFFIX,hsbc.com.ph
-DOMAIN-SUFFIX,hsbc.com.tw
-DOMAIN-SUFFIX,hsbc.co.th
-DOMAIN-SUFFIX,hsbc.lk
-DOMAIN-SUFFIX,hsbc.com.vn
-DOMAIN-SUFFIX,hsbc.co.nz
+# DOMAIN-SUFFIX,hsbc.co.kr # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.com.ph # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.co.th # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.lk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.com.vn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.co.nz # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,hsbc.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,hsbc.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,hsbc.uk
-DOMAIN-SUFFIX,hsbc.ch
-DOMAIN-SUFFIX,hsbc.fr
-DOMAIN-SUFFIX,hsbc.de
-DOMAIN-SUFFIX,hsbc.be
-DOMAIN-SUFFIX,hsbc.nl
-DOMAIN-SUFFIX,hsbc.lu
-DOMAIN-SUFFIX,hsbc.es
-DOMAIN-SUFFIX,hsbc.it
-DOMAIN-SUFFIX,hsbc.co.il
-DOMAIN-SUFFIX,hsbc.com.tr
-DOMAIN-SUFFIX,hsbc.ae
-DOMAIN-SUFFIX,hsbc.com.bh
-DOMAIN-SUFFIX,hsbc.com.eg
-DOMAIN-SUFFIX,hsbc.co.mu
-DOMAIN-SUFFIX,hsbc.com.mx
-DOMAIN-SUFFIX,hsbc.com.uy
+# DOMAIN-SUFFIX,hsbc.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.ch # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.fr # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.de # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.be # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.nl # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.lu # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.es # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.it # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.co.il # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.com.tr # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.ae # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.com.bh # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.com.eg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.co.mu # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.com.mx # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hsbc.com.uy # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,hangseng.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,hangseng.com.hk
-DOMAIN-SUFFIX,hangseng.com.cn
+# DOMAIN-SUFFIX,hangseng.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hangseng.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,hangsengbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,hsbc.ca # 按 KISS 原则做有充分理由支持的尝试性精简。
 # DOMAIN-SUFFIX,payme.hsbc # 按 KISS 原则做有充分理由支持的尝试性精简。
@@ -148,213 +148,213 @@ DOMAIN-SUFFIX,hangseng.com.cn
 # Standard Chartered
 # DOMAIN-SUFFIX,sc.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,standardchartered.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,standardchartered.com.hk
-DOMAIN-SUFFIX,standardchartered.com.sg
-DOMAIN-SUFFIX,standardchartered.com.cn
-DOMAIN-SUFFIX,standardchartered.co.uk
-DOMAIN-SUFFIX,standardchartered.co.in
-DOMAIN-SUFFIX,standardchartered.com.my
-DOMAIN-SUFFIX,standardchartered.com.tw
-DOMAIN-SUFFIX,standardcharteredprivatebank.com
+# DOMAIN-SUFFIX,standardchartered.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,standardchartered.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,standardchartered.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,standardchartered.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,standardchartered.co.in # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,standardchartered.com.my # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,standardchartered.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,standardcharteredprivatebank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Citi / Citibank
 # DOMAIN-SUFFIX,citi.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,citi.com.cn
-DOMAIN-SUFFIX,citi.co.uk
-DOMAIN-SUFFIX,citigroup.com
+# DOMAIN-SUFFIX,citi.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,citi.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,citigroup.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,citibank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,citibank.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,citibank.com.sg
-DOMAIN-SUFFIX,citibank.com.cn
-DOMAIN-SUFFIX,citibank.co.uk
-DOMAIN-SUFFIX,citibank.com.tw
-DOMAIN-SUFFIX,citibank.com.au
-DOMAIN-SUFFIX,citibank.co.in
-DOMAIN-SUFFIX,citibank.com.my
-DOMAIN-SUFFIX,citibankonline.com
-DOMAIN-SUFFIX,citicards.com
+# DOMAIN-SUFFIX,citibank.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,citibank.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,citibank.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,citibank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,citibank.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,citibank.co.in # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,citibank.com.my # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,citibankonline.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,citicards.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # JPMorgan Chase
 # DOMAIN-SUFFIX,chase.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,chasecdn.com
-DOMAIN-SUFFIX,chasepaymentech.com
+# DOMAIN-SUFFIX,chasecdn.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,chasepaymentech.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,jpmorgan.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,jpmorganchase.com
-DOMAIN-SUFFIX,jpmorganonline.com
+# DOMAIN-SUFFIX,jpmorganchase.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,jpmorganonline.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,jpmorganwealthmanagement.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Bank of America / Merrill
 # DOMAIN-SUFFIX,bankofamerica.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,bankofamerica.com.cn
+# DOMAIN-SUFFIX,bankofamerica.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,bofa.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,merrill.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,merrilledge.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,ml.com
+# DOMAIN-SUFFIX,ml.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,bankofamerica.com.edgekey.net # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Wells Fargo
 # DOMAIN-SUFFIX,wellsfargo.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,wf.com
+# DOMAIN-SUFFIX,wf.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,wellsfargoadvisors.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,wellsfargomedia.com
+# DOMAIN-SUFFIX,wellsfargomedia.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,wellsfargo.com.edgekey.net # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # UBS
 # DOMAIN-SUFFIX,ubs.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,ubs.ch
-DOMAIN-SUFFIX,ubs.com.cn
-DOMAIN-SUFFIX,ubs.com.hk
-DOMAIN-SUFFIX,ubs.com.sg
-DOMAIN-SUFFIX,ubs.com.tw
-DOMAIN-SUFFIX,ubs.com.au
-DOMAIN-SUFFIX,ubsbankusa.com
+# DOMAIN-SUFFIX,ubs.ch # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ubs.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ubs.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ubs.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ubs.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ubs.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ubsbankusa.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Barclays
 # DOMAIN-SUFFIX,barclays.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,barclays.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,barclaysus.com
+# DOMAIN-SUFFIX,barclaysus.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,barclaycard.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,barclaycardus.com
-DOMAIN-SUFFIX,barclayswealth.com
+# DOMAIN-SUFFIX,barclaycardus.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,barclayswealth.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Lloyds Bank
 # DOMAIN-SUFFIX,lloydsbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,lloydsbank.co.uk
-DOMAIN-SUFFIX,lloydsbankcommercial.com
-DOMAIN-SUFFIX,lloydsbankcardnet.com
+# DOMAIN-SUFFIX,lloydsbank.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,lloydsbankcommercial.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,lloydsbankcardnet.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # NatWest / RBS / Ulster Bank
 # DOMAIN-SUFFIX,natwest.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,natwestinternational.com
+# DOMAIN-SUFFIX,natwestinternational.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,rbs.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,royalbankofscotland.com
+# DOMAIN-SUFFIX,royalbankofscotland.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,ulsterbank.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Deutsche Bank
 # DOMAIN-SUFFIX,db.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,deutsche-bank.com
-DOMAIN-SUFFIX,deutsche-bank.de
-DOMAIN-SUFFIX,deutschebank.be
-DOMAIN-SUFFIX,deutschewealth.com
+# DOMAIN-SUFFIX,deutsche-bank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,deutsche-bank.de # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,deutschebank.be # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,deutschewealth.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # BNP Paribas
 # DOMAIN-SUFFIX,bnpparibas.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,bnpparibas.net
-DOMAIN-SUFFIX,mabanque.bnpparibas
-DOMAIN-SUFFIX,hellobank.fr
-DOMAIN-SUFFIX,hellobank.be
-DOMAIN-SUFFIX,bnpparibasfortis.be
-DOMAIN-SUFFIX,bgl.lu
+# DOMAIN-SUFFIX,bnpparibas.net # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mabanque.bnpparibas # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hellobank.fr # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hellobank.be # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bnpparibasfortis.be # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bgl.lu # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Societe Generale
 # DOMAIN-SUFFIX,societegenerale.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,societegenerale.fr
-DOMAIN-SUFFIX,sg.fr
-DOMAIN-SUFFIX,boursobank.com
-DOMAIN-SUFFIX,boursorama.com
+# DOMAIN-SUFFIX,societegenerale.fr # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,sg.fr # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,boursobank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,boursorama.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Credit Agricole / LCL
 # DOMAIN-SUFFIX,credit-agricole.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,credit-agricole.fr
-DOMAIN-SUFFIX,creditagricole.info
+# DOMAIN-SUFFIX,credit-agricole.fr # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,creditagricole.info # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,lcl.fr # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # ING
 # DOMAIN-SUFFIX,ing.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,ing.nl
-DOMAIN-SUFFIX,ing.be
-DOMAIN-SUFFIX,ing.de
-DOMAIN-SUFFIX,ingdirect.es
-DOMAIN-SUFFIX,ing.com.au
-DOMAIN-SUFFIX,ing.lu
-DOMAIN-SUFFIX,ing.pl
-DOMAIN-SUFFIX,ing.it
+# DOMAIN-SUFFIX,ing.nl # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ing.be # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ing.de # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ingdirect.es # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ing.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ing.lu # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ing.pl # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ing.it # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Santander / Openbank
 # DOMAIN-SUFFIX,santander.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,santander.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,santanderbank.com
-DOMAIN-SUFFIX,santander.com.br
-DOMAIN-SUFFIX,santander.com.mx
-DOMAIN-SUFFIX,bancosantander.es
-DOMAIN-SUFFIX,santanderconsumerusa.com
-DOMAIN-SUFFIX,openbank.es
+# DOMAIN-SUFFIX,santanderbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,santander.com.br # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,santander.com.mx # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bancosantander.es # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,santanderconsumerusa.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,openbank.es # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,openbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Japan major banks
 # DOMAIN-SUFFIX,mufg.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,mufg.co.jp
-DOMAIN-SUFFIX,mufgbank.com
-DOMAIN-SUFFIX,mufgamericas.com
-DOMAIN-SUFFIX,mufgunionbank.com
+# DOMAIN-SUFFIX,mufg.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mufgbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mufgamericas.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mufgunionbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,smbc.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,smbctb.co.jp
-DOMAIN-SUFFIX,smbc-card.com
-DOMAIN-SUFFIX,smbcnikko.co.jp
-DOMAIN-SUFFIX,smbcgroup.com
-DOMAIN-SUFFIX,mizuho-fg.co.jp
+# DOMAIN-SUFFIX,smbctb.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,smbc-card.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,smbcnikko.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,smbcgroup.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mizuho-fg.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,mizuhobank.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,mizuho-sc.com
+# DOMAIN-SUFFIX,mizuho-sc.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Singapore banks
 # DOMAIN-SUFFIX,dbs.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,dbs.com.sg
-DOMAIN-SUFFIX,dbs.com.hk
+# DOMAIN-SUFFIX,dbs.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,dbs.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,posb.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,digibank.com
+# DOMAIN-SUFFIX,digibank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,ocbc.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,ocbc.com.sg
-DOMAIN-SUFFIX,ocbc.com.hk
-DOMAIN-SUFFIX,ocbc.com.cn
-DOMAIN-SUFFIX,bankofsingapore.com
-DOMAIN-SUFFIX,uobgroup.com
+# DOMAIN-SUFFIX,ocbc.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ocbc.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ocbc.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bankofsingapore.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,uobgroup.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,uob.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,uob.com.my
-DOMAIN-SUFFIX,uob.co.th
-DOMAIN-SUFFIX,uob.com.hk
-DOMAIN-SUFFIX,uobchina.com.cn
+# DOMAIN-SUFFIX,uob.com.my # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,uob.co.th # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,uob.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,uobchina.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Australia / New Zealand banks
 # DOMAIN-SUFFIX,anz.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,anz.com.au
+# DOMAIN-SUFFIX,anz.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,anz.co.nz # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,anz.com.sg
-DOMAIN-SUFFIX,anz.com.cn
-DOMAIN-SUFFIX,anz.com.hk
+# DOMAIN-SUFFIX,anz.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,anz.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,anz.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,commbank.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,commbank.com
-DOMAIN-SUFFIX,commonwealthbank.com.au
-DOMAIN-SUFFIX,netbank.com.au
+# DOMAIN-SUFFIX,commbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,commonwealthbank.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,netbank.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,commsec.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,westpac.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,westpac.co.nz # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,stgeorge.com.au
-DOMAIN-SUFFIX,banksa.com.au
-DOMAIN-SUFFIX,bankofmelbourne.com.au
+# DOMAIN-SUFFIX,stgeorge.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,banksa.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bankofmelbourne.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,nab.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,nabtrade.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,ubank.com.au
+# DOMAIN-SUFFIX,ubank.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Canada banks
 # DOMAIN-SUFFIX,rbc.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,rbcroyalbank.com
-DOMAIN-SUFFIX,rbcbank.com
-DOMAIN-SUFFIX,rbcwealthmanagement.com
+# DOMAIN-SUFFIX,rbcroyalbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,rbcbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,rbcwealthmanagement.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,rbcdirectinvesting.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,td.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,tdbank.com
+# DOMAIN-SUFFIX,tdbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,tdcanadatrust.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,tdwaterhouse.ca
+# DOMAIN-SUFFIX,tdwaterhouse.ca # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,scotiabank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,scotiabank.ca
-DOMAIN-SUFFIX,scotiaitrade.com
+# DOMAIN-SUFFIX,scotiabank.ca # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,scotiaitrade.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,bmo.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,bmo.ca
-DOMAIN-SUFFIX,bmoharris.com
+# DOMAIN-SUFFIX,bmo.ca # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bmoharris.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,bmoinvestorline.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,cibc.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,cibc.ca
-DOMAIN-SUFFIX,cibcfcib.com
+# DOMAIN-SUFFIX,cibc.ca # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cibcfcib.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,simplii.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Mainland China / Hong Kong / Macau / Taiwan banks
@@ -362,173 +362,173 @@ DOMAIN-SUFFIX,cibcfcib.com
 # DOMAIN-SUFFIX,bocmacau.com.mo # 中国银行系相关但未在确认清单内，按确认范围注释停用。
 # DOMAIN-SUFFIX,bocgi.com # 中国银行系相关但未在确认清单内，按确认范围注释停用。
 # DOMAIN-SUFFIX,bocionline.com # 中国银行系相关但未在确认清单内，按确认范围注释停用。
-DOMAIN-SUFFIX,abchina.com
-DOMAIN-SUFFIX,abchina.com.cn
-DOMAIN-SUFFIX,95599.cn
+# DOMAIN-SUFFIX,abchina.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,abchina.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,95599.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,bankcomm.cn # 交通银行系相关但未在确认清单内，按确认范围注释停用。
 # DOMAIN-SUFFIX,bankcomm.com.hk # 交通银行系相关但未在确认清单内，按确认范围注释停用。
 # DOMAIN-SUFFIX,bocomgroup.com # 交通银行系相关但未在确认清单内，按确认范围注释停用。
-DOMAIN-SUFFIX,psbc.com
-DOMAIN-SUFFIX,psbc.com.cn
-DOMAIN-SUFFIX,95580.com
+# DOMAIN-SUFFIX,psbc.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,psbc.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,95580.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,cmbchina.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,cmbchina.com.cn
-DOMAIN-SUFFIX,cmbchina.com.hk
-DOMAIN-SUFFIX,cmblife.com
+# DOMAIN-SUFFIX,cmbchina.com.cn # 已迁移至 FinanceRealDNSDirect.list；www.cmbchina.com.cn：多种方法均无法正常访问网站；待进一步核查；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cmbchina.com.hk # 已迁移至 FinanceRealDNSDirect.list；www.cmbchina.com.hk：多种方法均无法正常访问网站；待进一步核查；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cmblife.com # 用户核查：该域名当前不是招商银行官方入口，注释保留原文。
 # DOMAIN-SUFFIX,cmbwinglungbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,cmbwinglungbank.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,winglungbank.com
-DOMAIN-SUFFIX,wlb.com.hk
-DOMAIN-SUFFIX,cmbi.com.hk
+# DOMAIN-SUFFIX,winglungbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,wlb.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cmbi.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,hkbea.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,hkbea.com.cn
-DOMAIN-SUFFIX,bankofeastasia.com
-DOMAIN-SUFFIX,bea.com
+# DOMAIN-SUFFIX,hkbea.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bankofeastasia.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bea.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,cib.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,cmbc.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,cmbc.com.hk
+# DOMAIN-SUFFIX,cmbc.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,citicbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,citicbank.com.cn
-DOMAIN-SUFFIX,cncb.com.hk
+# DOMAIN-SUFFIX,citicbank.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cncb.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,ecitic.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,cebbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,cebbank.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,cebbank.com.hk
-DOMAIN-SUFFIX,hxb.com.cn
-DOMAIN-SUFFIX,hxb.com
-DOMAIN-SUFFIX,cgbchina.com.cn
-DOMAIN-SUFFIX,cgbchina.com
-DOMAIN-SUFFIX,gdb.com.cn
+# DOMAIN-SUFFIX,cebbank.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hxb.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hxb.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cgbchina.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cgbchina.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,gdb.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,pingan.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,pingan.com.cn
-DOMAIN-SUFFIX,pab.com.cn
+# DOMAIN-SUFFIX,pingan.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,pab.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,pinganbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,pinganbank.com.cn
-DOMAIN-SUFFIX,czbank.com
-DOMAIN-SUFFIX,czbank.com.cn
-DOMAIN-SUFFIX,cbhb.com.cn
+# DOMAIN-SUFFIX,pinganbank.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,czbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,czbank.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cbhb.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,bankofbeijing.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,bankofbeijing.com
-DOMAIN-SUFFIX,bosc.cn
-DOMAIN-SUFFIX,bosc.com.cn
-DOMAIN-SUFFIX,jsbchina.cn
-DOMAIN-SUFFIX,jsbchina.com
-DOMAIN-SUFFIX,jsbchina.com.cn
-DOMAIN-SUFFIX,nbcb.com.cn
-DOMAIN-SUFFIX,nbcb.cn
-DOMAIN-SUFFIX,njcb.com.cn
-DOMAIN-SUFFIX,njcb.com
-DOMAIN-SUFFIX,njcb.cn
-DOMAIN-SUFFIX,bnu.com.mo
-DOMAIN-SUFFIX,taifungbank.com
-DOMAIN-SUFFIX,luso.com.mo
-DOMAIN-SUFFIX,bot.com.tw
-DOMAIN-SUFFIX,landbank.com.tw
-DOMAIN-SUFFIX,tcb-bank.com.tw
-DOMAIN-SUFFIX,firstbank.com.tw
-DOMAIN-SUFFIX,hncb.com.tw
-DOMAIN-SUFFIX,esunbank.com
-DOMAIN-SUFFIX,esunbank.com.tw
-DOMAIN-SUFFIX,cathaybk.com.tw
-DOMAIN-SUFFIX,fubon.com
-DOMAIN-SUFFIX,taipeifubon.com.tw
-DOMAIN-SUFFIX,sinopac.com
-DOMAIN-SUFFIX,sinopac.com.tw
-DOMAIN-SUFFIX,ctbcbank.com
-DOMAIN-SUFFIX,ctbcbank.com.tw
-DOMAIN-SUFFIX,megabank.com.tw
-DOMAIN-SUFFIX,taishinbank.com.tw
-DOMAIN-SUFFIX,yuantabank.com.tw
-DOMAIN-SUFFIX,scsb.com.tw
-DOMAIN-SUFFIX,kgibank.com.tw
-DOMAIN-SUFFIX,ubot.com.tw
-DOMAIN-SUFFIX,linebank.com.tw
+# DOMAIN-SUFFIX,bankofbeijing.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bosc.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bosc.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,jsbchina.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,jsbchina.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,jsbchina.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,nbcb.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,nbcb.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,njcb.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,njcb.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,njcb.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bnu.com.mo # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,taifungbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,luso.com.mo # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bot.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,landbank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,tcb-bank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,firstbank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,hncb.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,esunbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,esunbank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cathaybk.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,fubon.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,taipeifubon.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,sinopac.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,sinopac.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ctbcbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ctbcbank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,megabank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,taishinbank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,yuantabank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,scsb.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,kgibank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ubot.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,linebank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # China / Hong Kong / Macau / Taiwan payment tools
 # DOMAIN-SUFFIX,cloudquickpass.com # 银联云闪付相关但未在确认清单内，按确认范围注释停用。
-DOMAIN-SUFFIX,octopus.com.hk
-DOMAIN-SUFFIX,octopus.com
-DOMAIN-SUFFIX,octopuscards.com
-DOMAIN-SUFFIX,octopuswallet.com.hk
-DOMAIN-SUFFIX,macaupass.com
-DOMAIN-SUFFIX,mpay.mo
-DOMAIN-SUFFIX,jkopay.com
-DOMAIN-SUFFIX,linepay.com.tw
-DOMAIN-SUFFIX,piapp.com.tw
-DOMAIN-SUFFIX,ecpay.com.tw
-DOMAIN-SUFFIX,allpay.com.tw
+# DOMAIN-SUFFIX,octopus.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,octopus.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,octopuscards.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,octopuswallet.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,macaupass.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mpay.mo # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,jkopay.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,linepay.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,piapp.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ecpay.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,allpay.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Hong Kong virtual banks / digital banks
 # DOMAIN-SUFFIX,za.group # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,bank.za.group # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,www.bank.za.group  # 非官方主入口，不宜作为有效检测目标
-DOMAIN-SUFFIX,airstarbank.com
-DOMAIN-SUFFIX,elebank.com
+# DOMAIN-SUFFIX,airstarbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,elebank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,welab.bank # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,welab.co
-DOMAIN-SUFFIX,livibank.com
+# DOMAIN-SUFFIX,welab.co # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,livibank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,mox.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,paob.com.hk
-DOMAIN-SUFFIX,fusionbank.com
+# DOMAIN-SUFFIX,paob.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,fusionbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,antbank.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,xapobank.com
-DOMAIN-SUFFIX,xapo.com
+# DOMAIN-SUFFIX,xapobank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,xapo.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Mainland China internet banks
-DOMAIN-SUFFIX,webank.com
-DOMAIN-SUFFIX,aibank.com
-DOMAIN-SUFFIX,xwbank.com
-DOMAIN-SUFFIX,suningbank.com
-DOMAIN-SUFFIX,z-bank.com
+# DOMAIN-SUFFIX,webank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,aibank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,xwbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,suningbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,z-bank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Singapore digital banks
 # DOMAIN-SUFFIX,gxs.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,trustbank.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,maribank.sg
-DOMAIN-SUFFIX,anext.com.sg
-DOMAIN-SUFFIX,glbank.com
+# DOMAIN-SUFFIX,maribank.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,anext.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,glbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Malaysia digital banks
-DOMAIN-SUFFIX,gxbank.my
+# DOMAIN-SUFFIX,gxbank.my # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,gxbank.org  # 非主入口或并行入口，不建议作为主域名
-DOMAIN-SUFFIX,aeonbank.com.my
+# DOMAIN-SUFFIX,aeonbank.com.my # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,myboostbank.co  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
 # DOMAIN-SUFFIX,kafdigitalbank.com.my  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
-DOMAIN-SUFFIX,rytbank.my
+# DOMAIN-SUFFIX,rytbank.my # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Philippines digital banks
 # DOMAIN-SUFFIX,maya.ph  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
 # DOMAIN-SUFFIX,mayabank.ph  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
 # DOMAIN-SUFFIX,gotyme.com.ph  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
-DOMAIN-SUFFIX,tonikbank.com
-DOMAIN-SUFFIX,uno.bank
-DOMAIN-SUFFIX,seabank.ph
+# DOMAIN-SUFFIX,tonikbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,uno.bank # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,seabank.ph # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Indonesia digital banks
-DOMAIN-SUFFIX,jenius.com
+# DOMAIN-SUFFIX,jenius.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,jago.com  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
-DOMAIN-SUFFIX,seabank.co.id
+# DOMAIN-SUFFIX,seabank.co.id # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,blubybcadigital.id  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
 
 # South Korea digital banks
-DOMAIN-SUFFIX,kakaobank.com
-DOMAIN-SUFFIX,kbanknow.com
-DOMAIN-SUFFIX,tossbank.com
+# DOMAIN-SUFFIX,kakaobank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,kbanknow.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,tossbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Taiwan digital banks
-DOMAIN-SUFFIX,rakuten-bank.com.tw
-DOMAIN-SUFFIX,nextbank.com.tw
+# DOMAIN-SUFFIX,rakuten-bank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,nextbank.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Japan online banks
-DOMAIN-SUFFIX,rakuten-bank.co.jp
-DOMAIN-SUFFIX,netbk.co.jp
-DOMAIN-SUFFIX,sonybank.net
-DOMAIN-SUFFIX,moneykit.net
-DOMAIN-SUFFIX,sonybank.jp
+# DOMAIN-SUFFIX,rakuten-bank.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,netbk.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,sonybank.net # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,moneykit.net # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,sonybank.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,www.sonybank.net  # 非当前推荐入口，官方服务入口优先 sonybank.net / moneykit.net / sonybank.jp
-DOMAIN-SUFFIX,paypay-bank.co.jp
-DOMAIN-SUFFIX,jibunbank.co.jp
-DOMAIN-SUFFIX,sevenbank.co.jp
+# DOMAIN-SUFFIX,paypay-bank.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,jibunbank.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,sevenbank.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Global neobanks / digital financial services
 # DOMAIN-SUFFIX,n26.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
@@ -536,67 +536,67 @@ DOMAIN-SUFFIX,sevenbank.co.jp
 # DOMAIN-SUFFIX,starlingbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,chime.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,current.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,dave.com
+# DOMAIN-SUFFIX,dave.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,moneylion.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,varomoney.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,sofi.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,ally.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,go2bank.com
-DOMAIN-SUFFIX,greendot.com
+# DOMAIN-SUFFIX,go2bank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,greendot.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,axosbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,lendingclub.com
+# DOMAIN-SUFFIX,lendingclub.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,synchronybank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,jeniusbank.com
-DOMAIN-SUFFIX,one.app
-DOMAIN-SUFFIX,upgrade.com
-DOMAIN-SUFFIX,wealthfront.com
-DOMAIN-SUFFIX,betterment.com
-DOMAIN-SUFFIX,mercury.com
-DOMAIN-SUFFIX,quontic.com
-DOMAIN-SUFFIX,cit.com
-DOMAIN-SUFFIX,citbank.com
-DOMAIN-SUFFIX,openbank.us
-DOMAIN-SUFFIX,marcus.com
-DOMAIN-SUFFIX,novo.co
-DOMAIN-SUFFIX,bluevine.com
-DOMAIN-SUFFIX,brex.com
-DOMAIN-SUFFIX,relayfi.com
-DOMAIN-SUFFIX,northone.com
-DOMAIN-SUFFIX,found.com
-DOMAIN-SUFFIX,lili.co
-DOMAIN-SUFFIX,grasshopper.bank
-DOMAIN-SUFFIX,everbank.com
-DOMAIN-SUFFIX,baskbank.com
-DOMAIN-SUFFIX,ufbdirect.com
-DOMAIN-SUFFIX,laurelroad.com
+# DOMAIN-SUFFIX,jeniusbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,one.app # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,upgrade.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,wealthfront.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,betterment.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mercury.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,quontic.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cit.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,citbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,openbank.us # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,marcus.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,novo.co # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bluevine.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,brex.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,relayfi.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,northone.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,found.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,lili.co # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,grasshopper.bank # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,everbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,baskbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,ufbdirect.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,laurelroad.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # UK neobanks / fintech banks
-DOMAIN-SUFFIX,chase.co.uk
-DOMAIN-SUFFIX,bunq.com
-DOMAIN-SUFFIX,atombank.co.uk
-DOMAIN-SUFFIX,tandem.co.uk
-DOMAIN-SUFFIX,zopa.com
-DOMAIN-SUFFIX,kroo.com
-DOMAIN-SUFFIX,cashplus.com
-DOMAIN-SUFFIX,cashplusbank.com
-DOMAIN-SUFFIX,monese.com
-DOMAIN-SUFFIX,mettle.co.uk
-DOMAIN-SUFFIX,allica.bank
-DOMAIN-SUFFIX,clear.bank
-DOMAIN-SUFFIX,clearbank.co.uk
-DOMAIN-SUFFIX,monument.co
-DOMAIN-SUFFIX,oaknorth.co.uk
-DOMAIN-SUFFIX,oaknorth.com
-DOMAIN-SUFFIX,firstdirect.com
-DOMAIN-SUFFIX,tide.co
-DOMAIN-SUFFIX,anna.money
-DOMAIN-SUFFIX,countingup.com
-DOMAIN-SUFFIX,getchip.uk
-DOMAIN-SUFFIX,paragonbank.co.uk
-DOMAIN-SUFFIX,aldermore.co.uk
-DOMAIN-SUFFIX,shawbrook.co.uk
-DOMAIN-SUFFIX,chartersavingsbank.co.uk
-DOMAIN-SUFFIX,lunar.app
+# DOMAIN-SUFFIX,chase.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bunq.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,atombank.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,tandem.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,zopa.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,kroo.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cashplus.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cashplusbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,monese.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mettle.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,allica.bank # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,clear.bank # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,clearbank.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,monument.co # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,oaknorth.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,oaknorth.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,firstdirect.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,tide.co # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,anna.money # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,countingup.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,getchip.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,paragonbank.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,aldermore.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,shawbrook.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,chartersavingsbank.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,lunar.app # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Canada neobanks
 # DOMAIN-SUFFIX,eqbank.ca # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
@@ -608,9 +608,9 @@ DOMAIN-SUFFIX,lunar.app
 # DOMAIN-SUFFIX,nu.com.co  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
 # DOMAIN-SUFFIX,inter.co  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
 # DOMAIN-SUFFIX,bancointer.com.br  # 暂停：纯新兴市场本土金融域名，减少直连规则数量
-DOMAIN-SUFFIX,c6bank.com.br
-DOMAIN-SUFFIX,neon.com.br
-DOMAIN-SUFFIX,uala.com.ar
+# DOMAIN-SUFFIX,c6bank.com.br # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,neon.com.br # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,uala.com.ar # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Middle East / Africa neobanks
 # DOMAIN-SUFFIX,wio.io # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
@@ -620,78 +620,78 @@ DOMAIN-SUFFIX,uala.com.ar
 # DOMAIN-SUFFIX,kuda.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Major US banks and card issuers
-DOMAIN-SUFFIX,capitalone.com
-DOMAIN-SUFFIX,capitalonebank.com
-DOMAIN-SUFFIX,usbank.com
-DOMAIN-SUFFIX,pnc.com
-DOMAIN-SUFFIX,pncbank.com
-DOMAIN-SUFFIX,pncwealthmanagement.com
-DOMAIN-SUFFIX,truist.com
-DOMAIN-SUFFIX,truistbank.com
-DOMAIN-SUFFIX,bbt.com
-DOMAIN-SUFFIX,suntrust.com
+# DOMAIN-SUFFIX,capitalone.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,capitalonebank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,usbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,pnc.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,pncbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,pncwealthmanagement.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,truist.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,truistbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,bbt.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,suntrust.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # American Express / Amex / 美国运通
 # 2026-05-12：按用户给定清单补齐；非一字不差的既有规则保留。
 # DOMAIN-SUFFIX,americanexpress.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,americanexpress.com.ar
+# DOMAIN-SUFFIX,americanexpress.com.ar # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,americanexpress.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,americanexpress.at
-DOMAIN-SUFFIX,americanexpress.com.br
-DOMAIN-SUFFIX,americanexpress.ca
+# DOMAIN-SUFFIX,americanexpress.at # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.com.br # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.ca # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,americanexpress.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,americanexpress.fi
-DOMAIN-SUFFIX,americanexpress.fr
-DOMAIN-SUFFIX,americanexpress.de
+# DOMAIN-SUFFIX,americanexpress.fi # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.fr # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.de # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,americanexpress.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,americanexpress.co.in
-DOMAIN-SUFFIX,americanexpress.it
+# DOMAIN-SUFFIX,americanexpress.co.in # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.it # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,americanexpress.co.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,americanexpress.jp
-DOMAIN-SUFFIX,americanexpress.com.mx
-DOMAIN-SUFFIX,americanexpress.nl
-DOMAIN-SUFFIX,americanexpress.co.nz
-DOMAIN-SUFFIX,americanexpress.com.pr
+# DOMAIN-SUFFIX,americanexpress.jp # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.com.mx # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.nl # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.co.nz # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.com.pr # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,americanexpress.com.sg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,americanexpress.es
-DOMAIN-SUFFIX,americanexpress.se
-DOMAIN-SUFFIX,americanexpress.com.tw
-DOMAIN-SUFFIX,americanexpress.co.th
-DOMAIN-SUFFIX,americanexpress.co.uk
-DOMAIN-SUFFIX,americanexpress.ae
-DOMAIN-SUFFIX,americanexpress.com.bh
-DOMAIN-SUFFIX,americanexpress.com.eg
-DOMAIN-SUFFIX,americanexpress.com.jo
-DOMAIN-SUFFIX,americanexpress.com.kw
-DOMAIN-SUFFIX,americanexpress.com.lb
-DOMAIN-SUFFIX,americanexpress.com.om
-DOMAIN-SUFFIX,americanexpress.com.qa
-DOMAIN-SUFFIX,aexp.com
-DOMAIN-SUFFIX,aexp-static.com
-DOMAIN-SUFFIX,amex.com
-DOMAIN-SUFFIX,amex.com.au
-DOMAIN-SUFFIX,amexgiftcard.com
-DOMAIN-SUFFIX,amextravel.com
-DOMAIN-SUFFIX,membershiprewards.com
+# DOMAIN-SUFFIX,americanexpress.es # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.se # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.com.tw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.co.th # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.co.uk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.ae # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.com.bh # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.com.eg # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.com.jo # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.com.kw # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.com.lb # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.com.om # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,americanexpress.com.qa # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,aexp.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,aexp-static.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,amex.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,amex.com.au # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,amexgiftcard.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,amextravel.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,membershiprewards.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,discover.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,discovercard.com
-DOMAIN-SUFFIX,discoverbank.com
+# DOMAIN-SUFFIX,discovercard.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,discoverbank.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Payment networks and processors
 # DOMAIN-SUFFIX,visa.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,visa.com.cn
-DOMAIN-SUFFIX,visa.com.hk
-DOMAIN-SUFFIX,visaeurope.com
-DOMAIN-SUFFIX,visaonline.com
-DOMAIN-SUFFIX,visaacceptance.com
-DOMAIN-SUFFIX,cybersource.com
-DOMAIN-SUFFIX,authorizenet.com
+# DOMAIN-SUFFIX,visa.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,visa.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,visaeurope.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,visaonline.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,visaacceptance.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,cybersource.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,authorizenet.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,mastercard.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,mastercard.com.cn
-DOMAIN-SUFFIX,mastercard.com.hk
-DOMAIN-SUFFIX,mastercardservices.com
-DOMAIN-SUFFIX,mastercardconnect.com
-DOMAIN-SUFFIX,mastercard.us
+# DOMAIN-SUFFIX,mastercard.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mastercard.com.hk # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mastercardservices.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mastercardconnect.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
+# DOMAIN-SUFFIX,mastercard.us # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,discovernetwork.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
 # Card authentication / 3DS / payment risk dependencies
@@ -704,7 +704,7 @@ DOMAIN-SUFFIX,mastercard.us
 # DOMAIN-SUFFIX,braintreegateway.com
 # DOMAIN-SUFFIX,braintree-api.com
 # DOMAIN-SUFFIX,forter.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,checkouttools.com
+# DOMAIN-SUFFIX,checkouttools.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,riskified.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,signifyd.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
@@ -718,7 +718,7 @@ DOMAIN-SUFFIX,checkouttools.com
 # DOMAIN-SUFFIX,kaxsdc.com
 
 # DOMAIN-SUFFIX,stripe.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,stripe.network
+# DOMAIN-SUFFIX,stripe.network # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,stripe.global # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,link.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,adyen.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
@@ -726,9 +726,9 @@ DOMAIN-SUFFIX,stripe.network
 # DOMAIN-SUFFIX,adyen.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,checkout.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,checkoutcdn.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,cko-payments.com
+# DOMAIN-SUFFIX,cko-payments.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,worldpay.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
-DOMAIN-SUFFIX,worldpayglobal.com
+# DOMAIN-SUFFIX,worldpayglobal.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,worldpay.us # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,squareup.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,square.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
