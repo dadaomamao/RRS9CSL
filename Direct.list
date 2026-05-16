@@ -802,3 +802,13 @@ DOMAIN-SUFFIX,time.windows.com  # 不宜作为普通网站连通性检测目标
 # DOMAIN-SUFFIX,tigerbrokers.com.hk
 # DOMAIN-SUFFIX,upfintech.com
 # DOMAIN-SUFFIX,snowballsecurities.com
+# China Telecom / 中国电信
+DOMAIN-SUFFIX,189.cn
+DOMAIN-SUFFIX,chinatelecom.com.cn
+DOMAIN-SUFFIX,e.dlife.cn
+# China Unicom / 中国联通
+DOMAIN-SUFFIX,10010.com
+DOMAIN-SUFFIX,10010.cn
+DOMAIN-SUFFIX,chinaunicom.com.cn
+DOMAIN-SUFFIX,chinaunicom.cn
+
