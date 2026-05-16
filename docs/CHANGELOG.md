@@ -2,6 +2,17 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-05-16
+
+### Direct and finance / AI route safety review
+
+- 在 `Direct.list` 增补中国电信和中国联通直连规则：`189.cn`、`chinatelecom.com.cn`、`e.dlife.cn`、`10010.com`、`10010.cn`、`chinaunicom.com.cn`、`chinaunicom.cn`。
+- 拉取云端最新 `Direct.list`、`FinanceRealDNSDirect.list` 和 `AI.list` 做程序化核验：`Direct.list` 生效规则 8 条，`FinanceRealDNSDirect.list` 生效规则 623 条，`AI.list` 生效规则 283 条；三者规则语法坏行均为 0。
+- 对金融真实 DNS 直连规则与 AI 规则做严格交叉审查：`Direct.list` / `FinanceRealDNSDirect.list` 与 `AI.list` 没有生效精确重复、同域名重复或后缀覆盖冲突。
+- 在 `AI.list` 的 `DOMAIN-KEYWORD,sora` 后补充单条行尾注释，记录 `FinanceRealDNSDirect.list` 中 `boursorama.com` 会被字符串 `sora` 命中的假阳性风险；本次只增加说明，不改变该关键词规则的生效状态。
+- 仅限信息安全方向完成防御性红蓝审查：审查对象限于本仓库文本、配置、diff、维护流程和公开规则语义；重点检查提示词注入、skill 投毒、权限扩大、凭据泄露、持久化、联网执行、依赖安装、攻击性测试措辞和第三方系统探测风险。
+- 审查结论：通过。未发现本次 diff 要求或诱导漏洞扫描、端口扫描、目录枚举、爆破、payload、绕过、凭据尝试、读取敏感信息、修改主机环境或测试第三方系统。
+
 ## 2026-05-15
 
 ### Financial direct rule consolidation and red-blue audit
