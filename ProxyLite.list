@@ -279,3 +279,13 @@ DOMAIN-SUFFIX,base.blockscout.com
 DOMAIN-SUFFIX,freedom.gov
 DOMAIN-SUFFIX,aitodo.co
 DOMAIN-SUFFIX,t66y.com
+
+# t66y 论坛媒体、附件和外部图床补充
+DOMAIN-SUFFIX,ci.t66y.com # t66y 已确认媒体/附件子域；显式保留，便于排查图片加载。
+# DOMAIN-SUFFIX,cloudflare.com # 已由 AI.list 的 active 规则覆盖；按跨列表重复规则，不在 ProxyLite.list 重复启用。
+# DOMAIN-SUFFIX,cloudflare.net # 已由 AI.list 的 active 规则覆盖；按跨列表重复规则，不在 ProxyLite.list 重复启用。
+DOMAIN-SUFFIX,cloudflareaccess.com # Cloudflare Access 相关入口；论坛外链资源遇到 Cloudflare 访问链路时补充代理。
+DOMAIN-SUFFIX,cf-ipfs.com # Cloudflare IPFS 网关；论坛外链图片和附件可能使用。
+DOMAIN-SUFFIX,imgur.com # 常见外部图床；论坛用户贴图可能使用。
+DOMAIN-SUFFIX,postimg.cc # 常见外部图床；论坛用户贴图可能使用。
+DOMAIN-SUFFIX,catbox.moe # 常见外部文件/图片托管；论坛用户附件可能使用。
