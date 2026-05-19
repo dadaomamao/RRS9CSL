@@ -289,3 +289,6 @@ DOMAIN-SUFFIX,cf-ipfs.com # Cloudflare IPFS 网关；论坛外链图片和附件
 DOMAIN-SUFFIX,imgur.com # 常见外部图床；论坛用户贴图可能使用。
 DOMAIN-SUFFIX,postimg.cc # 常见外部图床；论坛用户贴图可能使用。
 DOMAIN-SUFFIX,catbox.moe # 常见外部文件/图片托管；论坛用户附件可能使用。
+
+# JavLibrary 核心域名
+DOMAIN-SUFFIX,javlibrary.com # JavLibrary 核心域名；Cloudflare 与通用图床依赖已由现有 AI.list / ProxyLite.list 规则覆盖。
