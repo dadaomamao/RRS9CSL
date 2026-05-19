@@ -84,7 +84,8 @@ DOMAIN-SUFFIX,time.windows.com  # 不宜作为普通网站连通性检测目标
 # DOMAIN-SUFFIX,bankcomm.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,95559.com.cn # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 
-#银联与中国银联商务相关域名DOMAIN-SUFFIX,unionpay.com
+#银联与中国银联商务相关域名
+#DOMAIN-SUFFIX,unionpay.com
 # DOMAIN-SUFFIX,chinaunionpay.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,unionpayintl.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
 # DOMAIN-SUFFIX,unionpaysecure.com # 已迁移至 FinanceRealDNSDirect.list；Direct.list 注释保留原文作为历史线索。
