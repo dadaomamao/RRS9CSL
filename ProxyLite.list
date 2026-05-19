@@ -7,6 +7,9 @@
 # - 结论不确定时停止并询问用户，不继续测试或改规则。
 # - 可用性结论不确定的规则保持注释，等待进一步人工复核。
 
+# 域名关键字匹配
+# DOMAIN-KEYWORD,1e100 # 用途无法确认，暂不启用。
+
 # 明确小雅专门域名/小雅元数据镜像
 # DOMAIN-SUFFIX,emby-data.800686.xyz
 # DOMAIN-SUFFIX,emby-data.xn--yetq23gxma.org
@@ -274,5 +277,4 @@ DOMAIN-SUFFIX,cdn.iobit.com
 DOMAIN-SUFFIX,mainnet.base.org
 DOMAIN-SUFFIX,base.blockscout.com
 DOMAIN-SUFFIX,freedom.gov
-# 域名关键字匹配
-# DOMAIN-KEYWORD,1e100 # 用途无法确认，暂不启用。
+DOMAIN-SUFFIX,aitodo.co
