@@ -2,6 +2,29 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-05-19
+
+### ProxyLite forum, media, and custom proxy maintenance
+
+- 在 `ProxyLite.list` 增补 `aitodo.co`，并将未启用的 `DOMAIN-KEYWORD,1e100` 注释候选移到文件前部的域名关键字匹配区，保持该关键词仍不生效。
+- 新增 t66y 论坛专用代理规则：`t66y.com` 与已确认媒体/附件子域 `ci.t66y.com`。
+- 为 t66y 论坛用户常见外链媒体补充 `cloudflareaccess.com`、`cf-ipfs.com`、`imgur.com`、`postimg.cc`、`catbox.moe`；`cloudflare.com` 和 `cloudflare.net` 因已由 `AI.list` 生效规则覆盖，仅在本块注释保留，不重复启用。
+- 新增 JavLibrary 核心域名 `javlibrary.com`；Cloudflare 和通用图床依赖沿用现有 `AI.list` / `ProxyLite.list` 覆盖，不重复增加。
+- 将 t66y 与 JavLibrary 相关块移动到常规自定义域名补充列表前，便于人工审阅；该移动不改变这些规则的生效内容。
+
+### Direct and AI route maintenance
+
+- 在 `Direct.list` 增补 115 网盘相关直连规则，覆盖 `115.com`、`115cdn.com`、`115cdn.net`、`115cloud.cn`、`115cloud.com`、`115cloud.net`、`115img.com`、`115meta.com`、`115vod.com`、`116cd.cn`、`116cd.com`、`116cd.net`、`anxia.com`、`sq.cc`、`fhnfile.oss-cn-shenzhen.aliyuncs.com`、`fhnfile.cn-shenzhen.oss.aliyuncs.com`。
+- 修正 `Direct.list` 中银联分组的注释格式，把误连在标题后的 `DOMAIN-SUFFIX,unionpay.com` 拆成独立注释规则；本次不重新启用该规则。
+- 在 `AI.list` 中将 `DOMAIN-KEYWORD,sora` 改为注释保留，继续保留 `boursorama.com` 可能被 `sora` 字符串误命中的说明。
+- 在 `AI.list` 增补 `dynamedex.com`，记录其循证医学和医学大模型相关用途。
+
+### FinanceRealDNSDirect audit note and comment cleanup
+
+- 在 `FinanceRealDNSDirect.list` 的招商银行 / 招商永隆 / 招银国际规则块上方短暂加入单人纯人工审计状态说明，随后按同日多次人工确认删除该类复核提示。
+- 对 `FinanceRealDNSDirect.list` 做注释冗余清理，删除 `Codex`、后置审查、后置复核、需复核、需审查等维护过程提示，并压缩重复的来源和真实 DNS / DIRECT 尾注。
+- 本次 `FinanceRealDNSDirect.list` 清理只修改注释，不改变任何正式规则；复核结果为生效规则 623 条、语法错误 0、生效规则 hash `1e5b7185fea59588e7b29be0ddfbd87a9bb18ae568d933e7511c34a33f7ddfa2`。
+
 ## 2026-05-16
 
 ### Direct and finance / AI route safety review
