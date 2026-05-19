@@ -5,726 +5,724 @@
 #  2) rules: - RULE-SET,finance_realdns_direct,DIRECT
 # 生成原则：高置信首版；以用户上传 Direct.list / crypto.list 为仓库锚点，结合官方公开资料重建。
 # 硬排除：用户指定硬排除银行系、高风险 AI 交叉对象、未解决 AI/银行风控交叉、纯独立非银行券商。
-# 说明：部分高风险金融对象按本轮置顶规则先纳入，并标记“需 Codex 后置审查”。
 
 # Binance
-DOMAIN-SUFFIX,binance.com # 币安主域；crypto.list Binance-only 边界；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,binance.com # 币安主域；crypto.list Binance-only 边界。
 
 # 支付宝 / 蚂蚁集团 / 网商银行
-DOMAIN-SUFFIX,alipay.com # 支付宝主域；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,alipay.com.cn # 支付宝中国域；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,alipay.hk # 支付宝香港；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,alipayhk.com # 支付宝香港站点；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,alipayplus.com # Alipay+；跨境支付入口；官方公开资料可见；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,alipayobjects.com # 支付宝服务资源域；支付页兼容；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,alipayusercontent.com # 支付宝用户资源域；支付页兼容；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,antfin.com # 蚂蚁金服历史品牌域；金融集团入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,antgroup.com # 蚂蚁集团主域；金融集团入口；官方公开资料可见；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,mybank.cn # 网商银行；互联网银行入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
+DOMAIN-SUFFIX,alipay.com # 支付宝主域；支付入口。
+DOMAIN-SUFFIX,alipay.com.cn # 支付宝中国域；支付入口。
+DOMAIN-SUFFIX,alipay.hk # 支付宝香港；支付入口。
+DOMAIN-SUFFIX,alipayhk.com # 支付宝香港站点；支付入口。
+DOMAIN-SUFFIX,alipayplus.com # Alipay+；跨境支付入口。
+DOMAIN-SUFFIX,alipayobjects.com # 支付宝服务资源域；支付页兼容。
+DOMAIN-SUFFIX,alipayusercontent.com # 支付宝用户资源域；支付页兼容。
+DOMAIN-SUFFIX,antfin.com # 蚂蚁金服历史品牌域；金融集团入口。
+DOMAIN-SUFFIX,antgroup.com # 蚂蚁集团主域；金融集团入口。
+DOMAIN-SUFFIX,mybank.cn # 网商银行；互联网银行入口。
 
 # 微信支付 / 财付通
-DOMAIN-SUFFIX,tenpay.com # 财付通主域；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,wechatpay.cn # 微信支付中国域；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,wechatpay.com # 微信支付国际域；支付入口；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,pay.weixin.qq.com # Direct.list「微信支付 / 财付通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mch.weixin.qq.com # Direct.list「微信支付 / 财付通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,api.mch.weixin.qq.com # Direct.list「微信支付 / 财付通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,api2.mch.weixin.qq.com # Direct.list「微信支付 / 财付通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,wx.tenpay.com # Direct.list「微信支付 / 财付通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,tenpay.com # 财付通主域；支付入口。
+DOMAIN-SUFFIX,wechatpay.cn # 微信支付中国域；支付入口。
+DOMAIN-SUFFIX,wechatpay.com # 微信支付国际域；支付入口。
+DOMAIN-SUFFIX,pay.weixin.qq.com # Direct.list「微信支付 / 财付通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mch.weixin.qq.com # Direct.list「微信支付 / 财付通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,api.mch.weixin.qq.com # Direct.list「微信支付 / 财付通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,api2.mch.weixin.qq.com # Direct.list「微信支付 / 财付通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,wx.tenpay.com # Direct.list「微信支付 / 财付通」；从 Direct.list 宽口径迁入。
 
 # 中国银行集团
-DOMAIN-SUFFIX,bankofchina.com # 中国银行全球主域；银行入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,boc.cn # 中国银行中国域；银行入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,bocomgroup.com # 交银国际；银行集团投资/证券平台；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,bochk.com # 中银香港；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,bank-of-china.com # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bochk.com.hk # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bocgroup.com # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bocmacau.com # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bocusa.com # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,boctokyo.co.jp # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bankofchina.co.id # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bankofchina.com.kh # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bankofchina.com.vn # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bankofchina.com.la # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bankofchina.com.my # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bankofchina.co.th # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bankofchina.com.th # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,bankofchina.com # 中国银行全球主域；银行入口。
+DOMAIN-SUFFIX,boc.cn # 中国银行中国域；银行入口。
+DOMAIN-SUFFIX,bocomgroup.com # 交银国际；银行集团投资/证券平台。
+DOMAIN-SUFFIX,bochk.com # 中银香港；银行入口。
+DOMAIN-SUFFIX,bank-of-china.com # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bochk.com.hk # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bocgroup.com # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bocmacau.com # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bocusa.com # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,boctokyo.co.jp # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bankofchina.co.id # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bankofchina.com.kh # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bankofchina.com.vn # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bankofchina.com.la # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bankofchina.com.my # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bankofchina.co.th # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bankofchina.com.th # Direct.list「中国银行集团」；从 Direct.list 宽口径迁入。
 
 # 中国工商银行集团
-DOMAIN-SUFFIX,icbc.com.cn # 工商银行主域；银行入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,95588.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc-ltd.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbcasia.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.com.hk # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.com.mo # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.com.sg # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.com.au # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.co.id # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.com.kh # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbcmanila.com.cn # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbcthai.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.co.kr # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.com.kw # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.com.mm # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.de # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc-at.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbclondon.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc-uk.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.com.tr # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc-cz.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbcswiss.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.com.mx # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc-us.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbkus.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.com.ar # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,icbc.com.pe # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,icbc.com.cn # 工商银行主域；银行入口。
+DOMAIN-SUFFIX,95588.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc-ltd.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbcasia.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.com.hk # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.com.mo # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.com.sg # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.com.au # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.co.id # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.com.kh # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbcmanila.com.cn # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbcthai.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.co.kr # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.com.kw # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.com.mm # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.de # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc-at.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbclondon.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc-uk.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.com.tr # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc-cz.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbcswiss.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.com.mx # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc-us.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbkus.com # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.com.ar # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,icbc.com.pe # Direct.list「中国工商银行集团」；从 Direct.list 宽口径迁入。
 
 # 交通银行集团
-DOMAIN-SUFFIX,bankcomm.cn # 交通银行主域；银行入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,bankcomm.com.hk # 交通银行香港；银行入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,bankcomm.com # Direct.list「交通银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,95559.com.cn # Direct.list「交通银行集团」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,lloydsbankcommercial.com # Direct.list「Lloyds Bank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,bankcomm.cn # 交通银行主域；银行入口。
+DOMAIN-SUFFIX,bankcomm.com.hk # 交通银行香港；银行入口。
+DOMAIN-SUFFIX,bankcomm.com # Direct.list「交通银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,95559.com.cn # Direct.list「交通银行集团」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,lloydsbankcommercial.com # Direct.list「Lloyds Bank」；从 Direct.list 宽口径迁入。
 
 # 银联 / 中国银联商务
-DOMAIN-SUFFIX,unionpay.com # 中国银联主域；卡组织；Direct.list 锚点；真实 DNS 兼容与 DIRECT。
-DOMAIN-SUFFIX,unionpayintl.com # 银联国际；跨境支付与 3DS 相关；官方公开资料可见。
-DOMAIN-SUFFIX,chinaunionpay.com # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,unionpaysecure.com # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,95516.com # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,chinaums.com # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,chinaumswh.com # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,umspay.cn # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mpos.quanminfu.com # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,m.95534.biz # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,unionpay.com # 中国银联主域；卡组织。
+DOMAIN-SUFFIX,unionpayintl.com # 银联国际；跨境支付与 3DS 相关。
+DOMAIN-SUFFIX,chinaunionpay.com # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,unionpaysecure.com # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,95516.com # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,chinaums.com # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,chinaumswh.com # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,umspay.cn # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mpos.quanminfu.com # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,m.95534.biz # Direct.list「银联与中国银联商务相关域名」；从 Direct.list 宽口径迁入。
 
 # 招商银行 / 招商永隆 / 招银国际
-# 此规则加入时已经经过单人纯人工审计；后续请第二、第三人复核。
-DOMAIN-SUFFIX,cmbchina.com # 招商银行主域；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,cmbchina.com.cn # 招商银行中国域；Direct.list 锚点；www.cmbchina.com.cn 多种方法无法正常访问，待进一步核查；需 Codex 后置审查。
-DOMAIN-SUFFIX,cmbchina.com.hk # 招商银行香港域；Direct.list 锚点；www.cmbchina.com.hk 多种方法无法正常访问，待进一步核查；需 Codex 后置审查。
-DOMAIN-SUFFIX,cmbwinglungbank.com # 招商永隆银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,cmbwinglungbank.com.hk # 招商永隆香港；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,cmbwinglungbank.com.cn # 招商永隆中国；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,winglungbank.com # 招商永隆银行旧品牌域；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,wlb.com.hk # 招商永隆银行短域；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,cmbi.com.hk # 招银国际；招商系金融入口；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,cmbchina.com # 招商银行主域；银行入口。
+DOMAIN-SUFFIX,cmbchina.com.cn # 招商银行中国域；www.cmbchina.com.cn 多种方法无法正常访问，待进一步核查。
+DOMAIN-SUFFIX,cmbchina.com.hk # 招商银行香港域；www.cmbchina.com.hk 多种方法无法正常访问，待进一步核查。
+DOMAIN-SUFFIX,cmbwinglungbank.com # 招商永隆银行；银行入口。
+DOMAIN-SUFFIX,cmbwinglungbank.com.hk # 招商永隆香港；银行入口。
+DOMAIN-SUFFIX,cmbwinglungbank.com.cn # 招商永隆中国；银行入口。
+DOMAIN-SUFFIX,winglungbank.com # 招商永隆银行旧品牌域。
+DOMAIN-SUFFIX,wlb.com.hk # 招商永隆银行短域。
+DOMAIN-SUFFIX,cmbi.com.hk # 招银国际；招商系金融入口。
 
 # Mainland China / Hong Kong / Macau / Taiwan banks
-DOMAIN-SUFFIX,abchina.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,abchina.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,95599.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,psbc.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,psbc.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,95580.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hkbea.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bankofeastasia.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bea.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cmbc.com.hk # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cncb.com.hk # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cebbank.com.hk # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hxb.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hxb.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cgbchina.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cgbchina.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,pingan.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,pab.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,pinganbank.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,czbank.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,czbank.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cbhb.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bankofbeijing.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bosc.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bosc.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,jsbchina.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,jsbchina.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,jsbchina.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,nbcb.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,nbcb.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,njcb.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,njcb.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,njcb.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bnu.com.mo # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,taifungbank.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,luso.com.mo # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bot.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,landbank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,tcb-bank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,firstbank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hncb.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,esunbank.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,esunbank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cathaybk.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,fubon.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,taipeifubon.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,sinopac.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,sinopac.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ctbcbank.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ctbcbank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,megabank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,taishinbank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,yuantabank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,scsb.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,kgibank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ubot.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,linebank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,abchina.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,abchina.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,95599.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,psbc.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,psbc.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,95580.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hkbea.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bankofeastasia.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bea.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cmbc.com.hk # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cncb.com.hk # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cebbank.com.hk # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hxb.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hxb.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cgbchina.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cgbchina.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,pingan.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,pab.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,pinganbank.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,czbank.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,czbank.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cbhb.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bankofbeijing.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bosc.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bosc.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,jsbchina.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,jsbchina.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,jsbchina.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,nbcb.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,nbcb.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,njcb.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,njcb.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,njcb.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bnu.com.mo # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,taifungbank.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,luso.com.mo # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bot.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,landbank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,tcb-bank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,firstbank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hncb.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,esunbank.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,esunbank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cathaybk.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,fubon.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,taipeifubon.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,sinopac.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,sinopac.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ctbcbank.com # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ctbcbank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,megabank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,taishinbank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,yuantabank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,scsb.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,kgibank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ubot.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,linebank.com.tw # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
 
 # China / Hong Kong / Macau / Taiwan payment tools
-DOMAIN-SUFFIX,octopus.com.hk # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,octopus.com # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,octopuscards.com # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,octopuswallet.com.hk # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,macaupass.com # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mpay.mo # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,jkopay.com # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,linepay.com.tw # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,piapp.com.tw # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ecpay.com.tw # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,allpay.com.tw # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,octopus.com.hk # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,octopus.com # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,octopuscards.com # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,octopuswallet.com.hk # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,macaupass.com # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mpay.mo # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,jkopay.com # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,linepay.com.tw # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,piapp.com.tw # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ecpay.com.tw # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,allpay.com.tw # Direct.list「China / Hong Kong / Macau / Taiwan payment tools」；从 Direct.list 宽口径迁入。
 
 # Hong Kong virtual banks / digital banks
-DOMAIN-SUFFIX,antbank.hk # 蚂蚁银行香港；持牌数字银行；官方公开资料可见。
-DOMAIN-SUFFIX,mox.com # Mox；渣打系数字银行；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,welab.bank # WeLab Bank；持牌数字银行；官方公开资料可见。
-DOMAIN-SUFFIX,za.group # ZA 集团金融入口；官方公开资料可见。
-DOMAIN-SUFFIX,bank.za.group # ZA Bank；持牌数字银行；官方公开资料可见。
-DOMAIN-SUFFIX,airstarbank.com # Direct.list「Hong Kong virtual banks / digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,elebank.com # Direct.list「Hong Kong virtual banks / digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,welab.co # Direct.list「Hong Kong virtual banks / digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,livibank.com # Direct.list「Hong Kong virtual banks / digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,paob.com.hk # Direct.list「Hong Kong virtual banks / digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,fusionbank.com # Direct.list「Hong Kong virtual banks / digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,antbank.hk # 蚂蚁银行香港；持牌数字银行。
+DOMAIN-SUFFIX,mox.com # Mox；渣打系数字银行。
+DOMAIN-SUFFIX,welab.bank # WeLab Bank；持牌数字银行。
+DOMAIN-SUFFIX,za.group # ZA 集团金融入口。
+DOMAIN-SUFFIX,bank.za.group # ZA Bank；持牌数字银行。
+DOMAIN-SUFFIX,airstarbank.com # Direct.list「Hong Kong virtual banks / digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,elebank.com # Direct.list「Hong Kong virtual banks / digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,welab.co # Direct.list「Hong Kong virtual banks / digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,livibank.com # Direct.list「Hong Kong virtual banks / digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,paob.com.hk # Direct.list「Hong Kong virtual banks / digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,fusionbank.com # Direct.list「Hong Kong virtual banks / digital banks」；从 Direct.list 宽口径迁入。
 
 # Xapo / 直布罗陀虚拟币数字银行
-DOMAIN-SUFFIX,xapobank.com # 用户明确要求合并；直布罗陀虚拟币数字银行；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,xapo.com # 用户明确要求合并；直布罗陀虚拟币数字银行；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,xapobank.com # 用户明确要求合并；直布罗陀虚拟币数字银行。
+DOMAIN-SUFFIX,xapo.com # 用户明确要求合并；直布罗陀虚拟币数字银行。
 
 # Mainland China internet banks
-DOMAIN-SUFFIX,webank.com # Direct.list「Mainland China internet banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,aibank.com # Direct.list「Mainland China internet banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,xwbank.com # Direct.list「Mainland China internet banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,suningbank.com # Direct.list「Mainland China internet banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,z-bank.com # Direct.list「Mainland China internet banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,webank.com # Direct.list「Mainland China internet banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,aibank.com # Direct.list「Mainland China internet banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,xwbank.com # Direct.list「Mainland China internet banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,suningbank.com # Direct.list「Mainland China internet banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,z-bank.com # Direct.list「Mainland China internet banks」；从 Direct.list 宽口径迁入。
 
 # Singapore digital banks
-DOMAIN-SUFFIX,maribank.sg # Direct.list「Singapore digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,anext.com.sg # Direct.list「Singapore digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,glbank.com # Direct.list「Singapore digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,maribank.sg # Direct.list「Singapore digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,anext.com.sg # Direct.list「Singapore digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,glbank.com # Direct.list「Singapore digital banks」；从 Direct.list 宽口径迁入。
 
 # Malaysia digital banks
-DOMAIN-SUFFIX,gxbank.my # Direct.list「Malaysia digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,aeonbank.com.my # Direct.list「Malaysia digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,rytbank.my # Direct.list「Malaysia digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,gxbank.my # Direct.list「Malaysia digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,aeonbank.com.my # Direct.list「Malaysia digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,rytbank.my # Direct.list「Malaysia digital banks」；从 Direct.list 宽口径迁入。
 
 # Philippines digital banks
-DOMAIN-SUFFIX,tonikbank.com # Direct.list「Philippines digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,uno.bank # Direct.list「Philippines digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,seabank.ph # Direct.list「Philippines digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,tonikbank.com # Direct.list「Philippines digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,uno.bank # Direct.list「Philippines digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,seabank.ph # Direct.list「Philippines digital banks」；从 Direct.list 宽口径迁入。
 
 # Indonesia digital banks
-DOMAIN-SUFFIX,jenius.com # Direct.list「Indonesia digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,seabank.co.id # Direct.list「Indonesia digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,jenius.com # Direct.list「Indonesia digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,seabank.co.id # Direct.list「Indonesia digital banks」；从 Direct.list 宽口径迁入。
 
 # South Korea digital banks
-DOMAIN-SUFFIX,kakaobank.com # Direct.list「South Korea digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,kbanknow.com # Direct.list「South Korea digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,tossbank.com # Direct.list「South Korea digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,kakaobank.com # Direct.list「South Korea digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,kbanknow.com # Direct.list「South Korea digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,tossbank.com # Direct.list「South Korea digital banks」；从 Direct.list 宽口径迁入。
 
 # Taiwan digital banks
-DOMAIN-SUFFIX,rakuten-bank.com.tw # Direct.list「Taiwan digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,nextbank.com.tw # Direct.list「Taiwan digital banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,rakuten-bank.com.tw # Direct.list「Taiwan digital banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,nextbank.com.tw # Direct.list「Taiwan digital banks」；从 Direct.list 宽口径迁入。
 
 # Japan online banks
-DOMAIN-SUFFIX,rakuten-bank.co.jp # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,netbk.co.jp # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,sonybank.net # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,moneykit.net # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,sonybank.jp # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,paypay-bank.co.jp # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,jibunbank.co.jp # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,sevenbank.co.jp # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,rakuten-bank.co.jp # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,netbk.co.jp # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,sonybank.net # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,moneykit.net # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,sonybank.jp # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,paypay-bank.co.jp # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,jibunbank.co.jp # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,sevenbank.co.jp # Direct.list「Japan online banks」；从 Direct.list 宽口径迁入。
 
 # HSBC / Hang Seng / 汇丰 / 恒生
-DOMAIN-SUFFIX,hsbc.com # 汇丰集团主域；银行入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,hsbc.co.uk # 汇丰英国；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,hsbc.com.hk # 汇丰香港；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,hsbc.com.sg # 汇丰新加坡；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,hsbc.com.au # 汇丰澳洲；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,hsbc.co.jp # 汇丰日本；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,hsbcnet.com # HSBCnet；企业网银/机构入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,hsbcprivatebank.com # 汇丰私人银行；银行集团投资/财富入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,hangseng.com # 恒生集团主域；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,hangsengbank.com # 恒生银行；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,hsbc.com.cn # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.com.mo # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.com.my # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbcamanah.com.my # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.co.in # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.co.kr # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.com.ph # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.com.tw # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.co.th # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.lk # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.com.vn # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.co.nz # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.uk # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.ch # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.fr # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.de # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.be # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.nl # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.lu # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.es # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.it # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.co.il # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.com.tr # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.ae # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.com.bh # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.com.eg # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.co.mu # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.com.mx # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hsbc.com.uy # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hangseng.com.hk # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hangseng.com.cn # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,hsbc.com # 汇丰集团主域；银行入口。
+DOMAIN-SUFFIX,hsbc.co.uk # 汇丰英国；银行入口。
+DOMAIN-SUFFIX,hsbc.com.hk # 汇丰香港；银行入口。
+DOMAIN-SUFFIX,hsbc.com.sg # 汇丰新加坡；银行入口。
+DOMAIN-SUFFIX,hsbc.com.au # 汇丰澳洲；银行入口。
+DOMAIN-SUFFIX,hsbc.co.jp # 汇丰日本；银行入口。
+DOMAIN-SUFFIX,hsbcnet.com # HSBCnet；企业网银/机构入口。
+DOMAIN-SUFFIX,hsbcprivatebank.com # 汇丰私人银行；银行集团投资/财富入口。
+DOMAIN-SUFFIX,hangseng.com # 恒生集团主域；银行入口。
+DOMAIN-SUFFIX,hangsengbank.com # 恒生银行；银行入口。
+DOMAIN-SUFFIX,hsbc.com.cn # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.com.mo # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.com.my # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbcamanah.com.my # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.co.in # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.co.kr # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.com.ph # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.com.tw # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.co.th # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.lk # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.com.vn # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.co.nz # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.uk # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.ch # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.fr # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.de # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.be # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.nl # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.lu # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.es # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.it # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.co.il # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.com.tr # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.ae # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.com.bh # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.com.eg # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.co.mu # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.com.mx # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hsbc.com.uy # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hangseng.com.hk # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hangseng.com.cn # Direct.list「HSBC / Hang Seng」；从 Direct.list 宽口径迁入。
 
 # Standard Chartered / 渣打
-DOMAIN-SUFFIX,standardchartered.com # 渣打集团主域；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,sc.com # 渣打主域；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,sc.com.hk # 渣打香港；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,standardchartered.com.hk # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,standardchartered.com.sg # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,standardchartered.com.cn # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,standardchartered.co.uk # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,standardchartered.co.in # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,standardchartered.com.my # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,standardchartered.com.tw # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,standardcharteredprivatebank.com # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,standardchartered.com # 渣打集团主域；银行入口。
+DOMAIN-SUFFIX,sc.com # 渣打主域；银行入口。
+DOMAIN-SUFFIX,sc.com.hk # 渣打香港；银行入口。
+DOMAIN-SUFFIX,standardchartered.com.hk # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,standardchartered.com.sg # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,standardchartered.com.cn # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,standardchartered.co.uk # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,standardchartered.co.in # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,standardchartered.com.my # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,standardchartered.com.tw # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,standardcharteredprivatebank.com # Direct.list「Standard Chartered」；从 Direct.list 宽口径迁入。
 
 # Citi / Citibank / Citigroup
-DOMAIN-SUFFIX,citicbank.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citicbank.com # 中信银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,ecitic.com # 中信集团金融入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,citi.com # 花旗集团主域；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,citibank.com # 花旗银行主域；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,citibank.com.hk # 花旗香港；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,citi.com.cn # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citi.co.uk # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citigroup.com # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citibank.com.sg # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citibank.com.cn # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citibank.co.uk # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citibank.com.tw # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citibank.com.au # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citibank.co.in # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citibank.com.my # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citibankonline.com # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citicards.com # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,citicbank.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citicbank.com # 中信银行；银行入口。
+DOMAIN-SUFFIX,ecitic.com # 中信集团金融入口。
+DOMAIN-SUFFIX,citi.com # 花旗集团主域；银行入口。
+DOMAIN-SUFFIX,citibank.com # 花旗银行主域；银行入口。
+DOMAIN-SUFFIX,citibank.com.hk # 花旗香港；银行入口。
+DOMAIN-SUFFIX,citi.com.cn # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citi.co.uk # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citigroup.com # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citibank.com.sg # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citibank.com.cn # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citibank.co.uk # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citibank.com.tw # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citibank.com.au # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citibank.co.in # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citibank.com.my # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citibankonline.com # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citicards.com # Direct.list「Citi / Citibank」；从 Direct.list 宽口径迁入。
 
 # JPMorgan Chase / Chase
-DOMAIN-SUFFIX,jpmorgan.com # 摩根大通集团主域；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,chase.com # Chase；零售银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,jpmcb.com # JPMC 企业/机构域；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,jpmorganwealthmanagement.com # 摩根财富管理；银行集团投资入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,chasecdn.com # Direct.list「JPMorgan Chase」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,chasepaymentech.com # Direct.list「JPMorgan Chase」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,jpmorganchase.com # Direct.list「JPMorgan Chase」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,jpmorganonline.com # Direct.list「JPMorgan Chase」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,chase.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,jpmorgan.com # 摩根大通集团主域；银行入口。
+DOMAIN-SUFFIX,chase.com # Chase；零售银行入口。
+DOMAIN-SUFFIX,jpmcb.com # JPMC 企业/机构域。
+DOMAIN-SUFFIX,jpmorganwealthmanagement.com # 摩根财富管理；银行集团投资入口。
+DOMAIN-SUFFIX,chasecdn.com # Direct.list「JPMorgan Chase」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,chasepaymentech.com # Direct.list「JPMorgan Chase」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,jpmorganchase.com # Direct.list「JPMorgan Chase」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,jpmorganonline.com # Direct.list「JPMorgan Chase」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,chase.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
 
 # Bank of America / Merrill
-DOMAIN-SUFFIX,bankofamerica.com # 美国银行主域；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,bofa.com # 美国银行短域；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,merrill.com # Merrill；银行集团财富/投行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,merrilledge.com # Merrill Edge；银行集团投资入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,bankofamerica.com.edgekey.net # 美银品牌化 CDN 别名；Direct.list 锚点；真实 DNS 兼容；需 Codex 后置审查。
-DOMAIN-SUFFIX,bankofamerica.com.cn # Direct.list「Bank of America / Merrill」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ml.com # Direct.list「Bank of America / Merrill」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,bankofamerica.com # 美国银行主域；银行入口。
+DOMAIN-SUFFIX,bofa.com # 美国银行短域；银行入口。
+DOMAIN-SUFFIX,merrill.com # Merrill；银行集团财富/投行入口。
+DOMAIN-SUFFIX,merrilledge.com # Merrill Edge；银行集团投资入口。
+DOMAIN-SUFFIX,bankofamerica.com.edgekey.net # 美银品牌化 CDN 别名；真实 DNS 兼容。
+DOMAIN-SUFFIX,bankofamerica.com.cn # Direct.list「Bank of America / Merrill」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ml.com # Direct.list「Bank of America / Merrill」；从 Direct.list 宽口径迁入。
 
 # Wells Fargo
-DOMAIN-SUFFIX,wellsfargo.com # 富国银行主域；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,wellsfargoadvisors.com # 富国顾问；银行集团投资入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,wellsfargo.com.edgekey.net # 富国品牌化 CDN 别名；Direct.list 锚点；真实 DNS 兼容；需 Codex 后置审查。
-DOMAIN-SUFFIX,wf.com # Direct.list「Wells Fargo」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,wellsfargomedia.com # Direct.list「Wells Fargo」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,wellsfargo.com # 富国银行主域；银行入口。
+DOMAIN-SUFFIX,wellsfargoadvisors.com # 富国顾问；银行集团投资入口。
+DOMAIN-SUFFIX,wellsfargo.com.edgekey.net # 富国品牌化 CDN 别名；真实 DNS 兼容。
+DOMAIN-SUFFIX,wf.com # Direct.list「Wells Fargo」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,wellsfargomedia.com # Direct.list「Wells Fargo」；从 Direct.list 宽口径迁入。
 
 # UBS
-DOMAIN-SUFFIX,ubs.com # UBS；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,ubs.ch # Direct.list「UBS」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ubs.com.cn # Direct.list「UBS」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ubs.com.hk # Direct.list「UBS」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ubs.com.sg # Direct.list「UBS」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ubs.com.tw # Direct.list「UBS」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ubs.com.au # Direct.list「UBS」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ubsbankusa.com # Direct.list「UBS」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,ubs.com # UBS；银行集团主域。
+DOMAIN-SUFFIX,ubs.ch # Direct.list「UBS」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ubs.com.cn # Direct.list「UBS」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ubs.com.hk # Direct.list「UBS」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ubs.com.sg # Direct.list「UBS」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ubs.com.tw # Direct.list「UBS」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ubs.com.au # Direct.list「UBS」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ubsbankusa.com # Direct.list「UBS」；从 Direct.list 宽口径迁入。
 
 # Barclays
-DOMAIN-SUFFIX,barclays.com # Barclays；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,barclays.co.uk # Barclays UK；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,barclaycard.co.uk # Barclaycard；银行卡/支付入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,barclaysus.com # Direct.list「Barclays」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,barclaycardus.com # Direct.list「Barclays」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,barclayswealth.com # Direct.list「Barclays」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,barclays.com # Barclays；银行集团主域。
+DOMAIN-SUFFIX,barclays.co.uk # Barclays UK；银行入口。
+DOMAIN-SUFFIX,barclaycard.co.uk # Barclaycard；银行卡/支付入口。
+DOMAIN-SUFFIX,barclaysus.com # Direct.list「Barclays」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,barclaycardus.com # Direct.list「Barclays」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,barclayswealth.com # Direct.list「Barclays」；从 Direct.list 宽口径迁入。
 
 # Lloyds Bank
-DOMAIN-SUFFIX,lloydsbank.com # Lloyds Bank；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,lloydsbankinggroup.com # Lloyds Banking Group；集团入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,halifax.co.uk # Halifax；Lloyds 系银行品牌；需 Codex 后置审查。
-DOMAIN-SUFFIX,bankofscotland.co.uk # Bank of Scotland；Lloyds 系银行品牌；需 Codex 后置审查。
-DOMAIN-SUFFIX,lloydsbank.co.uk # Direct.list「Lloyds Bank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,lloydsbankcardnet.com # Direct.list「Lloyds Bank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,royalbankofscotland.com # Direct.list「NatWest / RBS / Ulster Bank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,lloydsbank.com # Lloyds Bank；银行入口。
+DOMAIN-SUFFIX,lloydsbankinggroup.com # Lloyds Banking Group；集团入口。
+DOMAIN-SUFFIX,halifax.co.uk # Halifax；Lloyds 系银行品牌。
+DOMAIN-SUFFIX,bankofscotland.co.uk # Bank of Scotland；Lloyds 系银行品牌。
+DOMAIN-SUFFIX,lloydsbank.co.uk # Direct.list「Lloyds Bank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,lloydsbankcardnet.com # Direct.list「Lloyds Bank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,royalbankofscotland.com # Direct.list「NatWest / RBS / Ulster Bank」；从 Direct.list 宽口径迁入。
 
 # NatWest / RBS / Ulster Bank
-DOMAIN-SUFFIX,natwest.com # NatWest；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,rbs.co.uk # RBS；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,ulsterbank.co.uk # Ulster Bank；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,coutts.com # Coutts；NatWest 系私人银行；需 Codex 后置审查。
-DOMAIN-SUFFIX,natwestinternational.com # Direct.list「NatWest / RBS / Ulster Bank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,natwest.com # NatWest；银行入口。
+DOMAIN-SUFFIX,rbs.co.uk # RBS；银行入口。
+DOMAIN-SUFFIX,ulsterbank.co.uk # Ulster Bank；银行入口。
+DOMAIN-SUFFIX,coutts.com # Coutts；NatWest 系私人银行。
+DOMAIN-SUFFIX,natwestinternational.com # Direct.list「NatWest / RBS / Ulster Bank」；从 Direct.list 宽口径迁入。
 
 # Deutsche Bank
-DOMAIN-SUFFIX,gdb.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,db.com # Deutsche Bank；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,deutsche-bank.com # Direct.list「Deutsche Bank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,deutsche-bank.de # Direct.list「Deutsche Bank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,deutschebank.be # Direct.list「Deutsche Bank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,deutschewealth.com # Direct.list「Deutsche Bank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,gdb.com.cn # Direct.list「Mainland China / Hong Kong / Macau / Taiwan banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,db.com # Deutsche Bank；银行集团主域。
+DOMAIN-SUFFIX,deutsche-bank.com # Direct.list「Deutsche Bank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,deutsche-bank.de # Direct.list「Deutsche Bank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,deutschebank.be # Direct.list「Deutsche Bank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,deutschewealth.com # Direct.list「Deutsche Bank」；从 Direct.list 宽口径迁入。
 
 # BNP Paribas
-DOMAIN-SUFFIX,bnpparibas.com # BNP Paribas；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,hellobank.com # Hello bank!；BNP 数字银行品牌；需 Codex 后置审查。
-DOMAIN-SUFFIX,bnpparibas.net # Direct.list「BNP Paribas」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mabanque.bnpparibas # Direct.list「BNP Paribas」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hellobank.fr # Direct.list「BNP Paribas」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,hellobank.be # Direct.list「BNP Paribas」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bnpparibasfortis.be # Direct.list「BNP Paribas」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bgl.lu # Direct.list「BNP Paribas」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,bnpparibas.com # BNP Paribas；银行集团主域。
+DOMAIN-SUFFIX,hellobank.com # Hello bank!；BNP 数字银行品牌。
+DOMAIN-SUFFIX,bnpparibas.net # Direct.list「BNP Paribas」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mabanque.bnpparibas # Direct.list「BNP Paribas」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hellobank.fr # Direct.list「BNP Paribas」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,hellobank.be # Direct.list「BNP Paribas」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bnpparibasfortis.be # Direct.list「BNP Paribas」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bgl.lu # Direct.list「BNP Paribas」；从 Direct.list 宽口径迁入。
 
 # Societe Generale
-DOMAIN-SUFFIX,societegenerale.com # 法兴；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,societegenerale.fr # Direct.list「Societe Generale」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,sg.fr # Direct.list「Societe Generale」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,boursobank.com # Direct.list「Societe Generale」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,boursorama.com # Direct.list「Societe Generale」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,societegenerale.com # 法兴；银行集团主域。
+DOMAIN-SUFFIX,societegenerale.fr # Direct.list「Societe Generale」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,sg.fr # Direct.list「Societe Generale」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,boursobank.com # Direct.list「Societe Generale」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,boursorama.com # Direct.list「Societe Generale」；从 Direct.list 宽口径迁入。
 
 # Credit Agricole / LCL
-DOMAIN-SUFFIX,credit-agricole.com # 法农；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,lcl.fr # LCL；法农系零售银行；需 Codex 后置审查。
-DOMAIN-SUFFIX,credit-agricole.fr # Direct.list「Credit Agricole / LCL」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,creditagricole.info # Direct.list「Credit Agricole / LCL」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,credit-agricole.com # 法农；银行集团主域。
+DOMAIN-SUFFIX,lcl.fr # LCL；法农系零售银行。
+DOMAIN-SUFFIX,credit-agricole.fr # Direct.list「Credit Agricole / LCL」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,creditagricole.info # Direct.list「Credit Agricole / LCL」；从 Direct.list 宽口径迁入。
 
 # ING
-DOMAIN-SUFFIX,ing.com # ING；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,ing.nl # Direct.list「ING」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ing.be # Direct.list「ING」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ing.de # Direct.list「ING」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ingdirect.es # Direct.list「ING」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ing.com.au # Direct.list「ING」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ing.lu # Direct.list「ING」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ing.pl # Direct.list「ING」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ing.it # Direct.list「ING」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,ing.com # ING；银行集团主域。
+DOMAIN-SUFFIX,ing.nl # Direct.list「ING」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ing.be # Direct.list「ING」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ing.de # Direct.list「ING」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ingdirect.es # Direct.list「ING」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ing.com.au # Direct.list「ING」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ing.lu # Direct.list「ING」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ing.pl # Direct.list「ING」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ing.it # Direct.list「ING」；从 Direct.list 宽口径迁入。
 
 # Santander / Openbank
-DOMAIN-SUFFIX,santander.com # Santander；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,santander.co.uk # Santander UK；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,openbank.com # Openbank；Santander 系数字银行；需 Codex 后置审查。
-DOMAIN-SUFFIX,santanderbank.com # Direct.list「Santander / Openbank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,santander.com.br # Direct.list「Santander / Openbank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,santander.com.mx # Direct.list「Santander / Openbank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bancosantander.es # Direct.list「Santander / Openbank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,santanderconsumerusa.com # Direct.list「Santander / Openbank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,openbank.es # Direct.list「Santander / Openbank」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,openbank.us # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,santander.com # Santander；银行集团主域。
+DOMAIN-SUFFIX,santander.co.uk # Santander UK；银行入口。
+DOMAIN-SUFFIX,openbank.com # Openbank；Santander 系数字银行。
+DOMAIN-SUFFIX,santanderbank.com # Direct.list「Santander / Openbank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,santander.com.br # Direct.list「Santander / Openbank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,santander.com.mx # Direct.list「Santander / Openbank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bancosantander.es # Direct.list「Santander / Openbank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,santanderconsumerusa.com # Direct.list「Santander / Openbank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,openbank.es # Direct.list「Santander / Openbank」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,openbank.us # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
 
 # Japan major banks
-DOMAIN-SUFFIX,mufg.jp # MUFG；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,bk.mufg.jp # 三菱 UFJ 银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,smbc.co.jp # 三井住友银行；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,prestia.co.jp # SMBC Prestia；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,mizuhobank.co.jp # 瑞穗银行；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,mizuhogroup.com # 瑞穗集团；银行集团入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,resonabank.co.jp # Resona Bank；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,resona-gr.co.jp # Resona Group；银行集团入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,sbishinseibank.co.jp # SBI 新生银行；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,mufg.co.jp # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mufgbank.com # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mufgamericas.com # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mufgunionbank.com # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,smbctb.co.jp # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,smbc-card.com # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,smbcnikko.co.jp # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,smbcgroup.com # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mizuho-fg.co.jp # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mizuho-sc.com # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,mufg.jp # MUFG；银行集团主域。
+DOMAIN-SUFFIX,bk.mufg.jp # 三菱 UFJ 银行入口。
+DOMAIN-SUFFIX,smbc.co.jp # 三井住友银行；银行入口。
+DOMAIN-SUFFIX,prestia.co.jp # SMBC Prestia；银行入口。
+DOMAIN-SUFFIX,mizuhobank.co.jp # 瑞穗银行；银行入口。
+DOMAIN-SUFFIX,mizuhogroup.com # 瑞穗集团；银行集团入口。
+DOMAIN-SUFFIX,resonabank.co.jp # Resona Bank；银行入口。
+DOMAIN-SUFFIX,resona-gr.co.jp # Resona Group；银行集团入口。
+DOMAIN-SUFFIX,sbishinseibank.co.jp # SBI 新生银行；银行入口。
+DOMAIN-SUFFIX,mufg.co.jp # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mufgbank.com # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mufgamericas.com # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mufgunionbank.com # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,smbctb.co.jp # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,smbc-card.com # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,smbcnikko.co.jp # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,smbcgroup.com # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mizuho-fg.co.jp # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mizuho-sc.com # Direct.list「Japan major banks」；从 Direct.list 宽口径迁入。
 
 # Singapore banks
-DOMAIN-SUFFIX,dbs.com # DBS；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,posb.com.sg # POSB；DBS 系零售银行；需 Codex 后置审查。
-DOMAIN-SUFFIX,ocbc.com # OCBC；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,uob.com.sg # UOB；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,trustbank.sg # Trust Bank；数字银行；Direct.list 锚点。
-DOMAIN-SUFFIX,mariabank.sg # MariBank；数字银行；Direct.list 锚点。
-DOMAIN-SUFFIX,gxs.com.sg # GXS Bank；数字银行；Direct.list 锚点。
-DOMAIN-SUFFIX,dbs.com.sg # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,dbs.com.hk # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,digibank.com # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ocbc.com.sg # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ocbc.com.hk # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ocbc.com.cn # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bankofsingapore.com # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,uobgroup.com # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,uob.com.my # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,uob.co.th # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,uob.com.hk # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,uobchina.com.cn # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,dbs.com # DBS；银行集团主域。
+DOMAIN-SUFFIX,posb.com.sg # POSB；DBS 系零售银行。
+DOMAIN-SUFFIX,ocbc.com # OCBC；银行集团主域。
+DOMAIN-SUFFIX,uob.com.sg # UOB；银行集团主域。
+DOMAIN-SUFFIX,trustbank.sg # Trust Bank；数字银行。
+DOMAIN-SUFFIX,mariabank.sg # MariBank；数字银行。
+DOMAIN-SUFFIX,gxs.com.sg # GXS Bank；数字银行。
+DOMAIN-SUFFIX,dbs.com.sg # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,dbs.com.hk # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,digibank.com # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ocbc.com.sg # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ocbc.com.hk # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ocbc.com.cn # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bankofsingapore.com # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,uobgroup.com # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,uob.com.my # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,uob.co.th # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,uob.com.hk # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,uobchina.com.cn # Direct.list「Singapore banks」；从 Direct.list 宽口径迁入。
 
 # Australia / New Zealand banks
-DOMAIN-SUFFIX,commbank.com.au # Commonwealth Bank；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,commsec.com.au # CommSec；银行集团投资入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,nab.com.au # NAB；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,nabtrade.com.au # nabtrade；银行集团投资入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,westpac.com.au # Westpac；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,westpac.co.nz # Westpac NZ；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,anz.com # ANZ；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,anz.co.nz # ANZ NZ；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,bnz.co.nz # BNZ；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,asb.co.nz # ASB；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,anz.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,anz.com.sg # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,anz.com.cn # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,anz.com.hk # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,commbank.com # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,commonwealthbank.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,netbank.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,stgeorge.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,banksa.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bankofmelbourne.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ubank.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,commbank.com.au # Commonwealth Bank；银行集团主域。
+DOMAIN-SUFFIX,commsec.com.au # CommSec；银行集团投资入口。
+DOMAIN-SUFFIX,nab.com.au # NAB；银行集团主域。
+DOMAIN-SUFFIX,nabtrade.com.au # nabtrade；银行集团投资入口。
+DOMAIN-SUFFIX,westpac.com.au # Westpac；银行集团主域。
+DOMAIN-SUFFIX,westpac.co.nz # Westpac NZ；银行入口。
+DOMAIN-SUFFIX,anz.com # ANZ；银行集团主域。
+DOMAIN-SUFFIX,anz.co.nz # ANZ NZ；银行入口。
+DOMAIN-SUFFIX,bnz.co.nz # BNZ；银行入口。
+DOMAIN-SUFFIX,asb.co.nz # ASB；银行入口。
+DOMAIN-SUFFIX,anz.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,anz.com.sg # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,anz.com.cn # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,anz.com.hk # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,commbank.com # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,commonwealthbank.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,netbank.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,stgeorge.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,banksa.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bankofmelbourne.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ubank.com.au # Direct.list「Australia / New Zealand banks」；从 Direct.list 宽口径迁入。
 
 # Canada banks
-DOMAIN-SUFFIX,rbc.com # RBC；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,rbcdirectinvesting.com # RBC Direct Investing；银行集团投资入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,bmo.com # BMO；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,bmoinvestorline.com # BMO InvestorLine；银行集团投资入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,td.com # TD；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,tdcanadatrust.com # TD Canada Trust；银行入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,scotiabank.com # Scotiabank；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,cibc.com # CIBC；银行集团主域；需 Codex 后置审查。
-DOMAIN-SUFFIX,simplii.com # Simplii；CIBC 系数字银行；需 Codex 后置审查。
-DOMAIN-SUFFIX,tangerine.ca # Tangerine；数字银行；Direct.list 锚点。
-DOMAIN-SUFFIX,eqbank.ca # EQ Bank；数字银行；Direct.list 锚点。
-DOMAIN-SUFFIX,rbcroyalbank.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,rbcbank.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,rbcwealthmanagement.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,tdbank.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,tdwaterhouse.ca # Direct.list「Canada banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,scotiabank.ca # Direct.list「Canada banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,scotiaitrade.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bmo.ca # Direct.list「Canada banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bmoharris.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cibc.ca # Direct.list「Canada banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cibcfcib.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,rbc.com # RBC；银行集团主域。
+DOMAIN-SUFFIX,rbcdirectinvesting.com # RBC Direct Investing；银行集团投资入口。
+DOMAIN-SUFFIX,bmo.com # BMO；银行集团主域。
+DOMAIN-SUFFIX,bmoinvestorline.com # BMO InvestorLine；银行集团投资入口。
+DOMAIN-SUFFIX,td.com # TD；银行集团主域。
+DOMAIN-SUFFIX,tdcanadatrust.com # TD Canada Trust；银行入口。
+DOMAIN-SUFFIX,scotiabank.com # Scotiabank；银行集团主域。
+DOMAIN-SUFFIX,cibc.com # CIBC；银行集团主域。
+DOMAIN-SUFFIX,simplii.com # Simplii；CIBC 系数字银行。
+DOMAIN-SUFFIX,tangerine.ca # Tangerine；数字银行。
+DOMAIN-SUFFIX,eqbank.ca # EQ Bank；数字银行。
+DOMAIN-SUFFIX,rbcroyalbank.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,rbcbank.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,rbcwealthmanagement.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,tdbank.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,tdwaterhouse.ca # Direct.list「Canada banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,scotiabank.ca # Direct.list「Canada banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,scotiaitrade.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bmo.ca # Direct.list「Canada banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bmoharris.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cibc.ca # Direct.list「Canada banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cibcfcib.com # Direct.list「Canada banks」；从 Direct.list 宽口径迁入。
 
 # Global neobanks / digital financial services
-DOMAIN-SUFFIX,dave.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,go2bank.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,greendot.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,lendingclub.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,jeniusbank.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,one.app # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,upgrade.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,wealthfront.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,betterment.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mercury.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,quontic.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cit.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,citbank.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,marcus.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,novo.co # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bluevine.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,brex.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,relayfi.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,northone.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,found.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,lili.co # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,grasshopper.bank # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,everbank.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,baskbank.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,ufbdirect.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,laurelroad.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,dave.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,go2bank.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,greendot.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,lendingclub.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,jeniusbank.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,one.app # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,upgrade.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,wealthfront.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,betterment.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mercury.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,quontic.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cit.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,citbank.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,marcus.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,novo.co # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bluevine.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,brex.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,relayfi.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,northone.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,found.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,lili.co # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,grasshopper.bank # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,everbank.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,baskbank.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,ufbdirect.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,laurelroad.com # Direct.list「Global neobanks / digital financial services」；从 Direct.list 宽口径迁入。
 
 # UK neobanks / fintech banks
-DOMAIN-SUFFIX,bunq.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,atombank.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,tandem.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,zopa.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,kroo.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cashplus.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cashplusbank.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,monese.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mettle.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,allica.bank # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,clear.bank # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,clearbank.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,monument.co # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,oaknorth.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,oaknorth.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,firstdirect.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,tide.co # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,anna.money # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,countingup.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,getchip.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,paragonbank.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,aldermore.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,shawbrook.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,chartersavingsbank.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,lunar.app # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,bunq.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,atombank.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,tandem.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,zopa.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,kroo.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cashplus.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cashplusbank.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,monese.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mettle.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,allica.bank # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,clear.bank # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,clearbank.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,monument.co # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,oaknorth.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,oaknorth.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,firstdirect.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,tide.co # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,anna.money # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,countingup.com # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,getchip.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,paragonbank.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,aldermore.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,shawbrook.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,chartersavingsbank.co.uk # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,lunar.app # Direct.list「UK neobanks / fintech banks」；从 Direct.list 宽口径迁入。
 
 # Latin America neobanks
-DOMAIN-SUFFIX,c6bank.com.br # Direct.list「Latin America neobanks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,neon.com.br # Direct.list「Latin America neobanks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,uala.com.ar # Direct.list「Latin America neobanks」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,c6bank.com.br # Direct.list「Latin America neobanks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,neon.com.br # Direct.list「Latin America neobanks」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,uala.com.ar # Direct.list「Latin America neobanks」；从 Direct.list 宽口径迁入。
 
 # Major US banks and card issuers
-DOMAIN-SUFFIX,capitalone.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,capitalonebank.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,usbank.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,pnc.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,pncbank.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,pncwealthmanagement.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,truist.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,truistbank.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,bbt.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,suntrust.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,capitalone.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,capitalonebank.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,usbank.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,pnc.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,pncbank.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,pncwealthmanagement.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,truist.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,truistbank.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,bbt.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,suntrust.com # Direct.list「Major US banks and card issuers」；从 Direct.list 宽口径迁入。
 
 # American Express / Amex / Discover / Diners Club
-DOMAIN-SUFFIX,americanexpress.com.ar # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.at # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.com.br # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.ca # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.fi # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.fr # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.de # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.co.in # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.it # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.jp # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.com.mx # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.nl # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.co.nz # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.com.pr # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.es # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.se # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.com.tw # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.co.th # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.co.uk # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.ae # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.com.bh # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.com.eg # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.com.jo # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.com.kw # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.com.lb # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.com.om # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.com.qa # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,aexp.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,aexp-static.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,amex.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,amex.com.au # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,amexgiftcard.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,amextravel.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,membershiprewards.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,discovercard.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,discoverbank.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,americanexpress.com # 美国运通主域；卡组织与 SafeKey 相关；需 Codex 后置审查。
-DOMAIN-SUFFIX,americanexpress.com.hk # 美国运通香港；卡组织区域入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,americanexpress.co.jp # 美国运通日本；卡组织区域入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,americanexpress.com.cn # 美国运通中国；卡组织区域入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,americanexpress.com.sg # 美国运通新加坡；卡组织区域入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,americanexpress.com.au # 美国运通澳洲；卡组织区域入口；需 Codex 后置审查。
-DOMAIN-SUFFIX,discover.com # Discover 主域；卡组织；需 Codex 后置审查。
-DOMAIN-SUFFIX,discovernetwork.com # Discover Network；卡组织网络域；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,dinersclub.com # Diners Club；卡品牌；Direct.list 锚点；需 Codex 后置审查。
+DOMAIN-SUFFIX,americanexpress.com.ar # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.at # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.com.br # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.ca # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.fi # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.fr # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.de # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.co.in # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.it # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.jp # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.com.mx # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.nl # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.co.nz # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.com.pr # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.es # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.se # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.com.tw # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.co.th # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.co.uk # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.ae # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.com.bh # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.com.eg # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.com.jo # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.com.kw # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.com.lb # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.com.om # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.com.qa # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,aexp.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,aexp-static.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,amex.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,amex.com.au # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,amexgiftcard.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,amextravel.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,membershiprewards.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,discovercard.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,discoverbank.com # Direct.list「American Express / Amex / 美国运通」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,americanexpress.com # 美国运通主域；卡组织与 SafeKey 相关。
+DOMAIN-SUFFIX,americanexpress.com.hk # 美国运通香港；卡组织区域入口。
+DOMAIN-SUFFIX,americanexpress.co.jp # 美国运通日本；卡组织区域入口。
+DOMAIN-SUFFIX,americanexpress.com.cn # 美国运通中国；卡组织区域入口。
+DOMAIN-SUFFIX,americanexpress.com.sg # 美国运通新加坡；卡组织区域入口。
+DOMAIN-SUFFIX,americanexpress.com.au # 美国运通澳洲；卡组织区域入口。
+DOMAIN-SUFFIX,discover.com # Discover 主域；卡组织。
+DOMAIN-SUFFIX,discovernetwork.com # Discover Network；卡组织网络域。
+DOMAIN-SUFFIX,dinersclub.com # Diners Club；卡品牌。
 
 # Payment networks and processors
-DOMAIN-SUFFIX,visa.com # Visa 主域；卡组织；支付网络入口；Direct.list 锚点。
-DOMAIN-SUFFIX,visasecureservices.com # Visa Secure 服务域；3DS 认证；官方公开资料可见。
-DOMAIN-SUFFIX,mastercard.com # Mastercard 主域；卡组织；Direct.list 锚点。
-DOMAIN-SUFFIX,visa.com.cn # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,visa.com.hk # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,visaeurope.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,visaonline.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,visaacceptance.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cybersource.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,authorizenet.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mastercard.com.cn # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mastercard.com.hk # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mastercardservices.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mastercardconnect.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,mastercard.us # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
+DOMAIN-SUFFIX,visa.com # Visa 主域；卡组织；支付网络入口。
+DOMAIN-SUFFIX,visasecureservices.com # Visa Secure 服务域；3DS 认证。
+DOMAIN-SUFFIX,mastercard.com # Mastercard 主域；卡组织。
+DOMAIN-SUFFIX,visa.com.cn # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,visa.com.hk # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,visaeurope.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,visaonline.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,visaacceptance.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cybersource.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,authorizenet.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mastercard.com.cn # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mastercard.com.hk # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mastercardservices.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mastercardconnect.com # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,mastercard.us # Direct.list「Payment networks and processors」；从 Direct.list 宽口径迁入。
 
 # Card authentication / 3DS / payment risk dependencies
-DOMAIN-SUFFIX,checkouttools.com # Direct.list「Card authentication / 3DS / payment risk dependencies」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,stripe.network # Direct.list「Card authentication / 3DS / payment risk dependencies」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cko-payments.com # Direct.list「Card authentication / 3DS / payment risk dependencies」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,worldpayglobal.com # Direct.list「Card authentication / 3DS / payment risk dependencies」；从 Direct.list 宽口径迁入；金融真实 DNS 兼容直连。
-DOMAIN-SUFFIX,cardinalcommerce.com # CardinalCommerce；Visa Protect / 3DS 认证服务；官方公开资料可见。
-DOMAIN-SUFFIX,emvco.com # EMVCo；EMV 3DS 规范与测试；官方公开资料可见。
+DOMAIN-SUFFIX,checkouttools.com # Direct.list「Card authentication / 3DS / payment risk dependencies」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,stripe.network # Direct.list「Card authentication / 3DS / payment risk dependencies」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cko-payments.com # Direct.list「Card authentication / 3DS / payment risk dependencies」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,worldpayglobal.com # Direct.list「Card authentication / 3DS / payment risk dependencies」；从 Direct.list 宽口径迁入。
+DOMAIN-SUFFIX,cardinalcommerce.com # CardinalCommerce；Visa Protect / 3DS 认证服务。
+DOMAIN-SUFFIX,emvco.com # EMVCo；EMV 3DS 规范与测试。
 
 # Payment processors / risk / wallets
-DOMAIN-SUFFIX,stripe.com # Stripe 主域；支付基础设施；官方公开资料可见；需 Codex 后置复核。
-DOMAIN-SUFFIX,stripe.global # Stripe 官方域；官方帮助中心列名；需 Codex 后置复核。
-DOMAIN-SUFFIX,adyen.com # Adyen 主域；支付基础设施；官方公开资料可见；需 Codex 后置复核。
-DOMAIN-SUFFIX,adyenpayments.com # Adyen live API 域；官方文档明确；需 Codex 后置复核。
-DOMAIN-SUFFIX,adyen.com.cn # Adyen 中国域；Direct.list 锚点；需 Codex 后置复核。
-DOMAIN-SUFFIX,checkout.com # Checkout.com 主域；支付基础设施；官方公开资料可见；需 Codex 后置复核。
-DOMAIN-SUFFIX,checkoutcdn.com # Checkout.com 前端资源域；官方可见 demo；需 Codex 后置复核。
-DOMAIN-SUFFIX,worldpay.com # Worldpay 主域；全球支付处理；官方公开资料可见；需 Codex 后置复核。
-DOMAIN-SUFFIX,worldpay.us # Worldpay US；支付页/美国支付基础设施；需 Codex 后置复核。
-DOMAIN-SUFFIX,squareup.com # Square 商户支付；Direct.list 锚点；需 Codex 后置复核。
-DOMAIN-SUFFIX,square.com # Square 主域；支付生态入口；需 Codex 后置复核。
-DOMAIN-SUFFIX,squarecdn.com # Square 服务资源域；支付页兼容；Direct.list 锚点；需 Codex 后置复核。
-DOMAIN-SUFFIX,block.xyz # Block 集团；支付金融集团入口；需 Codex 后置复核。
-DOMAIN-SUFFIX,cash.app # Cash App；数字金融/支付；Direct.list 锚点；需 Codex 后置复核。
-DOMAIN-SUFFIX,klarna.com # Klarna；支付/分期金融服务；Direct.list 锚点；需 Codex 后置复核。
-DOMAIN-SUFFIX,klarna.net # Klarna 服务域；Direct.list 锚点；需 Codex 后置复核。
-DOMAIN-SUFFIX,afterpay.com # Afterpay；支付/分期金融服务；Direct.list 锚点；需 Codex 后置复核。
-DOMAIN-SUFFIX,afterpay.com.au # Afterpay 澳洲；支付/分期金融服务；Direct.list 锚点；需 Codex 后置复核。
-DOMAIN-SUFFIX,afterpaycdn.com # Afterpay 服务资源域；支付页兼容；Direct.list 锚点；需 Codex 后置复核。
-DOMAIN-SUFFIX,affirm.com # Affirm；分期金融服务；Direct.list 锚点；需 Codex 后置复核。
-DOMAIN-SUFFIX,affirmcdn.com # Affirm 服务资源域；支付页兼容；Direct.list 锚点；需 Codex 后置复核。
-DOMAIN-SUFFIX,forter.com # Forter；支付风控；AI/银行交叉已审查；纳入并需 Codex 后置复核。
-DOMAIN-SUFFIX,riskified.com # Riskified；支付风控；AI/银行交叉已审查；纳入并需 Codex 后置复核。
-DOMAIN-SUFFIX,signifyd.com # Signifyd；支付风控；AI/银行交叉已审查；纳入并需 Codex 后置复核。
+DOMAIN-SUFFIX,stripe.com # Stripe 主域；支付基础设施。
+DOMAIN-SUFFIX,stripe.global # Stripe 官方域；官方帮助中心列名。
+DOMAIN-SUFFIX,adyen.com # Adyen 主域；支付基础设施。
+DOMAIN-SUFFIX,adyenpayments.com # Adyen live API 域；官方文档明确。
+DOMAIN-SUFFIX,adyen.com.cn # Adyen 中国域。
+DOMAIN-SUFFIX,checkout.com # Checkout.com 主域；支付基础设施。
+DOMAIN-SUFFIX,checkoutcdn.com # Checkout.com 前端资源域；官方可见 demo。
+DOMAIN-SUFFIX,worldpay.com # Worldpay 主域；全球支付处理。
+DOMAIN-SUFFIX,worldpay.us # Worldpay US；支付页/美国支付基础设施。
+DOMAIN-SUFFIX,squareup.com # Square 商户支付。
+DOMAIN-SUFFIX,square.com # Square 主域；支付生态入口。
+DOMAIN-SUFFIX,squarecdn.com # Square 服务资源域；支付页兼容。
+DOMAIN-SUFFIX,block.xyz # Block 集团；支付金融集团入口。
+DOMAIN-SUFFIX,cash.app # Cash App；数字金融/支付。
+DOMAIN-SUFFIX,klarna.com # Klarna；支付/分期金融服务。
+DOMAIN-SUFFIX,klarna.net # Klarna 服务域。
+DOMAIN-SUFFIX,afterpay.com # Afterpay；支付/分期金融服务。
+DOMAIN-SUFFIX,afterpay.com.au # Afterpay 澳洲；支付/分期金融服务。
+DOMAIN-SUFFIX,afterpaycdn.com # Afterpay 服务资源域；支付页兼容。
+DOMAIN-SUFFIX,affirm.com # Affirm；分期金融服务。
+DOMAIN-SUFFIX,affirmcdn.com # Affirm 服务资源域；支付页兼容。
+DOMAIN-SUFFIX,forter.com # Forter；支付风控；AI/银行交叉已审查。
+DOMAIN-SUFFIX,riskified.com # Riskified；支付风控；AI/银行交叉已审查。
+DOMAIN-SUFFIX,signifyd.com # Signifyd；支付风控；AI/银行交叉已审查。
 
 # Other financial domains
-DOMAIN-SUFFIX,cmbc.com.cn # 中国民生银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,cebbank.com # 光大银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,cebbank.com.cn # 光大银行中国域；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,cib.com.cn # 兴业银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,pingan.com # 平安集团；金融集团入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,pinganbank.com # 平安银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,minsheng.com.cn # 民生银行集团域；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,hkbea.com # 东亚银行；银行入口；官方公开资料可见；需 Codex 后置审查。
-DOMAIN-SUFFIX,bankofbeijing.com.cn # 北京银行；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,bobchina.com # 北京银行品牌域；银行入口；Direct.list 锚点；需 Codex 后置审查。
-DOMAIN-SUFFIX,n26.com # N26；数字银行；Direct.list 锚点。
-DOMAIN-SUFFIX,monzo.com # Monzo；数字银行；Direct.list 锚点。
-DOMAIN-SUFFIX,starlingbank.com # Starling Bank；数字银行；Direct.list 锚点。
-DOMAIN-SUFFIX,ally.com # Ally；数字银行/银行入口；Direct.list 锚点。
-DOMAIN-SUFFIX,sofi.com # SoFi；数字金融服务；Direct.list 锚点。
-DOMAIN-SUFFIX,chime.com # Chime；数字金融服务；Direct.list 锚点。
-DOMAIN-SUFFIX,current.com # Current；数字金融服务；Direct.list 锚点。
-DOMAIN-SUFFIX,moneylion.com # MoneyLion；数字金融服务；Direct.list 锚点。
-DOMAIN-SUFFIX,varomoney.com # Varo；数字银行；Direct.list 锚点。
-DOMAIN-SUFFIX,axosbank.com # Axos Bank；数字银行；Direct.list 锚点。
-DOMAIN-SUFFIX,synchronybank.com # Synchrony Bank；数字银行/信用金融；Direct.list 锚点。
-DOMAIN-SUFFIX,wio.io # Wio Bank；数字银行；Direct.list 锚点。
-DOMAIN-SUFFIX,liv.me # Liv.；数字银行品牌；Direct.list 锚点。
-DOMAIN-SUFFIX,kuda.com # Kuda；数字银行；Direct.list 锚点。
-DOMAIN-SUFFIX,wise.com # Wise；跨境金融账户；官方公开资料可见。
-DOMAIN-SUFFIX,transferwise.com # Wise 旧品牌域；迁移兼容；Direct.list 锚点。
-DOMAIN-SUFFIX,wiseassets.com # Wise Assets；投资/收益产品实体；官方公开资料可见。
-DOMAIN-SUFFIX,revolut.com # Revolut；数字银行/金融服务；Direct.list 锚点。
-DOMAIN-SUFFIX,rev.money # Revolut 相关域；Direct.list 锚点。
-DOMAIN-SUFFIX,payoneer.com # Payoneer；跨境收款/金融服务；Direct.list 锚点。
-DOMAIN-SUFFIX,payoneer.com.cn # Payoneer 中国域；跨境金融服务；Direct.list 锚点。
-DOMAIN-SUFFIX,link.com # Stripe Link 钱包；官方公开资料可见；AI 交叉已审查；需 Codex 后置复核。
+DOMAIN-SUFFIX,cmbc.com.cn # 中国民生银行；银行入口。
+DOMAIN-SUFFIX,cebbank.com # 光大银行；银行入口。
+DOMAIN-SUFFIX,cebbank.com.cn # 光大银行中国域；银行入口。
+DOMAIN-SUFFIX,cib.com.cn # 兴业银行；银行入口。
+DOMAIN-SUFFIX,pingan.com # 平安集团；金融集团入口。
+DOMAIN-SUFFIX,pinganbank.com # 平安银行；银行入口。
+DOMAIN-SUFFIX,minsheng.com.cn # 民生银行集团域；银行入口。
+DOMAIN-SUFFIX,hkbea.com # 东亚银行；银行入口。
+DOMAIN-SUFFIX,bankofbeijing.com.cn # 北京银行；银行入口。
+DOMAIN-SUFFIX,bobchina.com # 北京银行品牌域；银行入口。
+DOMAIN-SUFFIX,n26.com # N26；数字银行。
+DOMAIN-SUFFIX,monzo.com # Monzo；数字银行。
+DOMAIN-SUFFIX,starlingbank.com # Starling Bank；数字银行。
+DOMAIN-SUFFIX,ally.com # Ally；数字银行/银行入口。
+DOMAIN-SUFFIX,sofi.com # SoFi；数字金融服务。
+DOMAIN-SUFFIX,chime.com # Chime；数字金融服务。
+DOMAIN-SUFFIX,current.com # Current；数字金融服务。
+DOMAIN-SUFFIX,moneylion.com # MoneyLion；数字金融服务。
+DOMAIN-SUFFIX,varomoney.com # Varo；数字银行。
+DOMAIN-SUFFIX,axosbank.com # Axos Bank；数字银行。
+DOMAIN-SUFFIX,synchronybank.com # Synchrony Bank；数字银行/信用金融。
+DOMAIN-SUFFIX,wio.io # Wio Bank；数字银行。
+DOMAIN-SUFFIX,liv.me # Liv.；数字银行品牌。
+DOMAIN-SUFFIX,kuda.com # Kuda；数字银行。
+DOMAIN-SUFFIX,wise.com # Wise；跨境金融账户。
+DOMAIN-SUFFIX,transferwise.com # Wise 旧品牌域；迁移兼容。
+DOMAIN-SUFFIX,wiseassets.com # Wise Assets；投资/收益产品实体。
+DOMAIN-SUFFIX,revolut.com # Revolut；数字银行/金融服务。
+DOMAIN-SUFFIX,rev.money # Revolut 相关域。
+DOMAIN-SUFFIX,payoneer.com # Payoneer；跨境收款/金融服务。
+DOMAIN-SUFFIX,payoneer.com.cn # Payoneer 中国域；跨境金融服务。
+DOMAIN-SUFFIX,link.com # Stripe Link 钱包；AI 交叉已审查。
