@@ -12,7 +12,7 @@ DOMAIN-KEYWORD,gcpp
 DOMAIN-KEYWORD,gemini
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,chatgpt
-DOMAIN-KEYWORD,sora # FinanceRealDNSDirect.list 的 boursorama.com 会被 AI.list 的 DOMAIN-KEYWORD,sora 字符串命中。它不是 Sora/AI 服务，但如果某个客户端把 AI 规则放在金融直连前面，可能被错误路由。
+#DOMAIN-KEYWORD,sora # FinanceRealDNSDirect.list 的 boursorama.com 会被 AI.list 的 DOMAIN-KEYWORD,sora 字符串命中。它不是 Sora/AI 服务，但如果某个客户端把 AI 规则放在金融直连前面，可能被错误路由。
 DOMAIN-KEYWORD,notebooklm
 DOMAIN-KEYWORD,notebookllm
 DOMAIN-KEYWORD,grok
@@ -290,3 +290,4 @@ DOMAIN-SUFFIX,modelcontextprotocol.io
 DOMAIN-SUFFIX,oracle.com
 DOMAIN-SUFFIX,java.com
 DOMAIN-SUFFIX,java.net
+DOMAIN-SUFFIX,dynamedex.com #循证医学相关，过于常用且与医学大模型有关，故而放在此处
