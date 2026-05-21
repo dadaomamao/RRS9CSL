@@ -2,6 +2,16 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-05-21
+
+### eSIM Google AI rule narrowing and security review
+
+- 在 `eSIM-AI.list` 中重新启用 Google AI / Gemini / NotebookLM / AI Studio 相关精修规则，但继续保持 Claude / Anthropic 分流禁用边界不变。
+- 将明显过宽或不属于 eSIM AI 精修入口的 Google 规则继续保持注释，包括普通 Google 搜索、YouTube、广告统计、通用静态资源、通用内容资源、通用容器和过宽 Google API 后缀。
+- 将 `DOMAIN-KEYWORD,gemini` 保持注释状态，避免误伤 Google Gemini 之外的同名服务，尤其避免虚拟货币相关服务被关键词错误命中。
+- 本次只启用更明确的 Google AI、NotebookLM、AI Studio、Generative Language、AI Platform、DeepMind、MakerSuite 和必要鉴权相关规则。
+- 信息安全审查结论：通过。本次 diff 未发现敏感对象命中、攻击性测试措辞、凭据或密钥处理、主机环境修改、第三方规则复制、外部依赖安装、联网执行要求或普通 Google / YouTube / 广告统计误收。
+
 ## 2026-05-19
 
 ### ProxyLite forum, media, and custom proxy maintenance
