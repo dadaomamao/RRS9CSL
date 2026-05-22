@@ -2,6 +2,15 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-05-22
+
+### eSIM Google AI route disabled after Gemini line test
+
+- 将 `eSIM-AI.list` 中 Google AI / Gemini / NotebookLM / AI Studio 相关生效规则全部改为注释保留。
+- Gemini 实测只能使用微软专线；其他线路无法正常无感使用。
+- 因上述实测结果，Google AI / Gemini 相关规则只保留在通用补充代理和 `AI.list` 网络中，不接入 eSIM 网络。
+- 本次只调整 `eSIM-AI.list` 的 Google AI 相关规则，不触碰 Claude / Anthropic、OpenAI、Grok 或其他规则块。
+
 ## 2026-05-21
 
 ### eSIM Google AI rule narrowing and security review
