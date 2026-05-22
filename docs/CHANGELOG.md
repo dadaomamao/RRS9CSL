@@ -13,6 +13,7 @@
 - 将 `AI.list` 中 Gemini / NotebookLM / AI Studio / MakerSuite / DeepMind / Generative Language / AI Platform 相关生效规则全部改为注释保留。
 - Gemini 硬智力过低、幻觉严重，暂停使用并在本地予以屏蔽。
 - `ProxyLite.list` 中 Gemini 系服务规则已由远端手动删除；本次同步该远端状态，不重新加入代理列表。
+- `GoogleAccountAiUS.list` 指谷歌 AI 专用 list，单列最小化 genmi / Gemini 系服务，作为屏蔽用入口。
 - 本次不触碰 Claude / Anthropic、OpenAI、Grok、Cursor 或金融相关规则块。
 
 ### eSIM Google AI route disabled after Gemini line test
