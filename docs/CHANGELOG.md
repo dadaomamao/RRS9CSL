@@ -4,6 +4,10 @@
 
 ## 2026-05-22
 
+### Network routing contingency note
+
+- 当前网络环境恶化严重，普通软路由需要预备随时有可能切换到 eSIM 节点，后续需要做严格流量智能分流。
+
 ### AI Gemini local block
 
 - 将 `AI.list` 中 Gemini / NotebookLM / AI Studio / MakerSuite / DeepMind / Generative Language / AI Platform 相关生效规则全部改为注释保留。
