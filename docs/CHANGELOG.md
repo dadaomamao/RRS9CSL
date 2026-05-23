@@ -4,6 +4,11 @@
 
 ## 2026-05-23
 
+### ProxyLite media telemetry coverage
+
+- 在 `ProxyLite.list` 增补 `litix.io`，用于覆盖 Dropbox 网页媒体播放实测带出的第三方播放质量 / 遥测链路，避免该类境外播放辅助连接落入 `MATCH`。
+- 本次不修改 `Dropbox.list`：Dropbox 自有域和官方精确第三方依赖仍由 `Dropbox.list` 维护，`litix.io` 作为非 Dropbox 自有域保留在通用代理补充入口。
+
 ### High priority CN real DNS direct entry
 
 - 新增 `HighPriorityCNRealDNSDirect.list`，作为高频境内非金融服务的真实 DNS 兼容直连入口。

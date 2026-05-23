@@ -281,6 +281,7 @@ DOMAIN-SUFFIX,dog.ssrdog.com
 DOMAIN-SUFFIX,nexitally.com
 DOMAIN-SUFFIX,cloudfront.net # Todoist 官方要求的通用 CDN 依赖；不是 Todoist 专属域名，所以保留在常规自定义域名补充列表。
 DOMAIN-SUFFIX,instatus.com   # 可覆盖 Todoist 状态页底层状态服务；不归入 Todoist 专区。
+DOMAIN-SUFFIX,litix.io
 DOMAIN-SUFFIX,zendesk.com
 DOMAIN-SUFFIX,cloudinary.com
 DOMAIN-SUFFIX,sendgrid.net
