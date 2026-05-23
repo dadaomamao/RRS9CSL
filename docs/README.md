@@ -35,6 +35,7 @@
 - `ProxyLite.list`
 - `Direct.list`
 - `FinanceRealDNSDirect.list`
+- `HighPriorityCNRealDNSDirect.list`
 - `crypto.list`
 - `Dropbox.list`
 - `AGENTS.md`

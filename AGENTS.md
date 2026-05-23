@@ -23,10 +23,11 @@
 3. `ProxyLite.list`
 4. `Direct.list`
 5. `FinanceRealDNSDirect.list`
-6. `crypto.list`
-7. `Dropbox.list`
-8. `AGENTS.md`
-9. `docs/*.md`
+6. `HighPriorityCNRealDNSDirect.list`
+7. `crypto.list`
+8. `Dropbox.list`
+9. `AGENTS.md`
+10. `docs/*.md`
 
 一般说明性 Markdown 统一放在 `docs/`。`docs/*.md` 只给人阅读，不是规则入口。
 
@@ -153,6 +154,19 @@
 4. 已迁入本文件的同规则类型、同域名规则，应在 `Direct.list` 中注释保留原文，不得直接删除。
 5. 建设银行系、浦发银行系、Claude / Anthropic 明确相关对象和未解决的 AI / 银行支付风控交叉对象不得自动加入。
 6. 后续 YAML 接入应使用 provider 名 `finance_realdns_direct`，并避免把整个 `Direct.list`、`crypto.list` 或 `AI.list` 放进 `fake-ip-filter`。
+
+### 5.3.2 `HighPriorityCNRealDNSDirect.list`
+
+用途：高频境内真实 DNS 兼容直连清单。
+
+维护边界：
+
+1. 本文件同时面向 DNS 层 `fake-ip-filter` 和路由层 `RULE-SET,DIRECT`。
+2. 只收纳维护者高频使用、依赖境内 CDN 就近调度、需要真实 DNS 解析并保持直连的非金融服务。
+3. 它不是国内域名大全，不是 `Direct.list` 的复制版，不是金融规则表，也不是代理列表。
+4. 金融、银行、支付、卡组织、3DS、支付认证、支付风控和 Binance 核心域名仍归 `FinanceRealDNSDirect.list`。
+5. OpenAI、ChatGPT、Codex、Google、YouTube、Claude、Anthropic、Gemini、Cursor 等境外或代理服务不得加入本文件。
+6. 后续 YAML 接入应使用 provider 名 `cn_priority_realdns_direct`，并避免把整个 `Direct.list` 放进 `fake-ip-filter` 作为本文件的替代品。
 
 ### 5.4 `Dropbox.list`
 

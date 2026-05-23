@@ -1,0 +1,51 @@
+# HighPriorityCNRealDNSDirect.list
+# 高频境内真实 DNS 直连清单
+# 用途：
+#  1) fake-ip-filter: - "rule-set:cn_priority_realdns_direct"
+#  2) rules: - RULE-SET,cn_priority_realdns_direct,DIRECT
+# 边界：
+#  1) 只放高频使用、依赖境内 CDN 就近调度、需要 real-DNS + DIRECT 的非金融服务。
+#  2) 金融、银行、支付、3DS、支付风控和 Binance 继续放入 FinanceRealDNSDirect.list。
+#  3) OpenAI / ChatGPT / Codex / Google / YouTube 等境外或代理服务不得放入本文件。
+
+# Taobao / Tmall
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,tbcdn.cn
+DOMAIN-SUFFIX,alibabadns.com
+
+# Zhihu
+DOMAIN-SUFFIX,zhihu.com
+DOMAIN-SUFFIX,zhimg.com
+
+# Bilibili
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,bilivideo.com
+DOMAIN-SUFFIX,bilivideo.cn
+DOMAIN-SUFFIX,acgvideo.com
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,bilicdn1.com
+
+# Weibo
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,weibo.cn
+DOMAIN-SUFFIX,sinaimg.cn
+DOMAIN-SUFFIX,sinaedge.com
+
+# miHoYo / Cloud Genshin
+DOMAIN-SUFFIX,mihoyo.com
+DOMAIN-SUFFIX,mihayou.com
+DOMAIN-SUFFIX,yuanshen.com
+
+# Douyin / ByteDance China
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,iesdouyin.com
+DOMAIN-SUFFIX,douyinpic.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,zjcdn.com
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,bytedance.com

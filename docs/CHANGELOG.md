@@ -2,6 +2,14 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-05-23
+
+### High priority CN real DNS direct entry
+
+- 新增 `HighPriorityCNRealDNSDirect.list`，作为高频境内非金融服务的真实 DNS 兼容直连入口。
+- 首批覆盖淘宝 / 天猫、知乎、B站、微博、米哈游 / 云原神、抖音 / 字节中国链路，面向 `fake-ip-filter` 和 `RULE-SET,DIRECT` 使用。
+- 同步更新 `AGENTS.md`、`docs/README.md`、`docs/USAGE.md` 和 `docs/NOTICE.md`，明确该入口不替代 `FinanceRealDNSDirect.list`、不承载金融规则，也不承载 OpenAI / ChatGPT / Codex / Google / YouTube 等代理服务。
+
 ## 2026-05-22
 
 ### Network routing contingency note

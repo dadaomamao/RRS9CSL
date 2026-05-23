@@ -65,7 +65,7 @@ English
 
 This repository contains personal proxy-rule configuration files.
 
-`FinanceRealDNSDirect.list` is treated as one of the repository's curated rule files and is subject to the same rights reservation, third-party-material boundaries, and non-authorization terms.
+`FinanceRealDNSDirect.list` and `HighPriorityCNRealDNSDirect.list` are treated as curated rule files of this repository and are subject to the same rights reservation, third-party-material boundaries, and non-authorization terms.
 
 Some rule files do contain URLs, domain names, or rule entries associated with explicit pornographic or adult websites. These references exist only as part of personal proxy-rule configuration. They do not mean that this repository publishes, recommends, promotes, distributes, redistributes, endorses, or makes available pornographic or adult content.
 
@@ -88,7 +88,7 @@ This Notice applies only to Repository Content. It does not claim ownership of a
 
 本仓库包含个人代理规则配置文件。
 
-`FinanceRealDNSDirect.list` 同样属于本仓库整理后的规则文件，受本声明中的权利保留、第三方材料边界和非授权条款约束。
+`FinanceRealDNSDirect.list` 和 `HighPriorityCNRealDNSDirect.list` 同样属于本仓库整理后的规则文件，受本声明中的权利保留、第三方材料边界和非授权条款约束。
 
 部分规则文件确实包含与明确色情内容或成人网站相关的 URL、域名或规则项。此类引用仅作为个人代理规则配置的一部分存在，不表示本仓库发布、推荐、推广、分发、再分发、背书或提供色情或成人内容。
 

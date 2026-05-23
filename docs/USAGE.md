@@ -20,6 +20,7 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/eSIM-AI.lis
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/ProxyLite.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Direct.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/FinanceRealDNSDirect.list
+https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/HighPriorityCNRealDNSDirect.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/crypto.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Dropbox.list
 ```
@@ -31,6 +32,7 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Dropbox.lis
 - `ProxyLite.list`：个人代理补充规则。
 - `Direct.list`：直连补充规则。
 - `FinanceRealDNSDirect.list`：金融真实 DNS 兼容直连清单，用于 `fake-ip-filter` 和 `RULE-SET,DIRECT`。
+- `HighPriorityCNRealDNSDirect.list`：高频境内真实 DNS 兼容直连清单，用于 `fake-ip-filter` 和 `RULE-SET,DIRECT`。
 - `crypto.list`：虚拟货币相关观察规则。
 - `Dropbox.list`：Dropbox 桌面同步、网页、API、分享下载和登录依赖规则。
 
@@ -43,6 +45,7 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Dropbox.lis
 默认原则：
 
 - 需要真实 DNS 兼容并保持直连的金融、银行、支付、3DS、支付认证和支付风控域名，优先放在 `FinanceRealDNSDirect.list`。
+- 高频境内非金融服务需要真实 DNS 兼容并保持直连时，优先放在 `HighPriorityCNRealDNSDirect.list`。
 - 普通直连补充仍放在 `Direct.list`；虚拟货币观察入口仍保留在 `crypto.list`。
 - 不能因为某个使用场景访问异常，就把公开 raw 规则改成代理。
 - 如果同一条金融规则同时出现在多个列表里，不能按普通重复规则自动删除；先确认是否应由 `FinanceRealDNSDirect.list` 承担真实 DNS 兼容直连。
