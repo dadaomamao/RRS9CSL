@@ -2,6 +2,14 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-05-25
+
+### High priority CN real DNS direct provider compatibility fix
+
+- 修复 `HighPriorityCNRealDNSDirect.list` 中 19 条生效规则的行尾说明兼容性问题，将说明文字移动到独立注释行，保持 active 规则行为为纯 classical text。
+- 本次不新增、不删除、不恢复任何域名规则；修复前后生效规则序列保持一致，生效规则 19 条，行尾注释 0 条，语法错误 0 条，生效规则 hash `c4f97ad8a8ceecb2f71826e39b9b6a87b258cac967581bedae99bba710166f82`。
+- 重新核查跨列表重复与覆盖：`HighPriorityCNRealDNSDirect.list` 与 `FinanceRealDNSDirect.list`、`Direct.list`、`ProxyLite.list`、`AI.list`、`crypto.list`、`Dropbox.list`、`eSIM-AI.list` 和 `GoogleAccountAiUS.list` 没有生效精确重复或覆盖冲突。
+
 ## 2026-05-23
 
 ### ProxyLite media telemetry coverage
