@@ -7,45 +7,51 @@
 #  1) 只放高频使用、依赖境内 CDN 就近调度、需要 real-DNS + DIRECT 的非金融服务。
 #  2) 金融、银行、支付、3DS、支付风控和 Binance 继续放入 FinanceRealDNSDirect.list。
 #  3) OpenAI / ChatGPT / Codex / Google / YouTube 等境外或代理服务不得放入本文件。
+# 研究口径：
+#  1) 搜索尽量宽，纳入极保守；仅启用归属与用途置信度 >=95% 的规则。
+#  2) 每条启用规则均应满足：真实归属、核心功能链路、安全边界、普通可访问性四类检查。
+#  3) 对旧规则如需停用，优先注释保留原文，不直接删除。
 
 # Taobao / Tmall
-DOMAIN-SUFFIX,taobao.com
-DOMAIN-SUFFIX,tmall.com
-DOMAIN-SUFFIX,alicdn.com
-DOMAIN-SUFFIX,tbcdn.cn
-DOMAIN-SUFFIX,alibabadns.com
+DOMAIN-SUFFIX,taobao.com # 淘宝主站与核心前台子域；官方开放平台列入资源/访问默认支持域名。
+DOMAIN-SUFFIX,tmall.com # 天猫主站与核心前台子域；官方前台与开放平台均直接使用。
+DOMAIN-SUFFIX,alicdn.com # 淘宝/天猫静态资源与图片分发；官方页面与开放平台直接出现。
+DOMAIN-SUFFIX,tbcdn.cn # 淘宝体系资源/CDN 域；官方开放平台列入默认支持域名。
+# DOMAIN-SUFFIX,alibabadns.com # 原规则注释保留：阿里云 DNS / 名称服务器基础设施，非淘宝/天猫前台核心链路，集团混合风险高。
 
 # Zhihu
-DOMAIN-SUFFIX,zhihu.com
-DOMAIN-SUFFIX,zhimg.com
+DOMAIN-SUFFIX,zhihu.com # 知乎主站与核心前台子域。
+DOMAIN-SUFFIX,zhimg.com # 知乎图片与静态资源核心链路；官方页面直接引用 pic*.zhimg.com。
 
 # Bilibili
-DOMAIN-SUFFIX,bilibili.com
-DOMAIN-SUFFIX,biliapi.net
-DOMAIN-SUFFIX,bilivideo.com
-DOMAIN-SUFFIX,bilivideo.cn
-DOMAIN-SUFFIX,acgvideo.com
-DOMAIN-SUFFIX,hdslb.com
-DOMAIN-SUFFIX,bilicdn1.com
+DOMAIN-SUFFIX,bilibili.com # B站主站与核心消费者子域。
+DOMAIN-SUFFIX,bilivideo.com # B站公开视频资源链路；官方页面直接出现 upos-*.bilivideo.com。
+DOMAIN-SUFFIX,hdslb.com # B站客户端下载与静态资源链路；官方下载中心和官方页面直接使用。
+# DOMAIN-SUFFIX,biliapi.net # 原规则注释保留：当前强证据更偏开发者/社区 API 场景，未达到普通用户核心链路 95% 门槛。
+# DOMAIN-SUFFIX,bilivideo.cn # 原规则注释保留：存在 MCDN/PCDN 风险信号，公开一手证据不足以支持整个后缀纳入。
+# DOMAIN-SUFFIX,acgvideo.com # 原规则注释保留：历史关联强于当前官方核心链路证据，暂不进入高优先级真实 DNS 表。
+# DOMAIN-SUFFIX,bilicdn1.com # 原规则注释保留：缺少足够强的官方一手证据证明其为普通用户核心链路，避免误纳 CDN/边缘加速域。
 
 # Weibo
-DOMAIN-SUFFIX,weibo.com
-DOMAIN-SUFFIX,weibo.cn
-DOMAIN-SUFFIX,sinaimg.cn
-DOMAIN-SUFFIX,sinaedge.com
+DOMAIN-SUFFIX,weibo.com # 微博主站与核心前台子域。
+DOMAIN-SUFFIX,weibo.cn # 微博触屏/移动入口。
+DOMAIN-SUFFIX,sinaimg.cn # 微博图片资源核心链路；开放平台示例与根站均支持。
+# DOMAIN-SUFFIX,sinaedge.com # 原规则注释保留：更像 Sina 级共享 CDN，微博专属性不足，后缀过宽。
 
-# miHoYo / Cloud Genshin
-DOMAIN-SUFFIX,mihoyo.com
-DOMAIN-SUFFIX,mihayou.com
-DOMAIN-SUFFIX,yuanshen.com
+# miHoYo / Genshin / Cloud Genshin
+DOMAIN-SUFFIX,yuanshen.com # 《原神》国服官网与相关下载子域；国服核心体验域。
+DOMAIN,ys.mihoyo.com # 《原神》国服核心站点；用精确主机替代宽后缀，避免带入 pay.mihoyo.com。
+DOMAIN,mhyy.mihoyo.com # 云·原神官方站点；云游戏核心链路。
+# DOMAIN-SUFFIX,mihoyo.com # 原规则注释保留：整后缀包含官方 pay.mihoyo.com 充值中心，安全边界不满足本文件口径。
+# DOMAIN-SUFFIX,mihayou.com # 原规则注释保留：官方镜像/品牌域存在，但不足以证明整个后缀是高频核心链路，暂不启用。
 
 # Douyin / ByteDance China
-DOMAIN-SUFFIX,douyin.com
-DOMAIN-SUFFIX,iesdouyin.com
-DOMAIN-SUFFIX,douyinpic.com
-DOMAIN-SUFFIX,snssdk.com
-DOMAIN-SUFFIX,amemv.com
-DOMAIN-SUFFIX,zjcdn.com
-DOMAIN-SUFFIX,ixigua.com
-DOMAIN-SUFFIX,byteimg.com
-DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,douyin.com # 抖音主站与官方 PC 端入口。
+DOMAIN-SUFFIX,iesdouyin.com # 抖音官方分享链路域；官方页面可见 share 链接。
+DOMAIN-SUFFIX,douyinpic.com # 抖音图片资源核心链路；官方页面可见 p*-sign.douyinpic.com。
+DOMAIN-SUFFIX,ixigua.com # 西瓜视频中国区服务域；官方开放平台明确使用 open-api.ixigua.com。
+# DOMAIN-SUFFIX,snssdk.com # 原规则注释保留：官方文档显示其同时服务于头条/抖音/西瓜，属于共享 OAuth/平台基础设施。
+# DOMAIN-SUFFIX,amemv.com # 原规则注释保留：虽与抖音强相关，但公开可见子域已覆盖支付、AI 抖音、直播、登录等混合链路，后缀过宽。
+# DOMAIN-SUFFIX,zjcdn.com # 原规则注释保留：官方一手证据不足，无法证明其为抖音/西瓜普通用户核心链路。
+# DOMAIN-SUFFIX,byteimg.com # 原规则注释保留：字节共享图片/图像基础设施，产品混合风险较高。
+# DOMAIN-SUFFIX,bytedance.com # 原规则注释保留：字节集团全球官网，明确覆盖 TikTok、CapCut、Lark、Pico 等多业务，不得纳入。
