@@ -2,6 +2,14 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-06-01
+
+### Automated remote sync and rule audit
+
+- 快进同步 GitHub `main` 到 `5f6b61a`，纳入 `ProxyLite.list` 最新远端规则状态。
+- 完成一次只读规则审计：生效规则 1273 条，语法坏行 0 条，未发现代理 / 直连生效规则冲突。
+- 本次只记录自动维护结果，不修改任何 `.list` 规则行。
+
 ## 2026-05-25
 
 ### High priority CN real DNS direct provider compatibility fix
