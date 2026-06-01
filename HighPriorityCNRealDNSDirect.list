@@ -53,3 +53,6 @@ DOMAIN-SUFFIX,snssdk.com
 # 美团外卖
 DOMAIN-SUFFIX,meituan.com
 DOMAIN-SUFFIX,meituan.net
+
+# Sam's Club China / 山姆会员商店中国
+DOMAIN-SUFFIX,samsclub.cn
