@@ -2,6 +2,13 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-06-06
+
+### High priority CN entertainment pause
+
+- 将 `HighPriorityCNRealDNSDirect.list` 中微博、米哈游 / 原神 / 米游社、抖音 / 字节视频娱乐相关生效规则全部改为注释保留，维护口径为“暂停一切娱乐”。
+- 本次只注释保留原规则文本，不物理删除域名；淘宝 / 天猫、知乎、B站、美团外卖和山姆等未点名规则保持不变。
+
 ## 2026-06-01
 
 ### Automated remote sync and rule audit
