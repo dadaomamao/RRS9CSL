@@ -52,6 +52,16 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Dropbox.lis
 
 不同使用场景的表现可能不同。同一服务在不同地理位置、运营商、DNS 和出口网络下也可能不同。若确实需要代理，优先在该使用场景自己的配置里覆盖，不改变公开默认直连原则。
 
+## DNS 解析上游
+
+本仓库的 `.list` 文件只负责规则命中，不替代本地 DNS 配置。使用这些规则时，DNS 上游必须按域名归属分开处理：
+
+- 境外域名只能使用 Google 加密 DNS 解析。这里的加密 DNS 指 DoH、DoT 或 DoQ 等加密上游；不能把明文 `8.8.8.8` 或 `8.8.4.4` 当作替代方案。
+- 境内域名必须使用本地运营商 DNS 和大厂公共 DNS 并发解析。只使用单一路径、单一公共 DNS 或境外 DNS，容易让国内 CDN 调度失真，尾部延迟会极大。
+- `FinanceRealDNSDirect.list` 和 `HighPriorityCNRealDNSDirect.list` 面向真实 DNS 兼容直连场景；它们依赖正确的境内 DNS 并发解析，不能用境外 DNS 统一兜底。
+
+如果本地客户端支持按规则集、域名后缀或策略组拆分 DNS，上述约束应在客户端 DNS 配置里实现；不要把 Markdown 文档当成规则入口，也不要通过修改公开 `.list` 规则来补救本地 DNS 上游选错的问题。
+
 ## Dropbox 专用规则
 
 `Dropbox.list` 是 Dropbox 专用规则入口。若同时使用 `Dropbox.list` 和包含宽泛第三方依赖的 `ProxyLite.list`，应让 Dropbox 专用规则排在宽泛规则之前。
