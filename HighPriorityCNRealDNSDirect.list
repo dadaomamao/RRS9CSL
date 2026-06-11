@@ -28,30 +28,27 @@ DOMAIN-SUFFIX,acgvideo.com
 DOMAIN-SUFFIX,hdslb.com
 
 # Weibo
-# 暂停一切娱乐：微博相关规则先注释保留，不作为高优先级 real-DNS DIRECT 生效规则。
-# DOMAIN-SUFFIX,weibo.com
-# DOMAIN-SUFFIX,weibo.cn
-# DOMAIN-SUFFIX,sinaimg.cn
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,weibo.cn
+DOMAIN-SUFFIX,sinaimg.cn
 
 # miHoYo / Genshin CN / Miyoushe
-# 暂停一切娱乐：米哈游 / 原神 / 米游社相关规则先注释保留。
-# DOMAIN-SUFFIX,mihoyo.com
-# DOMAIN-SUFFIX,mihayou.com
-# DOMAIN-SUFFIX,yuanshen.com
-# DOMAIN-SUFFIX,miyoushe.com
+DOMAIN-SUFFIX,mihoyo.com
+DOMAIN-SUFFIX,mihayou.com
+DOMAIN-SUFFIX,yuanshen.com
+DOMAIN-SUFFIX,miyoushe.com
 
 # Douyin / ByteDance China
-# 暂停一切娱乐：抖音 / 字节视频娱乐链路相关规则先注释保留。
-# DOMAIN-SUFFIX,douyin.com
-# DOMAIN-SUFFIX,iesdouyin.com
-# DOMAIN-SUFFIX,amemv.com
-# DOMAIN-SUFFIX,douyinpic.com
-# DOMAIN-SUFFIX,douyinstatic.com
-# DOMAIN-SUFFIX,douyincdn.com
-# DOMAIN-SUFFIX,douyinvod.com
-# DOMAIN-SUFFIX,ixigua.com
-# DOMAIN-SUFFIX,ixiguavideo.com
-# DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,iesdouyin.com
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,douyinpic.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,ixiguavideo.com
+DOMAIN-SUFFIX,snssdk.com
 
 # 美团外卖
 DOMAIN-SUFFIX,meituan.com
