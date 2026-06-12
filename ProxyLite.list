@@ -265,43 +265,43 @@ DOMAIN-SUFFIX,delta.chat
 
 # Delta Chat calls
 # 用途：当前 fallback TURN server，语音/视频通话高优先级
-DOMAIN,turn.delta.chat
+# DOMAIN,turn.delta.chat
 
 # Delta Chat calls / default onboarding relay
 # 用途：fallback STUN server；也是多个 chatmail app 的默认 onboarding relay
-DOMAIN-SUFFIX,nine.testrun.org
+DOMAIN,nine.testrun.org
 
 # Chatmail official relay directory / docs
-DOMAIN-SUFFIX,chatmail.at
+DOMAIN,chatmail.at
 
 # Public Chatmail relays
 # 来源：chatmail.at 官方公开 relay 列表
-DOMAIN-SUFFIX,mehl.cloud
-DOMAIN-SUFFIX,mailchat.pl
-DOMAIN-SUFFIX,chatmail.woodpeckersnest.space
-DOMAIN-SUFFIX,chatmail.culturanerd.it
-DOMAIN-SUFFIX,chat.adminforge.de
-DOMAIN-SUFFIX,chika.aangat.lahat.computer
-DOMAIN-SUFFIX,tarpit.fun
-DOMAIN-SUFFIX,d.gaufr.es
-DOMAIN-SUFFIX,chtml.ca
-DOMAIN-SUFFIX,chatmail.au
-DOMAIN-SUFFIX,e2ee.wang
-DOMAIN-SUFFIX,chat.privittytech.com
-DOMAIN-SUFFIX,e2ee.im
-DOMAIN-SUFFIX,chatmail.email
-DOMAIN-SUFFIX,danneskjold.de
-DOMAIN-SUFFIX,chat.in-the.eu
-DOMAIN-SUFFIX,chat.nuvon.app
-DOMAIN-SUFFIX,nibblehole.com
-DOMAIN-SUFFIX,chat.zashm.org
-DOMAIN-SUFFIX,chat.sus.fr
-DOMAIN-SUFFIX,delta.thelab.uno
-DOMAIN-SUFFIX,chat.vim.wtf
-DOMAIN-SUFFIX,uninterest.ing
-DOMAIN-SUFFIX,sweetfern.net
-DOMAIN-SUFFIX,delta.disobey.net
-DOMAIN-SUFFIX,nine.testrun.org
+# DOMAIN-SUFFIX,mehl.cloud
+# DOMAIN-SUFFIX,mailchat.pl
+# DOMAIN-SUFFIX,chatmail.woodpeckersnest.space
+# DOMAIN-SUFFIX,chatmail.culturanerd.it
+# DOMAIN-SUFFIX,chat.adminforge.de
+# DOMAIN-SUFFIX,chika.aangat.lahat.computer
+# DOMAIN-SUFFIX,tarpit.fun
+# DOMAIN-SUFFIX,d.gaufr.es
+# DOMAIN-SUFFIX,chtml.ca
+# DOMAIN-SUFFIX,chatmail.au
+# DOMAIN-SUFFIX,e2ee.wang
+# DOMAIN-SUFFIX,chat.privittytech.com
+# DOMAIN-SUFFIX,e2ee.im
+# DOMAIN-SUFFIX,chatmail.email
+# DOMAIN-SUFFIX,danneskjold.de
+# DOMAIN-SUFFIX,chat.in-the.eu
+# DOMAIN-SUFFIX,chat.nuvon.app
+# DOMAIN-SUFFIX,nibblehole.com
+# DOMAIN-SUFFIX,chat.zashm.org
+# DOMAIN-SUFFIX,chat.sus.fr
+# DOMAIN-SUFFIX,delta.thelab.uno
+# DOMAIN-SUFFIX,chat.vim.wtf
+# DOMAIN-SUFFIX,uninterest.ing
+# DOMAIN-SUFFIX,sweetfern.net
+# DOMAIN-SUFFIX,delta.disobey.net
+# DOMAIN-SUFFIX,nine.testrun.org
 
 
 #常规自定义域名补充列表
@@ -340,4 +340,3 @@ DOMAIN-SUFFIX,freedom.gov
 DOMAIN-SUFFIX,aitodo.co
 DOMAIN-SUFFIX,javpop.mov
 DOMAIN-SUFFIX,nxonearth.com
-
