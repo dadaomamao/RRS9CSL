@@ -1,0 +1,11 @@
+# AppleBrowseHKSmart.list
+#
+# Apple / App Store 浏览、搜索、商店元数据和展示资源入口。
+# 本列表面向需要走香港智能或同类低延迟代理出口的 App Store 浏览路径。
+#
+# 下载主机放在 AppleDownloadProxy.list。
+# Apple ID、iCloud、证书校验和普通 Apple 全域规则不放在这里。
+
+DOMAIN-SUFFIX,apps.apple.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,mzstatic.com

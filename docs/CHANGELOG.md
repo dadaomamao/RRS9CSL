@@ -2,6 +2,14 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-06-18
+
+### Apple App Store Hong Kong smart fallback split
+
+- 新增 `AppleDownloadProxy.list`、`AppleBrowseHKSmart.list` 和 `AppleMiscDirect.list`，将 Apple / App Store 下载、浏览和低风险杂项直连入口拆开维护。
+- 下载入口覆盖 `updates.cdn-apple.com`、`swcdn.apple.com`、`swdownload.apple.com`、`iosapps.itunes.apple.com` 等下载或大体积内容分发主机；浏览入口覆盖 `apps.apple.com`、`itunes.apple.com` 和 `mzstatic.com`；杂项直连入口只保留 `apple.com.cn`、`captive.apple.com` 和 Apple 时间服务。
+- 本次不修改 Apple ID、iCloud、证书校验、设备激活或通用 `apple_domain` 规则；本地使用时应让这三个入口排在通用 Apple 规则之前，并按使用场景接入专用代理、香港智能兜底或 `DIRECT`。
+
 ## 2026-06-11
 
 ### High priority CN real-DNS direct provincial regression gate

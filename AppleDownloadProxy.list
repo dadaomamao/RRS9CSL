@@ -1,0 +1,21 @@
+# AppleDownloadProxy.list
+#
+# Apple / App Store 下载与系统更新下载入口。
+# 本列表只覆盖下载或大体积内容分发相关主机，供本地配置接入
+# Apple 下载专用代理或兜底组。
+#
+# 不把 Apple ID、iCloud、证书校验或完整 Apple 全域规则放进来；
+# 这些对象需要单独评估。
+
+DOMAIN,appldnld.apple.com
+DOMAIN,audiocontentdownload.apple.com
+DOMAIN,iosapps.itunes.apple.com
+DOMAIN,oscdn.apple.com
+DOMAIN,osrecovery.apple.com
+DOMAIN,osxapps.itunes.apple.com
+DOMAIN,swcdn.apple.com
+DOMAIN,swdist.apple.com
+DOMAIN,swdownload.apple.com
+DOMAIN,swscan.apple.com
+DOMAIN,updates-http.cdn-apple.com
+DOMAIN,updates.cdn-apple.com

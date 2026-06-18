@@ -21,6 +21,9 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/ProxyLite.l
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Direct.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/FinanceRealDNSDirect.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/HighPriorityCNRealDNSDirect.list
+https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/AppleDownloadProxy.list
+https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/AppleBrowseHKSmart.list
+https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/AppleMiscDirect.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/crypto.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Dropbox.list
 ```
@@ -33,6 +36,9 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Dropbox.lis
 - `Direct.list`：直连补充规则。
 - `FinanceRealDNSDirect.list`：金融真实 DNS 兼容直连清单，用于 `fake-ip-filter` 和 `RULE-SET,DIRECT`。
 - `HighPriorityCNRealDNSDirect.list`：高频境内真实 DNS 兼容直连清单，用于 `fake-ip-filter` 和 `RULE-SET,DIRECT`。
+- `AppleDownloadProxy.list`：Apple / App Store 下载与系统更新下载入口，适合接入 Apple 下载专用代理或兜底组。
+- `AppleBrowseHKSmart.list`：Apple / App Store 浏览、搜索、商店元数据和展示资源入口，适合接入香港智能等低延迟代理出口。
+- `AppleMiscDirect.list`：Apple 杂项直连入口，只放低风险、非 App Store 代理目标的小集合。
 - `crypto.list`：虚拟货币相关观察规则。
 - `Dropbox.list`：Dropbox 桌面同步、网页、API、分享下载和登录依赖规则。
 
@@ -67,6 +73,18 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Dropbox.lis
 `Dropbox.list` 是 Dropbox 专用规则入口。若同时使用 `Dropbox.list` 和包含宽泛第三方依赖的 `ProxyLite.list`，应让 Dropbox 专用规则排在宽泛规则之前。
 
 例如 `DOMAIN,dropbox.zendesk.com` 是 Dropbox 官方支持邮件域的精确匹配；它可以和 `ProxyLite.list` 中更宽的 `DOMAIN-SUFFIX,zendesk.com` 同时存在，但具体策略以使用场景里的规则顺序为准。
+
+## Apple / App Store 专用规则
+
+Apple / App Store 规则按用途拆分：
+
+- `AppleDownloadProxy.list` 只放 Apple / App Store 下载与系统更新下载入口。
+- `AppleBrowseHKSmart.list` 只放 App Store 浏览、搜索、商店元数据和展示资源入口。
+- `AppleMiscDirect.list` 只放低风险 Apple 杂项直连入口。
+
+使用时应让这三个规则入口排在通用 `apple_domain` 之前。下载和浏览规则可以指向专用代理或兜底组；杂项规则默认保持 `DIRECT`。
+
+这些列表不替代通用 Apple 规则，也不覆盖 Apple ID、iCloud、证书校验或设备激活链路。
 
 ## 常见排查
 

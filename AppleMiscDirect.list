@@ -1,0 +1,12 @@
+# AppleMiscDirect.list
+#
+# Apple 杂项直连入口。
+# 本列表只放低风险、非 App Store 代理目标、且更适合本地直连的小集合。
+#
+# 不覆盖 Apple ID、iCloud、证书校验、App Store 浏览或下载规则。
+
+DOMAIN-SUFFIX,apple.com.cn
+DOMAIN,captive.apple.com
+DOMAIN,time.apple.com
+DOMAIN,time-ios.apple.com
+DOMAIN,time-macos.apple.com
