@@ -2,6 +2,13 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-07-08
+
+### ProxyLite Cochrane strict host block pause
+
+- 将 `ProxyLite.list` 中 Cochrane / Cochrane Library 严格精确主机块改为注释保留，避免与同块当前启用的 `DOMAIN-SUFFIX,cochrane.org` 全域兜底同时生效。
+- 本次只暂停严格精确块，不删除原规则文本；Cochrane 全域兜底、Cochrane 官方子服务候选和 Wiley 相关可选规则保持当前状态。
+
 ## 2026-06-18
 
 ### Apple App Store Hong Kong smart fallback split

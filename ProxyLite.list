@@ -306,25 +306,25 @@ DOMAIN,chatmail.at
 # Cochrane / Cochrane Library 严格启用规则
 # 精确主机版：优先推荐。尽量广纳入，但不放大到高概率无关子域。
 
-DOMAIN,cochrane.org
-DOMAIN,www.cochrane.org
-DOMAIN-SUFFIX,cochranelibrary.com
+# DOMAIN,cochrane.org
+# DOMAIN,www.cochrane.org
+# DOMAIN-SUFFIX,cochranelibrary.com
 
-DOMAIN,account.cochrane.org
-DOMAIN,login.cochrane.org
+# DOMAIN,account.cochrane.org
+# DOMAIN,login.cochrane.org
 
-DOMAIN,revman.cochrane.org
-DOMAIN,porto.cochrane.org
-DOMAIN,documentation.cochrane.org
-DOMAIN,help.cochrane.org
+# DOMAIN,revman.cochrane.org
+# DOMAIN,porto.cochrane.org
+# DOMAIN,documentation.cochrane.org
+# DOMAIN,help.cochrane.org
 
-DOMAIN,methods.cochrane.org
-DOMAIN,resources.cochrane.org
-DOMAIN,community.cochrane.org
-DOMAIN,training.cochrane.org
-DOMAIN,handbook.cochrane.org
-DOMAIN,subscribe.cochrane.org
-DOMAIN,crsweb.cochrane.org
+# DOMAIN,methods.cochrane.org
+# DOMAIN,resources.cochrane.org
+# DOMAIN,community.cochrane.org
+# DOMAIN,training.cochrane.org
+# DOMAIN,handbook.cochrane.org
+# DOMAIN,subscribe.cochrane.org
+# DOMAIN,crsweb.cochrane.org
 
 # Cochrane 官方子服务
   DOMAIN,data.cochrane.org # 用途：Cochrane 数据与 linked data；做 review data / QA dashboard 再开。
