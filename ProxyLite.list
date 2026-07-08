@@ -303,6 +303,55 @@ DOMAIN,chatmail.at
 # DOMAIN-SUFFIX,delta.disobey.net
 # DOMAIN-SUFFIX,nine.testrun.org
 
+# Cochrane / Cochrane Library 严格启用规则
+# 精确主机版：优先推荐。尽量广纳入，但不放大到高概率无关子域。
+
+DOMAIN,cochrane.org
+DOMAIN,www.cochrane.org
+DOMAIN-SUFFIX,cochranelibrary.com
+
+DOMAIN,account.cochrane.org
+DOMAIN,login.cochrane.org
+
+DOMAIN,revman.cochrane.org
+DOMAIN,porto.cochrane.org
+DOMAIN,documentation.cochrane.org
+DOMAIN,help.cochrane.org
+
+DOMAIN,methods.cochrane.org
+DOMAIN,resources.cochrane.org
+DOMAIN,community.cochrane.org
+DOMAIN,training.cochrane.org
+DOMAIN,handbook.cochrane.org
+DOMAIN,subscribe.cochrane.org
+DOMAIN,crsweb.cochrane.org
+
+# Cochrane 官方子服务
+  DOMAIN,data.cochrane.org # 用途：Cochrane 数据与 linked data；做 review data / QA dashboard 再开。
+  DOMAIN,abstracts.cochrane.org # 用途：Colloquium Abstracts；与核心证据访问相关度中低。
+# DOMAIN,engage.cochrane.org # 用途：志愿者协作平台；非本任务核心。
+# DOMAIN,crowd.cochrane.org # 用途：公民科学平台；非本任务核心。
+
+# Cochrane 官方全域兜底
+# 二选一策略：如果你更在乎召回而不是最小污染，可只开下面这一条替代上面的 cochrane.org 族精确主机。
+ DOMAIN-SUFFIX,cochrane.org # 覆盖官方所有子域，但会连带覆盖 links / abstracts / data / country sites / 可能的测试或活动子域。
+
+# Cochrane Library / Wiley 相关功能完整模式可选规则
+ DOMAIN-SUFFIX,onlinelibrary.wiley.com # 用途：Wiley Online Library；Cochrane Evidence Synthesis and Methods 期刊、部分个人登录函数、部分历史直链。
+ DOMAIN-SUFFIX,cochranesupport.wiley.com # 用途：Wiley 的 Cochrane 支持知识库；机构登录、已知问题、EZProxy / Cloudflare 排障。
+
+# 广纳入候选但默认注释
+  DOMAIN,tech.cochrane.org # 用途：旧版技术/培训入口；至少 /revman 当前仍可访问，但主入口已迁移。
+  DOMAIN,links.cochrane.org # 用途：官方跳转/Matomo/部分补充内容。
+
+# Cookie / 统计 / 客服 / 社媒 / 视频 / 字体 / 非核心依赖
+# 不建议为了 Cochrane 核心访问而纳入 youtube.com / youtu.be / facebook.com / instagram.com / linkedin.com / atlassian.com 等泛域名。
+
+# 暂不能明确为必须依赖，严格模式先注释
+# 本版未纳入 openathens.net / shibboleth.net / wiley.com 等泛域名。
+# 原因：当前公开官方证据不足以证明它们在主机粒度上是稳定、必需、且低误杀的。
+
+
 
 #常规自定义域名补充列表
 DOMAIN-SUFFIX,naiixi.com
