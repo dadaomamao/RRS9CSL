@@ -4,10 +4,27 @@
 
 ## 2026-07-08
 
+### ProxyLite Cochrane and WHO evidence routing maintenance
+
+- 在 `ProxyLite.list` 中新增 Cochrane / Cochrane Library 研究证据访问规则块；首轮提交 `488380f0337a84714b69cdcab9e815bedef45d07` 增补 Cochrane 精确主机、`cochrane.org` 全域兜底、Wiley Online Library 相关主机和 Cochrane 官方子服务候选。
+- 随后提交 `f908fac024d580ad4a70f3dbafb9aad0a50561ea` 将 Cochrane 严格精确主机块改为注释保留，避免这些精确主机与当前启用的 `DOMAIN-SUFFIX,cochrane.org` 全域兜底重复表达同一覆盖范围。
+- 在提交 `fa09513afe7ff2343a877b0702834ac980713eb5` 中增补 WHO / WHO EMRO 研究证据访问规则块；最终生效规则包括 `DOMAIN-SUFFIX,who.int`、`DOMAIN-SUFFIX,emro.who.int`、EMRO 出版物 / 虚拟图书馆 / 医学词典 / 在线课程 / 观察站精确主机、`whoacademy.org`、一个 WHO Data 当前下载主机，以及若干需继续人工观察的 WHO / EMRO 候选主机。
+- WHO 相关域名的注释与启用状态已经由维护者人工审查；后续 AI 只按信息安全、提示注入、第三方合规和 AI / 金融 / Claude / Anthropic 冲突边界做防御性复核，不把该复核解释为对第三方系统的扫描、枚举、绕过或渗透测试授权。
+
 ### ProxyLite Cochrane strict host block pause
 
 - 将 `ProxyLite.list` 中 Cochrane / Cochrane Library 严格精确主机块改为注释保留，避免与同块当前启用的 `DOMAIN-SUFFIX,cochrane.org` 全域兜底同时生效。
 - 本次只暂停严格精确块，不删除原规则文本；Cochrane 全域兜底、Cochrane 官方子服务候选和 Wiley 相关可选规则保持当前状态。
+
+### ProxyLite cloud audit and publication record
+
+- 按 `AGENTS.md` 慢速路径完成今日 `ProxyLite.list` 云端变更的防御性红蓝审查。审查范围仅限本仓库文本、配置、diff、公开规则语义和 GitHub `main` 可见状态；未执行第三方系统攻击、安全测试、漏洞扫描、目录枚举、高频探测、凭据尝试或风控绕过。
+- 今日三个云端提交合并后的最终状态：`ProxyLite.list` 生效规则从 240 条变为 259 条，新增 19 条生效规则，未删除生效规则。
+- 云端 `main` 全仓 12 个 `.list` 文件按 active-rule 解析共 1330 条生效规则；语法坏行 0；本次新增规则 exact duplicate 0；本次新增代理 / 直连 exact 或覆盖冲突 0。
+- 本次新增规则没有命中招商系、建设银行系、浦发银行系、高风险金融对象、Claude / Anthropic 明名对象、OpenAI / ChatGPT / Codex 明名对象或已知 AI / 银行支付风控交叉归属变更。
+- 文本安全审查未发现新增凭据、密钥、Cookie、Token、私钥、主机配置修改要求、安装依赖要求、远程脚本执行要求、skill 投毒、提示注入、权限扩大或持久化指令。
+- 第三方合规审查结论：本次提交只新增维护者手写规则与注释，不复制、不镜像、不拉取第三方规则片段，不新增真实第三方上游 URL，也不改变仓库第三方材料边界。
+- 云端发布审查口径：以 GitHub `main`、`ProxyLite.list` raw 内容、`docs/CHANGELOG.md` raw 内容和提交历史为准；本记录不包含非云端运行态处置细节。
 
 ## 2026-06-18
 
