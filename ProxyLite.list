@@ -351,7 +351,46 @@ DOMAIN,chatmail.at
 # 本版未纳入 openathens.net / shibboleth.net / wiley.com 等泛域名。
 # 原因：当前公开官方证据不足以证明它们在主机粒度上是稳定、必需、且低误杀的。
 
+# WHO / WHO EMRO 严格启用规则
+DOMAIN-SUFFIX,who.int
 
+# WHO 官方核心主机
+# DOMAIN,www.who.int # 已由 who.int 覆盖，通常无需单独启用。
+# DOMAIN,emro.who.int # 已由 who.int 覆盖；若只想路由 EMRO，请改用 DOMAIN-SUFFIX,emro.who.int。
+# DOMAIN,data.who.int # 已由 who.int 覆盖。
+# DOMAIN,iris.who.int # 已由 who.int 覆盖。
+# DOMAIN,open.who.int # 已由 who.int 覆盖。
+# DOMAIN,multimedia.who.int # 已由 who.int 覆盖。
+
+# WHO EMRO 专项规则
+  DOMAIN-SUFFIX,emro.who.int # 只想让 EMRO 走代理时，推荐启用这一条而不是 who.int 全域。
+  DOMAIN,applications.emro.who.int # 已由 emro.who.int 覆盖；用途：EMRO 出版物与 PDF。
+  DOMAIN,vlibrary.emro.who.int # 已由 emro.who.int 覆盖；用途：EMRO 虚拟图书馆。
+  DOMAIN,umd.emro.who.int # 已由 emro.who.int 覆盖；用途：EMRO Unified Medical Dictionary。
+  DOMAIN,moodle.emro.who.int # 已由 emro.who.int 覆盖；用途：EMRO 在线课程。
+  DOMAIN,rho.emro.who.int # 已由 emro.who.int 覆盖；用途：Eastern Mediterranean Health Observatory。
+
+# WHO 数据 / 出版物 / API / 培训 功能完整模式可选规则
+  DOMAIN-SUFFIX,whoacademy.org # 用途：WHO Academy 官方外部学习平台；相关概率：高；严格模式默认不启用。
+# DOMAIN,ghoapi.azureedge.net # 用途：WHO GHO OData API；相关概率：高；只能精确主机，不可放大到 azureedge.net。
+  DOMAIN,srhdpeuwpubsa.blob.core.windows.net # 用途：当前 WHO Data 下载主机；相关概率：中到高；仅建议排障时临时启用。
+
+# 广纳入候选但默认注释
+  DOMAIN,web-staging.lxp.academy.who.int # 疑似用途：WHO Academy 预发布学习主机；相关概率：中；带 staging 标识，默认不启用。
+  DOMAIN,who-j40.corephp.org # 疑似用途：EMRO 镜像或供应商部署别名；相关概率：低到中；非 WHO 主域，严格模式暂不启用。
+  DOMAIN,irq-data.emro.who.int # 疑似用途：伊拉克 EWARN 旧数据站；相关概率：低到中；仅见旧 PDF，等待当前日志复核。
+
+# Cookie / 统计 / 客服 / 社媒 / 视频 / 字体 / 非核心依赖
+# DOMAIN-SUFFIX,orangelogic.com # 用途：WHO Multimedia Library 的第三方 DAM 与 Cookie 文案链接；非核心，暂不启用。
+# DOMAIN-SUFFIX,youtube.com # 用途：视频外链；非核心，暂不启用。
+# DOMAIN-SUFFIX,facebook.com # 用途：社媒外链；非核心，暂不启用。
+# DOMAIN-SUFFIX,twitter.com # 用途：社媒外链；非核心，暂不启用。
+
+# 暂不能明确为 WHO / EMRO 官方或必要依赖，严格模式先注释
+# DOMAIN,repository.emro.who.int # 本轮公开证据不足，暂不启用。
+# DOMAIN,data.emro.who.int # 本轮公开证据不足，暂不启用。
+# DOMAIN,apps.emro.who.int # 本轮公开证据不足，暂不启用。
+# DOMAIN,library.emro.who.int # 本轮公开证据不足，暂不启用。
 
 #常规自定义域名补充列表
 DOMAIN-SUFFIX,naiixi.com
