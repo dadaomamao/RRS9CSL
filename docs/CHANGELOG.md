@@ -2,6 +2,16 @@
 
 本文件记录本仓库公开维护摘要。规则行为是否变化，以对应提交中实际修改的规则文件或文档为准；不适合公开的细节不在本文保留。
 
+## 2026-07-19
+
+### Repository entry consistency and region-neutral Google AI guidance
+
+- 将仓库中现有的 `GoogleAccountAiUS.list` 历史兼容文件纳入正式维护入口，并同步补入文档入口、用途说明和明确 raw URL；文件名仍不代表必须使用美国出口。
+- 修正 `AGENTS.md` 的入口漂移：列全根目录 12 个 `.list`，补充 Google AI 与 Apple 三文件的最小维护边界，并让所有根目录 `.list` 都接受银行 / 支付风控与 AI 风控交叉检查。
+- 明确消费端应选择目标服务正式支持地区内固定、低风险的出口，并优先故障封闭，避免静默跨地区切换；会按顶级域名或目标 IP 独立选节点的智能策略不等于同一出口保证。
+- 明确 Apple 三文件的文件名和 raw URL 是兼容接口，不构成单条规则永久用途或最终路由语义的证明，不得据此批量移动或重分类生效规则。
+- 本次不改变风险矩阵、确认次数、金融或 Claude / Anthropic 安全规则；只调整维护文档并保留 `GoogleAccountAiUS.list` 新增的整行注释，不修改、移动、启用或停用任何规则。全仓仍为 12 个 `.list`、1330 条生效规则；`GoogleAccountAiUS.list` 仍为 22 条生效规则，将生效规则按原顺序以 LF 连接并保留末尾 LF 后计算的 SHA-256 保持 `766ed2b9ab8f8fc2b6ae544683e14822f346a0093c5f83617aff3bb6009c9b57`。
+
 ## 2026-07-08
 
 ### ProxyLite Cochrane and WHO evidence routing maintenance

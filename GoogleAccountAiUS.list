@@ -1,4 +1,6 @@
 # Google AI / Gemini / NotebookLM / AI Studio
+# 文件名仅为兼容既有 raw URL 而保留，不表示必须使用美国出口。
+# 消费端应优先使用 Google 当前正式支持地区内固定、低风险的出口；智能策略不等于同一出口保证。
 # DOMAIN-KEYWORD,gemini
 DOMAIN-KEYWORD,notebooklm
 DOMAIN-KEYWORD,notebookllm

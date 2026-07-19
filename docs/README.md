@@ -32,6 +32,7 @@
 
 - `AI.list`
 - `eSIM-AI.list`
+- `GoogleAccountAiUS.list`
 - `ProxyLite.list`
 - `Direct.list`
 - `FinanceRealDNSDirect.list`

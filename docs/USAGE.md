@@ -17,6 +17,7 @@
 ```text
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/AI.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/eSIM-AI.list
+https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/GoogleAccountAiUS.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/ProxyLite.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Direct.list
 https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/FinanceRealDNSDirect.list
@@ -32,6 +33,7 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Dropbox.lis
 
 - `AI.list`：AI 服务相关规则。
 - `eSIM-AI.list`：手机 / eSIM 场景使用的 AI 精修规则。
+- `GoogleAccountAiUS.list`：Google AI / Gemini / NotebookLM / AI Studio 账号相关流量的历史兼容最小规则入口；文件名不代表出口地区要求。
 - `ProxyLite.list`：个人代理补充规则。
 - `Direct.list`：直连补充规则。
 - `FinanceRealDNSDirect.list`：金融真实 DNS 兼容直连清单，用于 `fake-ip-filter` 和 `RULE-SET,DIRECT`。
@@ -68,6 +70,18 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Dropbox.lis
 
 如果本地客户端支持按规则集、域名后缀或策略组拆分 DNS，上述约束应在客户端 DNS 配置里实现；不要把 Markdown 文档当成规则入口，也不要通过修改公开 `.list` 规则来补救本地 DNS 上游选错的问题。
 
+## Google AI / Gemini 兼容规则入口
+
+`GoogleAccountAiUS.list` 是仓库中已经存在并正式维护的历史兼容规则入口。文件名和既有 raw URL 为兼容已有部署而保留，不代表出口地区要求；消费端不应据此强制使用美国出口。
+
+使用时应遵守下面的顺序和边界：
+
+1. 已经使用本文件的消费端，应让它排在宽泛的 Google 或 AI 规则之前，先把 Google AI 账号相关流量送入独立策略组。
+2. 默认选择 Google 当前正式支持地区内固定、低风险的出口，并结合实际账号和网络环境验证。
+3. 对账号风控敏感流量优先使用故障封闭；固定出口不可用时拒绝连接，不要静默切换国家或地区。
+4. 若智能策略会按顶级域名或目标 IP 独立选择节点，它就不能保证整页请求共用同一出口。此类智能组只适合作为经过验证后的手动备选，不应作为默认出口。
+5. 不要为了追求“全覆盖”而把普通 Google、通用 CDN 或所有账号域名加入本文件；现有精确规则已经满足需求时，保持最小范围。
+
 ## Dropbox 专用规则
 
 `Dropbox.list` 是 Dropbox 专用规则入口。若同时使用 `Dropbox.list` 和包含宽泛第三方依赖的 `ProxyLite.list`，应让 Dropbox 专用规则排在宽泛规则之前。
@@ -76,13 +90,15 @@ https://raw.githubusercontent.com/dadaomamao/RRS9CSL/refs/heads/main/Dropbox.lis
 
 ## Apple / App Store 专用规则
 
-Apple / App Store 规则按用途拆分：
+Apple / App Store 规则按当前维护用途拆分：
 
-- `AppleDownloadProxy.list` 只放 Apple / App Store 下载与系统更新下载入口。
-- `AppleBrowseHKSmart.list` 只放 App Store 浏览、搜索、商店元数据和展示资源入口。
-- `AppleMiscDirect.list` 只放低风险 Apple 杂项直连入口。
+- `AppleDownloadProxy.list` 当前维护 Apple / App Store 下载与系统更新下载入口。
+- `AppleBrowseHKSmart.list` 当前维护 App Store 浏览、搜索、商店元数据和展示资源入口。
+- `AppleMiscDirect.list` 当前维护低风险 Apple 杂项直连入口。
 
-使用时应让这三个规则入口排在通用 `apple_domain` 之前。下载和浏览规则可以指向专用代理或兜底组；杂项规则默认保持 `DIRECT`。
+三个文件名及其既有 raw URL 都是兼容接口，不证明其中每条主机永久属于下载、浏览或直连。不得仅依据文件名批量移动或重分类生效规则；单条规则证据不足时保持原状态。
+
+使用时应让这三个规则入口排在消费端通用 Apple 规则（例如消费端自定义的 `apple_domain`）之前。下载和浏览规则可以指向专用代理或兜底组；杂项规则默认保持 `DIRECT`。
 
 这些列表不替代通用 Apple 规则，也不覆盖 Apple ID、iCloud、证书校验或设备激活链路。
 
